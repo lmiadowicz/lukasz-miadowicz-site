@@ -9,7 +9,7 @@ excerpt: "AI agents are becoming the primary user of your product. A practical A
 tags: ["AI", "AI Agents", "AI Product Management", "AUX", "Agentic UX", "B2B", "MCP", "Product Design", "Product Management", "Product Strategy"]
 category: "AI Product Management"
 readTime: "20 min read"
-image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/cursor-agents-window.webp"
+image: "/images/posts/cursor-agents-window.webp"
 canonical: "https://miadowicz.com/blog/agentic-ux-designing-in-product-experiences-for-ai-agents"
 faq:
   - question: "What is Agentic UX (AUX) and how is it different from regular UX design?"
@@ -70,13 +70,13 @@ A demo of Notion's personal agent shows exactly what this looks like. A product 
 
 **The agent's output is a first-class workspace object, not a response in a chat thread.** The agent is a contributor to the workspace, not a tool attached to the outside of it.
 
-![Notion Agent - intent captured, agent reading the FigJam screenshot and beginning work](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/notion-agent-reasoning.webp)
+![Notion Agent - intent captured, agent reading the FigJam screenshot and beginning work](/images/posts/notion-agent-reasoning.webp)
 *The agent reads the FigJam image embedded in the page. Right panel shows its steps in real time: "Thought for 6s", "Viewed Image", "Detailing the database setup". The user typed one sentence. No form, no schema config.*
 
-![Notion Agent - Product Roadmap database created, rows being populated from sticky note content](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/notion-agent-populating.webp)
+![Notion Agent - Product Roadmap database created, rows being populated from sticky note content](/images/posts/notion-agent-populating.webp)
 *Seconds later: a Product Roadmap database is live on the same page. Theme, Priority, and Status columns inferred by the agent. Rows written directly from the sticky notes. Agent panel: "Updated Brainstorm", "Updating Product Roadmap".*
 
-![Notion Agent - final result: By Status kanban view with agent summary](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/notion-agent-final-kanban.webp)
+![Notion Agent - final result: By Status kanban view with agent summary](/images/posts/notion-agent-final-kanban.webp)
 *The finished Product Roadmap in "By Status" kanban view. The agent's completion summary lists every view it generated — By Status board, By Theme table, P0s list. The agent offers to refine further. This is a standard Notion database — not a chat response, not a separate AI output.*
 
 ### Pattern 2: Agents in the Work Queue
@@ -85,12 +85,12 @@ The most elegant agentic design choice is also the most counterintuitive: don't 
 
 Salesforce's Agentforce does exactly this. It runs agents through the same case queue that human service reps use. The agent picks up a case, reads the customer history, works through the resolution steps, and closes it. If it can't resolve the issue, it escalates to a human rep — who opens the same case view the agent was working in, with the full reasoning trail already visible. The interface didn't change. The occupant did. There is no "AI mode" to switch into, no separate panel to open. The human rep sees exactly what the agent saw and picks up where it left off.
 
-![Salesforce Agentforce Service Console - agent handling a case, escalating to human with full context visible](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/salesforce-agentforce-case-handoff.webp)
+![Salesforce Agentforce Service Console - agent handling a case, escalating to human with full context visible](/images/posts/salesforce-agentforce-case-handoff.webp)
 *Agentforce Agent at work on a PepsiCo case: the agent handles the conversation, then transfers to a human rep. The right panel shows "360-degree Customer View", order history, real-time sentiment, and a "Conversation Catch Up" summary — everything the human needs to continue without starting over.*
 
 Intercom's Fin agent takes this further with an explicit transparency layer inside the inbox. Next to every customer conversation, Fin surfaces its proposed response, a resolution confidence score (94% in well-performing scenarios), and the knowledge sources it referenced. The interface gives the human four buttons: Send, Edit, Escalate, Unsure. The agent doesn't just resolve the ticket — it works in the same space as the human, at the same time, with its reasoning fully visible before any action is taken. The result: a 56% average autonomous resolution rate, with peaks above 86%.
 
-![Intercom Fin AI - conversations in the inbox with Resolved, Escalated, Pending views](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/intercom-fin-inbox.webp)
+![Intercom Fin AI - conversations in the inbox with Resolved, Escalated, Pending views](/images/posts/intercom-fin-inbox.webp)
 *Fin AI Agent's folder in the Intercom inbox: conversations are automatically sorted into Resolved, Escalated, and Pending. Human reps see only what needs their attention — Fin handles the rest in the same workspace.*
 
 **The handoff is natural because the workspace is shared.** Humans can read what the agent has done, understand its reasoning, and take over seamlessly — because there's nothing to hand over. They're already in the same place.
@@ -101,20 +101,20 @@ Some of the most powerful agentic implementations remove the interaction step en
 
 Asana's AI Teammates feature does this at the project level: agents appear as assignees on tasks and deliverables alongside human team members. They get assigned work the same way a person does, execute against it, and produce outputs — draft documents, research summaries, status updates — that land back in the project as completed tasks. There is no prompt box. The workflow that already existed is the interface.
 
-![Asana AI Teammate gallery - creating a teammate that will work inside projects as an assignee](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/asana-ai-teammates.webp)
+![Asana AI Teammate gallery - creating a teammate that will work inside projects as an assignee](/images/posts/asana-ai-teammates.webp)
 *Asana's AI Teammate gallery. You describe what the teammate should do, pick a role, and add it to a project as an assignee — the same way you'd add a person. From that point, it's part of the team's workflow, not a separate tool.*
 
 Sentry's Seer debugging agent goes further: it operates entirely without human initiation. When Sentry detects a production error, Seer automatically analyses the root cause, then pairs with a Claude-powered patch-writing agent to write the fix. The result is a pull request with a description of what broke and why — opened before any developer has looked at the alert. A developer goes from flagged error to reviewable fix in a single flow, without typing anything. The agent participates in the development workflow; the developer reviews at the end.
 
-![Sentry Seer - root cause analysis and code fix proposed inside the issue view](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/sentry-seer-analysis.webp)
+![Sentry Seer - root cause analysis and code fix proposed inside the issue view](/images/posts/sentry-seer-analysis.webp)
 *Seer's analysis panel inside a Sentry issue: root cause identified, solution proposed, code diff ready. The "Draft PR" button is the only action the developer needs to take.*
 
-![Sentry Seer - GitHub PR automatically created and merged, no human initiated it](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/sentry-seer-pr.webp)
+![Sentry Seer - GitHub PR automatically created and merged, no human initiated it](/images/posts/sentry-seer-pr.webp)
 *PR #91809, automatically generated by Seer: "This PR was automatically generated by Autofix." The developer reviewed and merged. They did not write it.*
 
 Linear's automated triage works the same way: when an issue is created, the agent reads its description, checks the component map, assigns it to the right team, sets priority, and adds relevant context — all without anyone requesting it. The issue lands in the queue already enriched. The human's first interaction with it is review, not triage.
 
-![Linear Agent - automatic triage: issues created with context, priority, and assignments already set](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/linear-agent-triage.webp)
+![Linear Agent - automatic triage: issues created with context, priority, and assignments already set](/images/posts/linear-agent-triage.webp)
 *Linear's triage agent in the customer context view. Issues arrive already processed — no one had to ask the agent to do this.*
 
 **The agent is a participant in the workflow, not a tool you query.** The interaction model flips: instead of prompting the agent to do something, you review what it already did.
@@ -127,10 +127,10 @@ The interface metaphor isn't "chat with an assistant." It's workforce management
 
 This is where agentic design is headed for power users: not a single agent answering questions, but a fleet of specialized agents executing in parallel, managed through a single dashboard.
 
-![Cursor 3 - Agents Window sidebar showing parallel agents](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/cursor-agents-window.webp)
+![Cursor 3 - Agents Window sidebar showing parallel agents](/images/posts/cursor-agents-window.webp)
 *Cursor 3's Agents Window: each running agent appears as a row with status, launch origin, and artifacts. The interaction model is workforce management, not chat.*
 
-![Cursor 3 - diff view and PR management from cloud agents](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/cursor-agents-diff.webp)
+![Cursor 3 - diff view and PR management from cloud agents](/images/posts/cursor-agents-diff.webp)
 *Cloud agents produce merge-ready pull requests with visual diffs. The human reviews and approves — they don't specify steps.*
 
 ---
@@ -167,7 +167,7 @@ This is what Gemini Enterprise is building with A2UI: approval dashboards dynami
 
 The supervision layer becomes as intelligent as the execution layer.
 
-![A2UI - agent composing a dynamic approval interface in the A2UI Composer](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/a2ui-composer.webp)
+![A2UI - agent composing a dynamic approval interface in the A2UI Composer](/images/posts/a2ui-composer.webp)
 *A2UI: the agent generates the interface as a declarative JSON spec — not executable code — and the client renders it natively. Each approval surface is built for the specific decision, not reused from a generic template.*
 
 ---

@@ -50,7 +50,7 @@ That has changed. Radically.
 
 McKinsey's 2025 survey of over 700 senior executives paints a stark picture of this new reality. <mark>The average investment required before a new corporate venture breaks even has plummeted from approximately **$125 million to $77 million in a single year**.</mark> [^1] This isn't a minor fluctuation. It's a seismic shift in the economics of innovation, driven almost entirely by the efficiency gains of AI.
 
-![Venture Building Economics Shift](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/diagram-02-venture-economics-shift.webp)
+![Venture Building Economics Shift](/images/posts/diagram-02-venture-economics-shift.webp)
 *The dramatic drop in break-even investment for corporate ventures, driven by AI-powered efficiency in discovery, prototyping, and go-to-market.*
 
 <mark>The same survey found that **61% of new ventures now cross the $10 million annual revenue mark**, up from 45% in 2023. And they're getting there **7 months faster**, with the average time to that milestone dropping from 38 months to just 31.</mark> [^1]
@@ -73,7 +73,7 @@ Let's be crystal clear about what this role is and isn't, because there is a lot
 
 <mark>A Venture Builder is the single-threaded owner of a new business from inception to scale. You are the de facto CEO of a startup that happens to be wholly owned (for now) by a larger company. You own the P&L, you own the roadmap, you own the go-to-market, and you own the outcome.</mark>
 
-![PM vs. Venture Builder Scope](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/diagram-03-pm-vs-vb-scope.webp)
+![PM vs. Venture Builder Scope](/images/posts/diagram-03-pm-vs-vb-scope.webp)
 *The Venture Builder role encompasses the PM's product scope but expands it to include full ownership of GTM, sales, finance, and governance.*
 
 <mark>The core mental model shifts from **shipping features** to **building a business**.</mark> That sounds simple, but it has profound implications for how you spend your time and what you value.
@@ -95,7 +95,7 @@ Let's be crystal clear about what this role is and isn't, because there is a lot
 
 A strong product management background is genuinely the best preparation for venture building. You already have the foundational skills. But there's a gap, and being honest about that gap is the first step to closing it.
 
-![The PM-to-Venture Builder Skills Map](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/diagram-04-skills-map.webp)
+![The PM-to-Venture Builder Skills Map](/images/posts/diagram-04-skills-map.webp)
 *Core PM skills are transferable, but the Venture Builder role requires building new capabilities in sales, GTM, finance, and governance.*
 
 ### What You Already Have (The Foundation)
@@ -130,7 +130,7 @@ Let's make this concrete. Here's a detailed, phase-by-phase walkthrough of how a
 
 The setup is classic: the opportunity is adjacent to the core product, it has a different ICP and pricing model, and it would distract from the core roadmap if built internally. The parent company has strong distribution (an enterprise sales team with deep relationships in financial services and healthcare), proprietary data (network telemetry and policy data from thousands of deployments), and deep workflow integration (the product is embedded in the customer's security operations). These are exactly the ingredients for a defensible AI-native venture.
 
-![The Venture Lifecycle: Phases and Decision Gates](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/diagram-01-venture-lifecycle.webp)
+![The Venture Lifecycle: Phases and Decision Gates](/images/posts/diagram-01-venture-lifecycle.webp)
 *The three-phase venture lifecycle with explicit go/no-go gates at each stage. Most ideas should be killed at Gate 1.*
 
 ### Phase 1: Validation (Weeks 1-4) — The Search for Pain
@@ -231,7 +231,7 @@ AI has genuinely changed what's possible in venture building. A team of two or t
 
 But AI hasn't changed the fundamentals of what makes a venture succeed or fail. The companies that are winning with AI-native ventures are the ones that have at least one of the following structural advantages:
 
-![The AI-Native Moat Flywheel](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/diagram-05-ai-moat.webp)
+![The AI-Native Moat Flywheel](/images/posts/diagram-05-ai-moat.webp)
 *A virtuous cycle where the parent company's distribution, data, and workflow provide an initial advantage, which the AI venture then deepens over time.*
 
 **Distribution.** An established company has an existing channel to market. You have a customer base, a brand that people trust, and a sales team that can open doors. A standalone startup has to build all of this from scratch. This is a massive head start that most people underestimate. Getting your first 100 customers is the hardest part of building any business, and if you can skip that by leveraging an existing channel, you've removed the single biggest risk in the venture.

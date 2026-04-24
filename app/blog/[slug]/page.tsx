@@ -228,7 +228,13 @@ export default async function BlogPostPage({
 
             <section className="mt-12 p-6 rounded-xl border border-indigo-500/20 bg-indigo-600/5">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-indigo-600/30 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-lg font-bold shrink-0">Ł</div>
+                <Image
+                  src={PROFILE_IMG}
+                  alt="Łukasz Miądowicz"
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover object-top border border-indigo-500/30 shrink-0"
+                />
                 <div>
                   <p className="text-white font-semibold mb-1" style={{ fontFamily: "var(--font-display)" }}>Łukasz Miądowicz</p>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-3">

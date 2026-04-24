@@ -9,7 +9,7 @@ excerpt: "User Stories were designed for human developers. Coding agents need so
 tags: ["Agent Specs", "Agentic AI", "AI", "Claude Code", "Product Management", "Software Development"]
 category: "Product Management"
 readTime: "10 min read"
-image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/agent-specs-cover.webp"
+image: "/images/posts/agent-specs-cover.webp"
 canonical: "https://miadowicz.com/blog/beyond-user-stories-why-agent-specs-are-the-future-software-development"
 faq:
   - question: "What is an Agent Spec in software development?"
@@ -38,7 +38,7 @@ Every PM course teaches it. Every agile coach preaches it. It lines countless Ji
 
 Think about how a user story travels from the Product Manager's mind to working code:
 
-![Translation Tax Diagram](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/diagram_1.webp)
+![Translation Tax Diagram](/images/posts/diagram_1.webp)
 
 This flow is what I call the **Translation Tax** — the time, effort, and cognitive work engineers spend interpreting vague user stories, filling in missing pieces, and translating "why" into "how."
 

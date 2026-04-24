@@ -9,7 +9,7 @@
     "tags": ["Product Strategy", "AI Moats", "Competitive Advantage", "Distribution Flywheel", "Data Moat", "Product Management", "SaaS", "AI Product", "Network Effects", "Context Graph"],
     "category": "Product Strategy",
     "readTime": "24 min read",
-    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/model_commoditization_curve.webp",
+    "image": "/images/posts/model_commoditization_curve.webp",
     "content": ""
   },
   {
@@ -35,7 +35,7 @@
     "tags": ["Agentic AI", "Multi-Agent Systems", "AI Product Management", "LLM", "Case Study", "AI Engineering", "Unit Economics", "0→1", "HITL", "AI Agents"],
     "category": "Agentic AI",
     "readTime": "30 min read",
-    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/framework_overview.webp",
+    "image": "/images/posts/framework_overview.webp",
     "content": ""
   },
   {
@@ -74,7 +74,7 @@
     "tags": ["AI", "AI Agents", "AI Product Management", "AUX", "Agentic UX", "B2B", "MCP", "Product Design", "Product Management", "Product Strategy"],
     "category": "AI Product Management",
     "readTime": "20 min read",
-    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/cursor-agents-window.webp",
+    "image": "/images/posts/cursor-agents-window.webp",
     "content": ""
   },
   {
@@ -100,7 +100,7 @@
     "tags": ["Agent Specs", "Agentic AI", "AI", "Claude Code", "Product Management", "Software Development"],
     "category": "Product Management",
     "readTime": "10 min read",
-    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/agent-specs-cover.webp",
+    "image": "",
     "content": ""
   },
   {

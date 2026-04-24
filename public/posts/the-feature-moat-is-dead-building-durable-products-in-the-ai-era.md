@@ -9,7 +9,7 @@ excerpt: "AI has commoditized your features, UI, and model access. Here's the fi
 tags: ["Product Strategy", "AI Moats", "Competitive Advantage", "Distribution Flywheel", "Data Moat", "Product Management", "SaaS", "AI Product", "Network Effects", "Context Graph"]
 category: "Product Strategy"
 readTime: "24 min read"
-image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/model_commoditization_curve.webp"
+image: "/images/posts/model_commoditization_curve.webp"
 canonical: "https://miadowicz.com/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era"
 faq:
   - question: "What is a product moat in the AI era?"
@@ -48,7 +48,7 @@ This post is my attempt to map out where the real, durable moats are being built
 
 The value of software used to be tied to how hard it was to create. That difficulty is gone. What's left is a catastrophic collapse of the moats we thought we had. The **Model Commoditization Curve** I've drawn up shows this clearly. The value captured by the model providers themselves? That peaked back in 2023–2024. This is a direct consequence of the non-linear trends I explored in [The Age of Amplification](/blog/the-age-of-amplification-ai-predictions-2030-first-principles) — capability is accelerating while the value shifts to the application layer. We're now past the "Commoditization Threshold." Model capability is becoming a utility, like electricity, and the real value is rapidly shifting to the layers you build on top.
 
-![The Model Commoditization Curve](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/model_commoditization_curve.webp)
+![The Model Commoditization Curve](/images/posts/model_commoditization_curve.webp)
 
 This isn't theory; it's happening right now. What I once thought was a defensible feature is now a fragile illusion. Let me be specific about what has collapsed:
 
@@ -68,7 +68,7 @@ Trying to defend a business on these grounds is like building a fortress on quic
 
 So, if the old moats are crumbling, what's next? The answer, I believe, is in a new hierarchy of defensibility. We have to stop seeing our products as a list of features and start seeing them as a stack of compounding advantages. I've learned that the most durable products are built from the bottom up, but they are defended from the top down.
 
-![The Product Moat Stack](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/moat_stack.webp)
+![The Product Moat Stack](/images/posts/moat_stack.webp)
 
 I call this the **Product Moat Stack**. It's how I re-frame my thinking from features to layers of compounding value. Each layer is more durable than the one below it, and each layer creates the conditions for the next one to form.
 
@@ -90,7 +90,7 @@ I call this the **Product Moat Stack**. It's how I re-frame my thinking from fea
 
 Understanding the stack is one thing. Acting on it is another. I created the **Moat Durability Matrix** as a tactical tool to help my teams prioritize. It maps different moats based on two dimensions: how easy they are to replicate by a well-funded competitor, and how fast they compound over time. The intersection of these two dimensions tells you where to invest.
 
-![The Moat Durability Matrix](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/moat_durability_matrix.webp)
+![The Moat Durability Matrix](/images/posts/moat_durability_matrix.webp)
 
 This matrix gives me a clear mandate for my product strategy. Let me walk through each quadrant with the honesty I wish someone had given me earlier in my career.
 
@@ -112,7 +112,7 @@ Of all the fortress moats, the one I find most powerful and least understood is 
 
 I call this the **Distribution Flywheel**. It's a virtuous cycle where each part of the product's usage actively drives the next. Most products are designed to be consumed. The best products are designed to be shared.
 
-![The Distribution Flywheel](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/distribution_flywheel.webp)
+![The Distribution Flywheel](/images/posts/distribution_flywheel.webp)
 
 **Workflow Embedding** is the entry point. Your product becomes essential for a core task, driving daily use. This is the prerequisite for everything else. If users don't come back every day, the flywheel never starts.
 

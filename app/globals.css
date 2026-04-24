@@ -79,6 +79,10 @@
     word-break: break-word;
     overflow-wrap: break-word;
   }
+  table, th, td {
+    word-break: normal;
+    overflow-wrap: normal;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
@@ -249,4 +253,43 @@ textarea:focus-visible, select:focus-visible,
 .field-error-message {
   color: oklch(0.75 0.18 25); font-size: 0.75rem; margin-top: 0.25rem;
   display: flex; align-items: center; gap: 0.25rem;
+}
+
+/* Responsive, readable prose tables */
+.prose :where(table) {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: max-content;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.prose :where(th),
+.prose :where(td) {
+  word-break: normal;
+  overflow-wrap: normal;
+  white-space: normal;
+  min-width: 7rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid oklch(1 0 0 / 10%);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.prose :where(th) {
+  text-align: left;
+  font-weight: 600;
+  color: oklch(0.9 0.005 265);
+  background: oklch(1 0 0 / 4%);
+  white-space: nowrap;
+}
+
+.prose :where(td) {
+  color: oklch(0.72 0.008 265);
+}
+
+.prose :where(tbody tr:hover td) {
+  background: oklch(1 0 0 / 2%);
 }

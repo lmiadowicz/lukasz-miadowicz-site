@@ -9,7 +9,7 @@ excerpt: "A first-principles methodology for building agentic AI systems: cognit
 tags: ["Agentic AI", "Multi-Agent Systems", "AI Product Management", "LLM", "Case Study", "AI Engineering", "Unit Economics", "0→1", "HITL", "AI Agents"]
 category: "Agentic AI"
 readTime: "30 min read"
-image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/framework_overview.webp"
+image: "/images/posts/framework_overview.webp"
 canonical: "https://miadowicz.com/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles"
 faq:
   - question: "What is agentic AI and how is it different from regular AI features?"
@@ -64,7 +64,7 @@ Agentic AI is not about replacing humans but about **augmenting their cognitive 
 
 ---
 
-![Framework Overview](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/framework_overview.webp)
+![Framework Overview](/images/posts/framework_overview.webp)
 *The 4-part methodology: From discovery to production to business viability*
 
 ---
@@ -107,7 +107,7 @@ This was the perfect setup for an agentic AI solution — but I needed to unders
 
 ---
 
-![Discovery Sprint Process](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/discovery_sprint.webp)
+![Discovery Sprint Process](/images/posts/discovery_sprint.webp)
 *The 4-week discovery sprint: From stakeholder alignment to validated design*
 
 ---
@@ -189,7 +189,7 @@ My solution was not a single, monolithic AI, but a *mesh* of collaborating softw
 
 ---
 
-![Agent Architecture](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/agent_architecture.webp)
+![Agent Architecture](/images/posts/agent_architecture.webp)
 *The 6-agent system: Each agent is a specialist with clear responsibilities and cost structure*
 
 ---
@@ -288,7 +288,7 @@ Here's a simplified schema:
 
 ---
 
-![Agent Patterns Comparison](https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/agent_patterns.webp)
+![Agent Patterns Comparison](/images/posts/agent_patterns.webp)
 *Three agent mesh patterns: Choose based on your problem's characteristics*
 
 ---
