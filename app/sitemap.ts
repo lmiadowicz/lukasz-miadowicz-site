@@ -1,14 +1,23 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts } from "@/lib/blog";
+import { getAllBooks } from "@/lib/books";
 
 const BASE_URL = "https://miadowicz.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
+  const books = getAllBooks();
 
   const blogPosts = posts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.updated || post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const bookPages = books.map((book) => ({
+    url: `${BASE_URL}/books/${book.slug}`,
+    lastModified: new Date(book.date),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
@@ -27,11 +36,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/books`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/glossary`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     ...blogPosts,
+    ...bookPages,
   ];
 }
