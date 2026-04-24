@@ -4,20 +4,21 @@ import { ChevronRight } from "lucide-react";
 import { Nav } from "@/components/Nav";
 
 export const metadata: Metadata = {
-  title: { absolute: "AI Product Glossary: Agent Harness, HITL, RAG | miadowicz." },
+  title: { absolute: "AI Product Glossary: Agent Harness, HITL, Circuit Breaker, Unit Economics | miadowicz." },
   description:
-    "Definitions of key AI product terms: Agent Harness, Agentic UX, HITL, 6 Levers, 4D Framework, RAG, MCP. By Łukasz Miądowicz, AI Product Leader.",
+    "Definitions of key AI product terms: Agent Harness, Agentic UX, HITL, Circuit Breaker, Unit Economics, 6 Levers, 4D Framework, RAG, MCP. By Łukasz Miądowicz, AI Product Leader.",
   keywords: [
     "Agent Harness definition", "Agentic UX", "HITL meaning", "AI product glossary",
-    "Orchestrator of Intelligence", "6 levers LLM", "4D Framework AI", "RAG definition",
-    "MCP model context protocol", "multi-agent systems", "AI product management terms",
+    "circuit breaker pattern AI", "unit economics agentic AI", "6 levers LLM", "4D Framework AI",
+    "RAG definition", "MCP model context protocol", "multi-agent systems", "AI product management terms",
+    "Orchestrator of Intelligence", "agentic AI definition",
   ],
   alternates: { canonical: "https://miadowicz.com/glossary" },
   openGraph: {
     type: "website",
     url: "https://miadowicz.com/glossary",
-    title: "AI Product Glossary — Terms Every AI Builder Must Know | Łukasz Miądowicz",
-    description: "Definitions of key AI product terms: Agent Harness, Agentic UX, HITL, 6 Levers, RAG, MCP. By Łukasz Miądowicz, AI Product Leader.",
+    title: "AI Product Glossary — Agent Harness, Circuit Breaker, Unit Economics & More | Łukasz Miądowicz",
+    description: "Definitions of key AI product terms: Agent Harness, Agentic UX, HITL, Circuit Breaker, Unit Economics, 6 Levers, RAG, MCP. By Łukasz Miądowicz, AI Product Leader.",
     images: [
       {
         url: "https://miadowicz.com/opengraph-image",
@@ -138,6 +139,22 @@ const glossarySchema = {
         text: "Traditional AI takes an input and produces an output — one step, then done. Agentic AI operates in loops: it plans, acts, observes the result, adjusts, and continues until a goal is reached. Agentic AI uses tools, maintains state, and makes sequential decisions. The shift from 'AI that answers' to 'AI that acts' is the defining change in the current generation of AI products.",
       },
     },
+    {
+      "@type": "Question",
+      name: "What is a circuit breaker pattern in agentic AI?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A circuit breaker is a production safety mechanism that stops an AI agent from running indefinitely. It monitors multiple thresholds: max iterations, max cost, max execution time, and stale iterations (no forward progress detected via state hashing). When any threshold is breached, the system escalates to a human with full context rather than continuing to consume API budget.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are unit economics for agentic AI systems?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Unit economics for AI means calculating cost per task against value created. Key components: LLM cost, API and data costs, infrastructure, and human review time (usually the dominant cost). Example: a 6-agent travel proposal system costs $5/task ($0.58 LLM + $0.20 API + $0.05 infra + $4.17 human review). Before automation: $200/task. Net savings: $191/task. Payback: 1.3 years on $150K build cost at 600 proposals/year.",
+      },
+    },
   ],
 };
 
@@ -177,7 +194,7 @@ const terms = [
     question: "What is HITL (Human-in-the-Loop)?",
     answer: "HITL (Human-in-the-Loop) is a design pattern where a human reviews, approves, or corrects an AI agent's output before it takes a consequential action. It is not a sign of AI weakness — it's a risk management mechanism for irreversible or high-stakes decisions.",
     detail: "The goal is to find the minimum number of HITL touchpoints that maintain trust while preserving automation value. Too many HITL gates and you've automated nothing. Too few and one hallucination causes real damage. The right HITL design is a product decision, not a technical one.",
-    related: null,
+    related: { label: "Deep dive: HITL design in the Agentic AI Playbook", href: "/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles" },
   },
   {
     id: "6-levers",
@@ -191,7 +208,7 @@ const terms = [
     question: "What is the 4D Framework for AI products?",
     answer: "The 4D Framework is a methodology for building AI products from first principles: (1) AI Discovery — identify where AI expands the problem space; (2) AI Design — architecture, prototyping, and 6-lever configuration; (3) AI Development — build, evaluate, iterate with observability; (4) AI Deployment — launch, monetize, and build the economic case.",
     detail: "Each phase has a distinct output: Discovery outputs a prioritized use case. Design outputs a working prototype. Development outputs a production-ready system with evals. Deployment outputs a business case with unit economics — payback period, cost per task, capacity multiplier.",
-    related: null,
+    related: { label: "Full playbook: 4D Framework in practice (Qtravel.ai case study)", href: "/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles" },
   },
   {
     id: "8-llm-constraints",
@@ -219,7 +236,7 @@ const terms = [
     question: "What is a multi-agent system?",
     answer: "A multi-agent system is an AI architecture where multiple specialized agents collaborate to complete a task too complex for a single agent — each with a defined role, a subset of tools, and explicit handoff protocols between them.",
     detail: "Multi-agent systems outperform single large agents on tasks that benefit from parallelism, specialization, or role separation: one agent researches, one drafts, one reviews, one executes. The architectural challenge is designing clean handoffs and deciding which agent has final authority.",
-    related: null,
+    related: { label: "Case study: 6-agent travel system architecture", href: "/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles" },
   },
   {
     id: "agentic-ai",
@@ -227,6 +244,20 @@ const terms = [
     answer: "Traditional AI takes an input and produces an output — one step, then done. Agentic AI operates in loops: it plans, acts, observes the result, adjusts, and continues until a goal is reached. Agentic AI uses tools, maintains state, and makes sequential decisions autonomously.",
     detail: "The shift from 'AI that answers' to 'AI that acts' is the defining change in the current generation of AI products. It's also what makes the Agent Harness necessary — without it, a looping, tool-calling agent in production is a liability, not an asset.",
     related: { label: "What Is an Agent Harness", href: "/blog/what-is-agent-harness" },
+  },
+  {
+    id: "circuit-breaker",
+    question: "What is a circuit breaker pattern in agentic AI?",
+    answer: "A circuit breaker is a production safety mechanism that stops an AI agent from running indefinitely. It monitors multiple thresholds simultaneously: max iterations, max cost (e.g. $5), max execution time, and stale iterations (no forward progress). When any threshold is breached, the system escalates to a human with full context rather than continuing to consume API budget.",
+    detail: "State hashing detects when an agent is looping without progress — a key failure mode where the agent keeps relaxing constraints but never reaches a solution. The circuit breaker is what makes agentic systems safe to deploy in production: bounded cost, bounded time, graceful degradation. Without it, one edge case can exhaust your monthly LLM budget in a single task.",
+    related: { label: "Circuit breaker implementation: Agentic AI Playbook", href: "/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles" },
+  },
+  {
+    id: "unit-economics-ai",
+    question: "What are unit economics for agentic AI systems?",
+    answer: "Unit economics for AI means calculating cost per task and comparing it against value created. The key components: LLM cost (token usage × model pricing), API and data costs, infrastructure, and — critically — human review time (usually the dominant cost, not the LLM). Net savings per task = value delivered minus total cost per task.",
+    detail: "Example benchmark: a 6-agent travel proposal system costs $5 total per task ($0.58 LLM + $0.20 API + $0.05 infra + $4.17 human review at 5 min). Before automation: $200 per task (4 hours of agent time). Net savings: $191 per task. Payback period: 1.3 years on a $150,000 build cost at 600 proposals/year. The insight: human review time, not LLM cost, is the primary expense — which means accuracy and reliability are the real ROI drivers.",
+    related: { label: "Full unit economics model: Agentic AI Playbook", href: "/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles" },
   },
 ];
 

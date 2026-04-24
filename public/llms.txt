@@ -31,9 +31,10 @@
 ## Blog & Writing
 
 - [All articles — AI product strategy, agentic AI, product discovery](https://miadowicz.com/blog)
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](https://miadowicz.com/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — 30-min deep dive: 4D framework, multi-agent architecture, circuit breakers, unit economics. 98% task time reduction, $191/task ROI, 1.3-year payback documented.
 - [What Is an Agent Harness — and Why 90% of AI Builders Miss It](https://miadowicz.com/blog/what-is-agent-harness)
 - [AI Product Discovery: How to Test Hypotheses in Days, Not Sprints](https://miadowicz.com/blog/ai-product-discovery-framework)
-- [AI Product Glossary — Agent Harness, Agentic UX, HITL, 6 Levers, 4D Framework, RAG, MCP and more](https://miadowicz.com/glossary)
+- [AI Product Glossary — Agent Harness, Agentic UX, HITL, 6 Levers, 4D Framework, RAG, MCP, Circuit Breaker and more](https://miadowicz.com/glossary)
 
 ## Contact & Links
 

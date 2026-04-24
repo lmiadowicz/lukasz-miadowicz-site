@@ -232,7 +232,7 @@ export default async function BlogPostPage({
                 <div>
                   <p className="text-white font-semibold mb-1" style={{ fontFamily: "var(--font-display)" }}>Łukasz Miądowicz</p>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-3">
-                    AI Product Leader, AI Strategy & Adoption Lead, Agent Harness Builder. I design AI systems that deliver business outcomes — not just features that respond. Ex-Software Engineer (Contractor at Google). $1M ARR exit. 10+ years in product.
+                    AI Product Leader, AI Strategy & Adoption Lead, Agent Harness Builder. I design AI systems that deliver business outcomes — not just features that respond. Ex-Software Engineer at Google for Startups. PhD Quantum Physics. $80M ARR scaled. 10+ years in product.
                   </p>
                   <Link href="/#contact" className="inline-flex items-center gap-1.5 text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium">
                     Work with me <ArrowRight size={13} />

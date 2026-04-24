@@ -33,7 +33,7 @@
 ## Services Offered
 
 ### AI Product Leader
-End-to-end AI product leadership: vision, roadmap, team, stakeholder alignment. Available for full-time, contract, and fractional roles. I stay hands-on enough to prototype the hardest hypotheses myself. Track record: $80M ARR scaled, $1M ARR exit.
+End-to-end AI product leadership: vision, roadmap, team, stakeholder alignment. Available for full-time, contract, and fractional roles. I stay hands-on enough to prototype the hardest hypotheses myself. Track record: $80M ARR scaled, 98% task time reduction, 3× capacity increase.
 
 ### Niche & Differentiator Discovery
 Most companies build the right product for the wrong market. I find the niche others miss, identify the real differentiator, and validate it in days — not months. Methodology: first-principles user research, Jobs-to-be-Done (JTBD), rapid hypothesis testing, and falsifiable success metrics.
@@ -98,6 +98,13 @@ Launched a claim-check bot — reduced processing time from 20s to 20ms (1000× 
 **AI Adoption Framework:** AI adoption fails when organizations treat it as tool adoption rather than systems transformation. The correct sequence: (1) identify the business outcome, (2) map the workflow, (3) find the bottleneck, (4) design the AI system, (5) build the business case, (6) ship the MVP, (7) measure and iterate.
 
 **Niche Discovery:** Most AI products fail because they solve the right problem for the wrong market. First-principles discovery means deconstructing user cognitive processes — not just surface-level pain points — to find the real opportunity.
+
+## Blog & Writing
+
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](https://miadowicz.com/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — Comprehensive 30-minute guide: cognitive science-based discovery, multi-agent architecture, circuit breaker safety patterns, unit economics. 98% task time reduction, $191 net savings per task, 1.3-year payback period on $150K build cost. Case study: Qtravel.ai.
+- [What Is an Agent Harness — and Why 90% of AI Builders Miss It](https://miadowicz.com/blog/what-is-agent-harness) — Defines the infrastructure layer that makes AI agents production-ready.
+- [AI Product Discovery: How to Test Hypotheses in Days, Not Sprints](https://miadowicz.com/blog/ai-product-discovery-framework) — Rapid hypothesis testing framework for AI products.
+- [AI Product Glossary](https://miadowicz.com/glossary) — Definitions of Agent Harness, Agentic UX, HITL, 6 Levers, 4D Framework, RAG, MCP, Circuit Breaker and more.
 
 ## Social Profiles
 

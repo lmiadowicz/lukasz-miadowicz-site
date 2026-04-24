@@ -1,5 +1,18 @@
 [
   {
+    "slug": "the-agentic-ai-playbook-building-0-to-1-products-from-first-principles",
+    "title": "The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles",
+    "date": "2026-02-02",
+    "updated": "2026-04-25",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "A first-principles methodology for building agentic AI systems: cognitive science discovery, multi-agent architecture, circuit breakers, and unit economics — with 98% task time reduction and $191/task ROI documented.",
+    "tags": ["Agentic AI", "Multi-Agent Systems", "AI Product Management", "LLM", "Case Study", "AI Engineering", "Unit Economics", "0→1", "HITL", "AI Agents"],
+    "category": "Agentic AI",
+    "readTime": "30 min read",
+    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/framework_overview.webp",
+    "content": ""
+  },
+  {
     "slug": "what-is-agent-harness",
     "title": "What Is an Agent Harness — and Why 90% of AI Builders Miss It",
     "date": "2026-04-20",
