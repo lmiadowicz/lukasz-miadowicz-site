@@ -1,5 +1,31 @@
 [
   {
+    "slug": "the-feature-moat-is-dead-building-durable-products-in-the-ai-era",
+    "title": "The Feature Moat Is Dead: Building Durable Products in the AI Era",
+    "date": "2026-04-25",
+    "updated": "2026-04-25",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "AI has commoditized your features, UI, and model access. Here's the first-principles map of where real, durable moats are being built in 2026 — from the Product Moat Stack to the Distribution Flywheel and Context Graph.",
+    "tags": ["Product Strategy", "AI Moats", "Competitive Advantage", "Distribution Flywheel", "Data Moat", "Product Management", "SaaS", "AI Product", "Network Effects", "Context Graph"],
+    "category": "Product Strategy",
+    "readTime": "24 min read",
+    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/model_commoditization_curve.webp",
+    "content": ""
+  },
+  {
+    "slug": "the-age-of-amplification-ai-predictions-2030-first-principles",
+    "title": "The Age of Amplification: What I See Coming in AI by 2030 (And Why Most People Are Looking at It Wrong)",
+    "date": "2026-02-07",
+    "updated": "2026-04-25",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "A first-principles analysis of AI's trajectory to 2030, exploring exponential acceleration, self-improving systems, multi-agent coordination, and why this is the Age of Amplification, not automation.",
+    "tags": ["AI", "AI Agents", "AI Strategy", "Future of AI", "First Principles", "Multi-Agent Systems", "Predictions"],
+    "category": "AI Strategy",
+    "readTime": "15 min read",
+    "image": "",
+    "content": ""
+  },
+  {
     "slug": "the-agentic-ai-playbook-building-0-to-1-products-from-first-principles",
     "title": "The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles",
     "date": "2026-02-02",
@@ -26,6 +52,32 @@
     "content": ""
   },
   {
+    "slug": "from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about",
+    "title": "From PM to Venture Builder: The Definitive Guide to the Career Move Nobody Talks About (But Should)",
+    "date": "2026-02-22",
+    "updated": "2026-02-22",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "A comprehensive guide to moving from Product Manager to Venture Builder - skills to build, a venture launch playbook, metrics & governance, AI moats, and how to pitch the role internally.",
+    "tags": ["AI", "Career", "Corporate Innovation", "Product Management", "Product Manager", "Spin-Out", "Startups", "Venture Builder", "Venture Building"],
+    "category": "Corporate Innovation",
+    "readTime": "25 min read",
+    "image": "",
+    "content": ""
+  },
+  {
+    "slug": "agentic-ux-designing-in-product-experiences-for-ai-agents",
+    "title": "Agentic UX: Designing In-Product Experiences for AI Agents",
+    "date": "2026-04-13",
+    "updated": "2026-04-25",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "AI agents are becoming the primary user of your product. A practical AUX guide for PMs — 4 patterns from Notion, Salesforce & Intercom, a supervision framework, and a 7-point action checklist.",
+    "tags": ["AI", "AI Agents", "AI Product Management", "AUX", "Agentic UX", "B2B", "MCP", "Product Design", "Product Management", "Product Strategy"],
+    "category": "AI Product Management",
+    "readTime": "20 min read",
+    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/cursor-agents-window.webp",
+    "content": ""
+  },
+  {
     "slug": "ai-product-discovery-framework",
     "title": "AI Product Discovery: How to Test Hypotheses in Days, Not Sprints",
     "date": "2026-04-15",
@@ -35,6 +87,32 @@
     "tags": ["Product Discovery", "AI Prototyping", "Hypothesis Testing", "Product Management", "LLM"],
     "category": "Product Strategy",
     "readTime": "6 min read",
+    "image": "",
+    "content": ""
+  },
+  {
+    "slug": "beyond-user-stories-why-agent-specs-are-the-future-software-development",
+    "title": "Beyond User Stories: Why Agent Specs Are the Future of Software Development",
+    "date": "2026-03-31",
+    "updated": "2026-03-31",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "User Stories were designed for human developers. Coding agents need something different. Learn how Agent Specs reduce the Translation Tax and help developers become Agent Orchestrators.",
+    "tags": ["Agent Specs", "Agentic AI", "AI", "Claude Code", "Product Management", "Software Development"],
+    "category": "Product Management",
+    "readTime": "10 min read",
+    "image": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/miadowicz/agent-specs-cover.webp",
+    "content": ""
+  },
+  {
+    "slug": "when-should-you-use-ai-decision-framework-for-pms",
+    "title": "When Should You Use AI? A Decision Framework for AI PMs",
+    "date": "2026-03-13",
+    "updated": "2026-03-13",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "A practical decision framework for AI PMs on when to add AI to a product feature — 5 key questions, a visual decision tree, 5 anti-patterns, and real-world examples.",
+    "tags": ["AI", "AI Features", "AI Product Management", "AIPM", "Decision Framework", "Product Design", "Product Management", "Product Manager", "Product Strategy"],
+    "category": "AI Product Management",
+    "readTime": "8 min read",
     "image": "",
     "content": ""
   }

@@ -31,10 +31,16 @@
 ## Blog & Writing
 
 - [All articles — AI product strategy, agentic AI, product discovery](https://miadowicz.com/blog)
+- [The Feature Moat Is Dead: Building Durable Products in the AI Era](https://miadowicz.com/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era) — 24-min first-principles guide to competitive advantage in 2026: Product Moat Stack, Moat Durability Matrix, Distribution Flywheel, Context Graph, Decision Traces. Tactical playbook for PMs.
+- [The Age of Amplification: What I See Coming in AI by 2030](https://miadowicz.com/blog/the-age-of-amplification-ai-predictions-2030-first-principles) — First-principles analysis of AI's trajectory to 2030: exponential acceleration, self-improving systems, multi-agent coordination, AEO vs SEO, and the Age of Amplification framework.
+- [Agentic UX: Designing In-Product Experiences for AI Agents](https://miadowicz.com/blog/agentic-ux-designing-in-product-experiences-for-ai-agents) — 4 design patterns (Embedded Agent, Work Queue, Project Participant, Management Interface), supervision layer, A2UI, and 7 PM practices. Case studies: Notion, Salesforce, Intercom, Cursor 3.
 - [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](https://miadowicz.com/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — 30-min deep dive: 4D framework, multi-agent architecture, circuit breakers, unit economics. 98% task time reduction, $191/task ROI, 1.3-year payback documented.
+- [When Should You Use AI? A Decision Framework for AI PMs](https://miadowicz.com/blog/when-should-you-use-ai-decision-framework-for-pms) — 5-question framework for deciding when AI belongs in a product feature: decision tree, 5 anti-patterns, real-world examples.
 - [What Is an Agent Harness — and Why 90% of AI Builders Miss It](https://miadowicz.com/blog/what-is-agent-harness)
 - [AI Product Discovery: How to Test Hypotheses in Days, Not Sprints](https://miadowicz.com/blog/ai-product-discovery-framework)
-- [AI Product Glossary — Agent Harness, Agentic UX, HITL, 6 Levers, 4D Framework, RAG, MCP, Circuit Breaker and more](https://miadowicz.com/glossary)
+- [Beyond User Stories: Why Agent Specs Are the Future of Software Development](https://miadowicz.com/blog/beyond-user-stories-why-agent-specs-are-the-future-software-development) — How Agent Specs replace vague user stories for AI coding agents, reduce the Translation Tax, and help developers become Agent Orchestrators.
+- [From PM to Venture Builder: The Definitive Guide to the Career Move Nobody Talks About (But Should)](https://miadowicz.com/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about) — Comprehensive guide to moving from Product Manager to Venture Builder: skills map, 3-phase venture lifecycle with go/no-go gates, metrics framework, governance, AI moats, and talent playbook.
+- [AI Product Glossary — Feature Moat, Product Moat Stack, Distribution Flywheel, Context Graph, Decision Traces, Agent Harness, HITL, RAG, MCP, Agent Spec, Circuit Breaker, Venture Builder and more](https://miadowicz.com/glossary)
 
 ## Contact & Links
 
