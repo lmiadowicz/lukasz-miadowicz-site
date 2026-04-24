@@ -521,7 +521,7 @@ Using early 2024 Claude 3 pricing:
 | Human Review (5 min @ $50/hour) | $4.17 |
 | **Total CPT** | **$5.00** |
 
-<mark>**Key Insight:** The human review time is the dominant cost, not the LLM. The primary ROI driver is not reducing LLM costs — it's increasing system accuracy and reliability to reduce human review time.</mark>
+**Key Insight:** The human review time is the dominant cost, not the LLM. The primary ROI driver is not reducing LLM costs — it's increasing system accuracy and reliability to reduce human review time.
 
 ### Chapter 10: ROI Analysis
 
@@ -606,7 +606,7 @@ At that ROI, it's a no-brainer for customers.
 
 This playbook has taken you from first principles to a production-ready, economically viable agentic AI product. I started by understanding user cognition through deep research, translated that understanding into a multi-agent architecture, implemented it with robust engineering practices, and proved its business viability with rigorous unit economics and a thoughtful GTM strategy.
 
-<mark>**The key insight: Agentic AI is not about building features; it is about building systems that think.** This requires a fundamentally different approach — one that combines cognitive science, systems thinking, rigorous engineering, and business acumen.</mark>
+**The key insight: Agentic AI is not about building features; it is about building systems that think.** This requires a fundamentally different approach — one that combines cognitive science, systems thinking, rigorous engineering, and business acumen.
 
 The travel agency case study demonstrates that when you do this work properly, the results are transformative:
 

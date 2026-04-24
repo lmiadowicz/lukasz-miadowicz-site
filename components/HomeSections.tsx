@@ -534,8 +534,8 @@ export function ExperienceSection() {
 export function BlogPreviewSection() {
   const posts = [
     { title: "What Is an Agent Harness — and Why 90% of AI Builders Miss It", excerpt: "Most AI builders focus on the LLM prompt. The Agent Harness is the infrastructure that makes an AI agent actually reliable in production — handling loops, tools, state, safety, and context.", tag: "AI Engineering", href: "/blog/what-is-agent-harness" },
-    { title: "AI Product Discovery: How to Test Hypotheses in Days, Not Sprints", excerpt: "Traditional product discovery takes weeks. With AI prototyping tools, you can test a hypothesis in 48 hours. Here's the framework I use to run rapid AI product discovery.", tag: "Product Strategy", href: "/blog/ai-product-discovery-framework" },
-    { title: "The Agentic AI Playbook: Building 0→1 Products from First Principles", excerpt: "How I reduced task time by 98% and tripled team capacity at Qtravel.ai. A complete framework for building agentic AI products from problem discovery to production — with the decisions that actually mattered.", tag: "Agentic AI", href: "https://miadowicz.com/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles/" },
+    { title: "The Age of Amplification: What I See Coming in AI by 2030", excerpt: "A first-principles analysis of AI's trajectory to 2030 — exponential acceleration, self-improving systems, multi-agent coordination, and why this is the Age of Amplification, not automation.", tag: "AI Strategy", href: "/blog/the-age-of-amplification-ai-predictions-2030-first-principles" },
+    { title: "From PM to Venture Builder: The Definitive Guide to the Career Move Nobody Talks About", excerpt: "A comprehensive guide to moving from Product Manager to Venture Builder — skills to build, a venture launch playbook, metrics & governance, AI moats, and how to pitch the role internally.", tag: "Corporate Innovation", href: "/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about" },
   ];
 
   return (

@@ -236,6 +236,15 @@ textarea:focus-visible, select:focus-visible,
 }
 .skip-link:focus { top: 0; outline: 3px solid oklch(0.98 0 0); outline-offset: 2px; }
 
+.prose mark {
+  background-color: oklch(0.62 0.22 264 / 18%);
+  color: oklch(0.88 0.08 264);
+  padding: 0.1em 0.25em;
+  border-radius: 0.2em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 .field-error { border-color: oklch(0.65 0.22 25) !important; }
 .field-error-message {
   color: oklch(0.75 0.18 25); font-size: 0.75rem; margin-top: 0.25rem;
