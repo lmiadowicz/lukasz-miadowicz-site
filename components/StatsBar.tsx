@@ -35,7 +35,7 @@ function AnimatedCounter({ value, suffix = "" }: { value: number; suffix?: strin
 const stats = [
   { value: 80, suffix: "M", label: "ARR scaled" },
   { value: 98, suffix: "%", label: "Task time reduction" },
-  { value: 3, suffix: "×", label: "Capacity increase" },
+  { value: 25, suffix: "%", label: "Revenue growth" },
   { value: 10, suffix: "+", label: "Years in Product" },
 ];
 
