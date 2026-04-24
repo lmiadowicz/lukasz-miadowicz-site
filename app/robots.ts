@@ -13,6 +13,8 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "OAI-SearchBot", allow: "/" },
       { userAgent: "Applebot-Extended", allow: "/" },
       { userAgent: "FacebookBot", allow: "/" },
+      // Google-Extended — Gemini training + Gemini grounding in Search
+      { userAgent: "Google-Extended", allow: "/" },
       // Training data crawlers — opt out to control what feeds future model weights
       { userAgent: "GPTBot", disallow: "/" },
       { userAgent: "ClaudeBot", disallow: "/" },
