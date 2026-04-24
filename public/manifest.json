@@ -1,0 +1,36 @@
+{
+  "name": "miadowicz. — AI Product Leader & AI Strategy Lead",
+  "short_name": "miadowicz.",
+  "description": "AI Product Leader & Head of AI Product. I define how AI should behave — shaping the character, knowledge, and capabilities of intelligent systems. $80M ARR scaled. 98% task time reduction.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#4f46e5",
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "technology"],
+  "screenshots": [],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

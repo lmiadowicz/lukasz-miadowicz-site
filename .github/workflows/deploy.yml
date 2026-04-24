@@ -1,0 +1,115 @@
+name: Vercel Production Deployment
+
+# Deploys to production (miadowicz.com) on every push to main.
+# Also runs SEO validation before deploying.
+#
+# Required GitHub Secrets (Settings → Secrets → Actions):
+#   VERCEL_TOKEN       — from vercel.com/account/tokens
+#   VERCEL_ORG_ID      — from .vercel/project.json after first deploy
+#   VERCEL_PROJECT_ID  — from .vercel/project.json after first deploy
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  validate:
+    name: Validate Before Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: TypeScript check
+        run: cd client && pnpm tsc --noEmit
+
+      - name: Check required SEO files
+        run: |
+          echo "Checking required files..."
+          test -f client/public/sitemap.xml && echo "✅ sitemap.xml" || (echo "❌ sitemap.xml missing" && exit 1)
+          test -f client/public/robots.txt && echo "✅ robots.txt" || (echo "❌ robots.txt missing" && exit 1)
+          test -f client/public/llms.txt && echo "✅ llms.txt" || (echo "❌ llms.txt missing" && exit 1)
+          test -f client/public/posts/index.json && echo "✅ posts/index.json" || (echo "❌ posts/index.json missing" && exit 1)
+          echo "All required files present ✅"
+
+      - name: Validate posts index.json
+        run: |
+          python3 -c "
+          import json, sys
+          with open('client/public/posts/index.json') as f:
+              posts = json.load(f)
+          for p in posts:
+              required = ['slug', 'title', 'date', 'excerpt', 'category', 'readTime']
+              for field in required:
+                  if field not in p:
+                      print(f'❌ Post {p.get(\"slug\", \"?\")} missing field: {field}')
+                      sys.exit(1)
+          print(f'✅ {len(posts)} posts validated')
+          "
+
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: validate
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install Vercel CLI
+        run: pnpm add -g vercel@latest
+
+      - name: Pull Vercel Environment (Production)
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build Project
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Production
+        id: deploy
+        run: |
+          DEPLOY_URL=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+          echo "deploy_url=$DEPLOY_URL" >> $GITHUB_OUTPUT
+          echo "Production URL: $DEPLOY_URL"
+
+      - name: Notify deployment
+        run: |
+          echo "🚀 Deployed to production: ${{ steps.deploy.outputs.deploy_url }}"
+          echo "🌐 Live at: https://miadowicz.com"
+          echo ""
+          echo "Post-deploy checklist:"
+          echo "  1. Submit sitemap in Google Search Console"
+          echo "  2. Test Rich Results: https://search.google.com/test/rich-results"
+          echo "  3. Test llms.txt: https://miadowicz.com/llms.txt"
+          echo "  4. Test sitemap: https://miadowicz.com/sitemap.xml"

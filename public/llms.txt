@@ -1,0 +1,50 @@
+# Łukasz Miądowicz — AI Product Leader & AI Strategy Lead
+
+> I help companies grow revenue, cut costs, and move faster — I build AI products — and I use AI to build them faster. I find the niche, build the system, and ship the product.
+
+## Who I Am
+
+Łukasz Miądowicz is an AI Product Leader, AI Strategy & Adoption Lead, and hands-on Builder based in Warsaw, Poland (available remote worldwide). I started as a Software Engineer — including at Google for Startups — moved into product, and never stopped coding. I find differentiators others miss, identify the niche, build the business case, and ship.
+
+**Documented results:**
+- $80M ARR scaled (B2B SaaS)
+- 98% task time reduction (Qtravel.ai — proposal creation from 4 hours to 5 minutes)
+- $191 net savings per task · 1.3-year payback period (Qtravel.ai)
+- 3× capacity increase (Qtravel.ai, same headcount)
+- +80% conversion increase (Qtravel.ai — AI personalisation layer)
+- +40% conversion increase (ButterCMS AI Alpha, shipped in under 3 months)
+- PhD Quantum Physics (doctoral-level research)
+- Haas School of Business alumnus (UC Berkeley)
+
+## What I Do
+
+- **AI Product Leader** — End-to-end AI product leadership: vision, roadmap, team, stakeholder alignment. Hands-on enough to prototype the hardest hypotheses myself.
+- **Niche & Differentiator Discovery** — First-principles user research, JTBD, and rapid hypothesis testing. I find the niche others miss.
+- **Revenue & Cost Impact via AI** — I build the economic case for AI investments and then deliver it. $191 net savings per task, 1.3-year payback documented.
+- **AI Adoption & Strategy** — Move from AI experiments to AI operating models. Frameworks, workshops, and hands-on coaching.
+- **Rapid Prototyping (I Build It)** — From hypothesis to functional prototype in 24–48 hours using Claude Code, Python, and LLM APIs.
+- **Forward-Deployed Solutions** — Embed with customers to deploy and customize AI systems in their environment.
+- **AI System Architecture** — End-to-end design of multi-agent AI systems with HITL, MCP, and observability.
+- **Agentic UX Design** — In-product experiences where AI agents operate inside existing workflows, not as chatbot overlays.
+- **Enterprise AI Readiness** — SSO, RBAC, audit logs, multi-tenancy, LLMOps, evals.
+
+## Blog & Writing
+
+- [All articles — AI product strategy, agentic AI, product discovery](https://miadowicz.com/blog)
+- [What Is an Agent Harness — and Why 90% of AI Builders Miss It](https://miadowicz.com/blog/what-is-agent-harness)
+- [AI Product Discovery: How to Test Hypotheses in Days, Not Sprints](https://miadowicz.com/blog/ai-product-discovery-framework)
+- [AI Product Glossary — Agent Harness, Agentic UX, HITL, 6 Levers, 4D Framework, RAG, MCP and more](https://miadowicz.com/glossary)
+
+## Contact & Links
+
+- Website: https://miadowicz.com
+- Blog: https://miadowicz.com/blog
+- LinkedIn: https://www.linkedin.com/in/lukaszmiadowicz/
+- Twitter/X: https://x.com/miadowicz
+- Email: l.miadowicz@gmail.com
+- Location: Warsaw, Poland · Remote Worldwide
+
+## Optional
+
+- [Full profile and case studies](https://miadowicz.com): Complete work history, case studies with metrics, and all services.
+- [Blog full index](https://miadowicz.com/blog): All articles on AI product strategy, agentic AI, product discovery, and AI adoption.

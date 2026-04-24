@@ -1,0 +1,90 @@
+name: Vercel Preview Deployment
+
+# Deploys a preview URL for every PR and push to non-main branches.
+# Preview URL format: https://miadowicz-site-git-[branch]-[team].vercel.app
+#
+# Required GitHub Secrets (Settings → Secrets → Actions):
+#   VERCEL_TOKEN       — from vercel.com/account/tokens
+#   VERCEL_ORG_ID      — from .vercel/project.json after first deploy
+#   VERCEL_PROJECT_ID  — from .vercel/project.json after first deploy
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  preview:
+    name: Deploy Preview
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'pnpm'
+
+      - name: Install Vercel CLI
+        run: pnpm add -g vercel@latest
+
+      - name: Pull Vercel Environment (Preview)
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build Project
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel (Preview)
+        id: deploy
+        run: |
+          PREVIEW_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
+          echo "Preview URL: $PREVIEW_URL"
+
+      - name: Comment PR with Preview URL
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const previewUrl = '${{ steps.deploy.outputs.preview_url }}';
+            const body = `## 🚀 Preview Deployment Ready
+
+            | | |
+            |---|---|
+            | **Preview URL** | [${previewUrl}](${previewUrl}) |
+            | **Branch** | \`${{ github.head_ref }}\` |
+            | **Commit** | \`${{ github.sha }}\` |
+
+            **Test checklist:**
+            - [ ] Hero section loads correctly
+            - [ ] Blog posts render with FAQs
+            - [ ] Contact form shows (Formspree)
+            - [ ] SEO meta tags present (view source)
+            - [ ] llms.txt accessible at /llms.txt
+            - [ ] sitemap.xml accessible at /sitemap.xml
+            - [ ] Mobile responsive
+            `;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: body
+            });

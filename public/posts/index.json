@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "what-is-agent-harness",
+    "title": "What Is an Agent Harness — and Why 90% of AI Builders Miss It",
+    "date": "2026-04-20",
+    "updated": "2026-04-20",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "Most AI builders focus on the LLM prompt. The Agent Harness is the infrastructure that makes an AI agent actually reliable in production — handling loops, tools, state, safety, and context. Here's what it is and why it matters.",
+    "tags": ["AI Agents", "Agent Harness", "LLM", "Agentic AI", "AI Engineering"],
+    "category": "AI Engineering",
+    "readTime": "8 min read",
+    "image": "",
+    "content": ""
+  },
+  {
+    "slug": "ai-product-discovery-framework",
+    "title": "AI Product Discovery: How to Test Hypotheses in Days, Not Sprints",
+    "date": "2026-04-15",
+    "updated": "2026-04-15",
+    "author": "Łukasz Miądowicz",
+    "excerpt": "Traditional product discovery takes weeks. With AI prototyping tools, you can test a hypothesis in 48 hours. Here's the framework I use to run rapid AI product discovery — from problem to working prototype to validated learning.",
+    "tags": ["Product Discovery", "AI Prototyping", "Hypothesis Testing", "Product Management", "LLM"],
+    "category": "Product Strategy",
+    "readTime": "6 min read",
+    "image": "",
+    "content": ""
+  }
+]

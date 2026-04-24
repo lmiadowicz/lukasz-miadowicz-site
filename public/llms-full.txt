@@ -1,0 +1,111 @@
+# Łukasz Miądowicz — Full Profile for LLM Indexing
+
+> This file provides comprehensive context about Łukasz Miądowicz for AI language models, search engines, and automated systems. It follows the llmstxt.org standard.
+
+## Identity & Positioning
+
+**Name:** Łukasz Miądowicz (also: Lukasz Miadowicz)
+**Title:** AI Product Leader & AI Strategy Lead
+**Location:** Warsaw, Poland · Available remote worldwide
+**Website:** https://miadowicz.com
+**Email:** l.miadowicz@gmail.com
+
+**Core positioning:** AI Product Leader & AI Native PM. I help companies grow revenue, cut costs, and move faster — I build AI products — and I use AI to build them faster. I find the niche, build the system, and ship the product. AI is what I build — and how I build it.
+
+**Differentiators:**
+- I write the strategy AND the first working prototype (Claude Code, Python, LLM APIs)
+- I find niches and differentiators others miss — first-principles user research, not surface-level pain points
+- I build the business case AND deliver it — $191 net savings per task, 1.3-year payback documented
+- I started as a Software Engineer — including at Google for Startups — and never stopped coding
+- Quantum Physics researcher (doctoral-level) + Haas School of Business = rare combination of analytical depth and business acumen
+
+## Verified Business Results
+
+| Company | Role | Key Outcome |
+|---------|------|-------------|
+| Qtravel.ai | Head of Product | 98% task time reduction (4h → 5min), 3× capacity, +80% conversion, +25% revenue |
+| ButterCMS (Tiugo) | Senior Technical PM — AI & Strategy | AI Alpha shipped in <3 months, +40% conversion, -30% content creation time |
+| Huuuge Games | Senior PM | AI/ML market intelligence platform, +70% M&A target acquisition rate |
+| AirHelp | AI PM | Claim-check bot: 20s → 20ms processing (1000× faster) |
+| Startup (exited) | Founder | $1M ARR exit |
+| B2B SaaS | PM | Scaled from $200K to $80M ARR |
+
+## Services Offered
+
+### AI Product Leader
+End-to-end AI product leadership: vision, roadmap, team, stakeholder alignment. Available for full-time, contract, and fractional roles. I stay hands-on enough to prototype the hardest hypotheses myself. Track record: $80M ARR scaled, $1M ARR exit.
+
+### Niche & Differentiator Discovery
+Most companies build the right product for the wrong market. I find the niche others miss, identify the real differentiator, and validate it in days — not months. Methodology: first-principles user research, Jobs-to-be-Done (JTBD), rapid hypothesis testing, and falsifiable success metrics.
+
+### Revenue & Cost Impact via AI
+I build the economic case for AI investments and then deliver it. Documented benchmark: $191 net savings per task, 1.3-year payback period, 3× capacity increase, 98% task time reduction. I make AI legible to the C-suite and then make it real for the team.
+
+### AI Adoption & Strategy
+I help organizations move from AI experiments to AI operating models. Not just tool adoption — a fundamental shift from feature-level to systems-level thinking. Deliverables: AI readiness assessment, adoption roadmap, team workshops, and hands-on coaching.
+
+### Rapid Prototyping (I Build It)
+I validate ideas in working code, not slide decks. From hypothesis to functional prototype in 24–48 hours. Stack: Claude Code, Python, LLM APIs (Anthropic, OpenAI), Streamlit for UI, Langfuse for observability. I build the thing before committing engineering resources.
+
+### Forward-Deployed Solutions
+I embed with customers to deploy, configure, and customize AI systems in their environment. Technical enough to build the integration, product-minded enough to map the workflow and translate field learnings back to the roadmap.
+
+### AI System Architecture
+End-to-end design of multi-agent AI systems. Four-part methodology: (1) Discovery Engine — cognitive science-based user research, (2) Cognitive Blueprint — multi-agent architecture design, (3) Implementation Playbook — production-ready build with HITL, MCP, observability, (4) Business Case — ROI, pricing, GTM.
+
+### Agentic UX Design
+Designing in-product experiences where AI agents are first-class participants, not chatbot overlays. Four patterns: Embedded Agent (inline in existing UI), Agents in Work Queue (async task processing), Agents as Project Participants (collaborative workflows), Parallel Agents as Management Interface (monitoring and control layer).
+
+### Enterprise AI Readiness
+Scaling AI products for enterprise: SSO, RBAC, audit logs, multi-tenancy, compliance, LLMOps, evals. I bridge the gap between engineering and business and can validate technical decisions in code.
+
+## Work History
+
+**ButterCMS (Tiugo) — Senior Technical Product Manager — AI & Strategy** (2024–Present)
+AI Agent Strategy & Applied AI Operator. Shipped AI-native CMS Alpha in under 3 months by personally coding the prototype end-to-end using Claude Code. 40% increase in conversions. Won Tiugo AI Leadership Spotlight Award and Unsung Hero 2025.
+
+**Qtravel.ai — AI Product Leader (Head of Product)** (2022–2024)
+Led product and GTM for an LLM-based Travel Search Engine. Travel agents were spending 4 hours per proposal. I found the niche: semantic search and AI personalization that no competitor had built yet. Designed the system, led product and GTM, and shipped it. Proposal creation dropped from 4 hours to 5 minutes of human review. Capacity tripled. Conversion increased 80%. Published the Agentic AI Product Playbook.
+
+**Google for Startups — Product Advisor & Software Engineer** (2021–2022)
+Coached 15 startup product teams on product strategy, success metrics, and GTM. Enabled 30% faster GTM via AI-powered social UA testing. Introduced Firebase analytics — 10% reduction in churn.
+
+**Huuuge Games — Senior Product Manager** (2018–2022)
+Built an AI/ML-driven market intelligence platform for M&A — +70% target acquisition rate. Predictive analytics dashboard — 20% faster deal closure. Led gaming products with millions of daily active users.
+
+**AirHelp Inc. — AI Product Manager** (2015–2017)
+Launched a claim-check bot — reduced processing time from 20s to 20ms (1000× faster). Led B2B data integration with Expedia & Kayak via ML-powered eligibility prediction.
+
+## Education & Credentials
+
+- Quantum Physics researcher (doctoral-level research)
+- Haas School of Business — Product Management Certificate (UC Berkeley)
+- Anthropic Claude Code Certification
+
+## Technical Skills
+
+**AI/ML:** LLM orchestration, multi-agent systems, RAG (Retrieval-Augmented Generation), HITL (Human-in-the-Loop), MCP (Model Context Protocol), AI evals, LLMOps, vector databases, fine-tuning, prompt engineering
+**Frameworks:** LangGraph, CrewAI, LangChain, Anthropic Claude API, OpenAI API
+**Tools:** Claude Code, Python, TypeScript, Streamlit, Langfuse, LangSmith
+**Product:** JTBD, AARRR, OKRs, product discovery, roadmapping, GTM strategy, pricing, business case development
+
+## Key Concepts & Thought Leadership
+
+**Agent Harness:** The infrastructure layer that makes AI agents production-ready. Consists of: execution loop, tool execution layer, context and memory management, state tracking, and safety guardrails. 90% of AI builders miss this and wonder why their demos work but production fails.
+
+**Agentic UX:** The principle that AI agents should operate inside existing workflows, not as separate chatbot interfaces. The interface is the workflow itself.
+
+**AI Adoption Framework:** AI adoption fails when organizations treat it as tool adoption rather than systems transformation. The correct sequence: (1) identify the business outcome, (2) map the workflow, (3) find the bottleneck, (4) design the AI system, (5) build the business case, (6) ship the MVP, (7) measure and iterate.
+
+**Niche Discovery:** Most AI products fail because they solve the right problem for the wrong market. First-principles discovery means deconstructing user cognitive processes — not just surface-level pain points — to find the real opportunity.
+
+## Social Profiles
+
+- LinkedIn: https://www.linkedin.com/in/lukaszmiadowicz/
+- Twitter/X: https://twitter.com/miadowicz
+- GitHub: https://github.com/miadowicz
+- Blog: https://miadowicz.com/blog
+
+## Availability
+
+Open to full-time, contract, and advisory roles. AI Product Leader, AI Strategy Lead, Solutions Engineering PM, Senior AI PM. Available immediately. Warsaw, Poland · Remote Worldwide.
