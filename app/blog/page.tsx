@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { ArrowRight, Clock, Tag, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { getAllPosts, formatDate } from "@/lib/blog";
 import { BlogTagFilter } from "@/components/BlogTagFilter";
 import { Nav } from "@/components/Nav";
@@ -112,7 +112,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           <BlogTagFilter allTags={allTags} activeTag={activeTag ?? null} />
         </Suspense>
 
-        <section id="blog-main" className="py-16" aria-label="Blog posts">
+        <section id="blog-main" className="py-12" aria-label="Blog posts">
           <div className="container">
             {filtered.length === 0 ? (
               <div className="text-center py-24" role="status">
@@ -122,44 +122,43 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                 </Link>
               </div>
             ) : (
-              <div className="grid md:grid-cols-2 gap-5">
+              <div className="max-w-3xl">
                 {filtered.map((post) => (
                   <article
                     key={post.slug}
                     aria-labelledby={`post-title-${post.slug}`}
-                    className="group border border-white/8 rounded-xl bg-[oklch(0.14_0.008_265)] hover:border-indigo-500/30 hover:bg-[oklch(0.15_0.01_265)] transition-all duration-300 p-6"
+                    className="group border-b border-white/8 last:border-b-0"
                   >
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs px-2 py-0.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 font-mono" aria-label={`Category: ${post.category}`}>
-                        {post.category}
-                      </span>
-                      <span className="flex items-center gap-1 text-xs text-zinc-400">
-                        <Clock size={11} aria-hidden="true" /> {post.readTime}
-                      </span>
-                      <time dateTime={post.date} className="text-xs text-zinc-400">{formatDate(post.date)}</time>
-                    </div>
-                    <Link href={`/blog/${post.slug}`}>
-                      <h2
-                        id={`post-title-${post.slug}`}
-                        className="text-lg font-bold text-white mb-2 leading-snug group-hover:text-indigo-300 transition-colors"
-                        style={{ fontFamily: "var(--font-display)" }}
-                      >
-                        {post.title}
-                      </h2>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="flex items-center justify-between gap-6 py-6 transition-all duration-150"
+                    >
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs font-mono text-indigo-400 tracking-widest uppercase mb-1.5">
+                          {post.category}
+                        </p>
+                        <h2
+                          id={`post-title-${post.slug}`}
+                          className="text-lg md:text-xl font-bold text-white group-hover:text-indigo-300 transition-colors leading-snug"
+                          style={{ fontFamily: "var(--font-display)" }}
+                        >
+                          {post.title}
+                        </h2>
+                      </div>
+                      <div className="flex-shrink-0 flex items-center gap-4">
+                        <div className="text-right hidden sm:block">
+                          <time dateTime={post.date} className="block text-xs text-zinc-500">
+                            {formatDate(post.date)}
+                          </time>
+                          <span className="text-xs text-zinc-600">{post.readTime}</span>
+                        </div>
+                        <ArrowRight
+                          size={15}
+                          className="text-zinc-600 group-hover:text-indigo-400 transition-colors flex-shrink-0"
+                          aria-hidden="true"
+                        />
+                      </div>
                     </Link>
-                    <p className="text-zinc-400 text-sm leading-relaxed mb-4 line-clamp-3">{post.excerpt}</p>
-                    <div className="flex items-center justify-between">
-                      <ul className="flex flex-wrap gap-1.5" aria-label="Tags" role="list">
-                        {post.tags.slice(0, 3).map((tag) => (
-                          <li key={tag} className="flex items-center gap-1 text-xs text-zinc-400 bg-white/5 px-2 py-1 rounded-md">
-                            <Tag size={9} aria-hidden="true" /> {tag}
-                          </li>
-                        ))}
-                      </ul>
-                      <Link href={`/blog/${post.slug}`} aria-label={`Read full article: ${post.title}`} className="flex items-center gap-1 text-xs text-indigo-400 hover:text-indigo-300 transition-colors font-medium">
-                        Read <ArrowRight size={12} aria-hidden="true" />
-                      </Link>
-                    </div>
                   </article>
                 ))}
               </div>
