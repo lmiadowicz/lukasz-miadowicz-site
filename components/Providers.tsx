@@ -6,15 +6,14 @@ import { MotionConfig } from "framer-motion";
 import posthog from "posthog-js";
 import { PostHogProvider as PHProvider } from "posthog-js/react";
 
-function init() {
-  if (typeof window === "undefined") return;
-  if (!process.env.NEXT_PUBLIC_POSTHOG_KEY) return;
-  if (posthog.__loaded) return;
+// Initialize at module load time (client only) so posthog is ready
+// before any useEffect pageview capture runs.
+if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY && !posthog.__loaded) {
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: "https://eu.i.posthog.com",
     person_profiles: "identified_only",
     persistence: "memory",        // cookieless — no consent banner needed
-    capture_pageview: false,      // we track manually below (App Router)
+    capture_pageview: false,      // tracked manually below (App Router)
     capture_pageleave: true,
   });
 }
@@ -24,6 +23,7 @@ function PageView() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
+    if (!posthog.__loaded) return;
     const url = window.location.origin + pathname +
       (searchParams.toString() ? `?${searchParams.toString()}` : "");
     posthog.capture("$pageview", { $current_url: url });
@@ -33,8 +33,6 @@ function PageView() {
 }
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  useEffect(() => { init(); }, []);
-
   return (
     <PHProvider client={posthog}>
       <MotionConfig reducedMotion="user">
