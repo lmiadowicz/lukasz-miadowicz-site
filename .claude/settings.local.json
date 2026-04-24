@@ -60,7 +60,8 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Bash(pnpm add *)",
-      "Bash(dig miadowicz.com A +short)"
+      "Bash(dig miadowicz.com A +short)",
+      "Bash(npx tsc *)"
     ]
   }
 }
