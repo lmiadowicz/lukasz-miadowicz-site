@@ -61,7 +61,32 @@
       "Bash(git push *)",
       "Bash(pnpm add *)",
       "Bash(dig miadowicz.com A +short)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site check-ignore -v public/images/posts/framework_overview.webp)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site add public/images/posts/)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site status --short)",
+      "Bash(echo \"total: $\\(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site status --short)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site status --porcelain public/)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site rev-parse --show-toplevel)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site ls-files --others --exclude-standard -- public/images/)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site add -f public/images/posts/a2ui-composer.webp)",
+      "Bash(git config *)",
+      "Read(//Users/lukaszmiadowicz/**)",
+      "Read(//Users/lukaszmiadowicz/.config/git/**)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site check-ignore -v public/images/posts/a2ui-composer.webp)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site status)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site log --oneline -5)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site show --stat 01cd5e3)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site log --oneline origin/main..HEAD)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site show --stat 76d972c)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site diff origin/main..HEAD --name-only)",
+      "Bash(git -C /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site status -sb)",
+      "Bash(identify /Users/lukaszmiadowicz/Development/lukasz-miadowicz-site/public/avatars/lukasz.png)",
+      "Bash(sips *)",
+      "WebFetch(domain:www.amazon.com)",
+      "WebFetch(domain:itamargilad.com)",
+      "WebFetch(domain:openlibrary.org)",
+      "Bash(xargs sed *)"
     ]
   }
 }

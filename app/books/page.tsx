@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight, ArrowRight, Star } from "lucide-react";
 import { getAllBooks, formatDate } from "@/lib/books";
 import { Nav } from "@/components/Nav";
@@ -7,7 +8,7 @@ import { Nav } from "@/components/Nav";
 const BASE_URL = "https://miadowicz.com";
 
 export const metadata: Metadata = {
-  title: { absolute: "Books — Reading Notes & Takeaways | miadowicz." },
+  title: { absolute: "Books - Reading Notes & Takeaways | miadowicz." },
   description:
     "Books I've read, what I learned from them, and how valuable they were. Notes from an AI Product Leader on strategy, product, and technology.",
   keywords: "book notes, product strategy books, AI books, product management books, reading list",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: `${BASE_URL}/books`,
-    title: "Books — Reading Notes & Takeaways | Łukasz Miądowicz",
+    title: "Books - Reading Notes & Takeaways | Lukasz Miadowicz",
     description:
       "Books I've read, what I learned from them, and how valuable they were.",
     images: [
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/opengraph-image`,
         width: 1200,
         height: 630,
-        alt: "Łukasz Miądowicz — AI Product Leader & AI Strategy Lead",
+        alt: "Lukasz Miadowicz - AI Product Leader & AI Strategy Lead",
       },
     ],
   },
@@ -58,6 +59,15 @@ function RatingStars({ rating }: { rating: number }) {
   );
 }
 
+function BookCoverPlaceholder({ title, author }: { title: string; author: string }) {
+  return (
+    <div className="w-14 h-20 rounded-sm bg-gradient-to-br from-indigo-900/60 to-indigo-950/80 border border-indigo-500/20 flex flex-col items-center justify-center p-1.5 shrink-0 shadow-md">
+      <span className="text-indigo-300 text-[7px] font-bold text-center leading-tight line-clamp-4 mb-1">{title}</span>
+      <span className="text-indigo-500 text-[6px] text-center leading-tight line-clamp-2">{author}</span>
+    </div>
+  );
+}
+
 export default async function BooksPage() {
   const books = getAllBooks();
 
@@ -88,7 +98,7 @@ export default async function BooksPage() {
                 Books I've read<br /><span className="text-indigo-400">& what I took away.</span>
               </h1>
               <p className="text-zinc-400 text-lg leading-relaxed">
-                Notes on books that shaped how I think about product, strategy, and AI — what I learned, what I disagreed with, and whether they're worth your time.
+                Notes on books that shaped how I think about product, strategy, and AI - what I learned, what I disagreed with, and whether they're worth your time.
               </p>
             </div>
           </div>
@@ -109,8 +119,20 @@ export default async function BooksPage() {
                   >
                     <Link
                       href={`/books/${book.slug}`}
-                      className="flex items-center justify-between gap-6 py-6 transition-all duration-150"
+                      className="flex items-center gap-5 py-6 transition-all duration-150"
                     >
+                      {book.image ? (
+                        <Image
+                          src={book.image}
+                          alt={`${book.title} cover`}
+                          width={56}
+                          height={80}
+                          className="rounded-sm object-cover shrink-0 shadow-md"
+                        />
+                      ) : (
+                        <BookCoverPlaceholder title={book.title} author={book.bookAuthor} />
+                      )}
+
                       <div className="flex-1 min-w-0">
                         <p className="text-xs font-mono text-indigo-400 tracking-widest uppercase mb-1.5">
                           {book.category}
@@ -124,18 +146,12 @@ export default async function BooksPage() {
                         <p className="text-xs text-zinc-500 mb-2">by {book.bookAuthor}</p>
                         <RatingStars rating={book.rating} />
                       </div>
-                      <div className="flex-shrink-0 flex items-center gap-4">
-                        <div className="text-right hidden sm:block">
-                          <time dateTime={book.date} className="block text-xs text-zinc-500">
-                            {formatDate(book.date)}
-                          </time>
-                        </div>
-                        <ArrowRight
-                          size={15}
-                          className="text-zinc-600 group-hover:text-indigo-400 transition-colors flex-shrink-0"
-                          aria-hidden="true"
-                        />
-                      </div>
+
+                      <ArrowRight
+                        size={15}
+                        className="text-zinc-600 group-hover:text-indigo-400 transition-colors flex-shrink-0 hidden sm:block"
+                        aria-hidden="true"
+                      />
                     </Link>
                   </article>
                 ))}
@@ -146,8 +162,8 @@ export default async function BooksPage() {
 
         <footer role="contentinfo" className="border-t border-white/5 py-8">
           <div className="container flex items-center justify-between text-xs text-zinc-400">
-            <span>© {new Date().getFullYear()} Łukasz Miądowicz</span>
-            <Link href="/" className="hover:text-zinc-300 transition-colors">← Back to home</Link>
+            <span>© {new Date().getFullYear()} Lukasz Miadowicz</span>
+            <Link href="/" className="hover:text-zinc-300 transition-colors">Back to home</Link>
           </div>
         </footer>
       </div>

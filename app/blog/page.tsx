@@ -9,20 +9,20 @@ import { Nav } from "@/components/Nav";
 export const metadata: Metadata = {
   title: { absolute: "AI Agents, Product Leadership & Prototyping | miadowicz." },
   description:
-    "Insights on AI agents, agent harness architecture, product discovery, and building AI-native products. By Łukasz Miądowicz — AI Product Leader.",
+    "Insights on AI agents, agent harness architecture, product discovery, and building AI-native products. By Łukasz Miądowicz - AI Product Leader.",
   keywords: "AI agents blog, agent harness, AI product management, LLM engineering, product discovery, AI prototyping, agentic AI",
   alternates: { canonical: "https://miadowicz.com/blog" },
   openGraph: {
     type: "website",
     url: "https://miadowicz.com/blog",
-    title: "Blog — AI Agents, Product Leadership & Prototyping | Łukasz Miądowicz",
+    title: "Blog - AI Agents, Product Leadership & Prototyping | Łukasz Miądowicz",
     description: "Insights on AI agents, agent harness architecture, product discovery, and building AI-native products.",
     images: [
       {
         url: "https://miadowicz.com/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Łukasz Miądowicz — AI Product Leader & AI Strategy Lead",
+        alt: "Łukasz Miądowicz - AI Product Leader & AI Strategy Lead",
       },
     ],
   },

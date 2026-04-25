@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!book) return {};
 
   const bookUrl = `${BASE_URL}/books/${book.slug}`;
-  const fullTitle = `${book.title} — Notes | Łukasz Miądowicz`;
+  const fullTitle = `${book.title} - Notes | Łukasz Miądowicz`;
   const description = book.excerpt.length > 155
     ? book.excerpt.slice(0, book.excerpt.lastIndexOf(" ", 152)) + "..."
     : book.excerpt;
@@ -128,23 +128,41 @@ export default async function BookPage({
                 </time>
               </div>
 
-              <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight" style={{ fontFamily: "var(--font-display)" }}>
-                {book.title}
-              </h1>
-              <p className="text-zinc-400 text-base mb-4">by <span className="text-zinc-300">{book.bookAuthor}</span></p>
-
-              <div className="flex flex-wrap items-center gap-4 mb-6">
-                <RatingStars rating={book.rating} />
-                {book.buyLink && (
-                  <a
-                    href={book.buyLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
-                  >
-                    Get the book <ExternalLink size={11} />
-                  </a>
+              <div className="flex items-start gap-6 mb-6">
+                {book.image ? (
+                  <Image
+                    src={book.image}
+                    alt={`${book.title} cover`}
+                    width={80}
+                    height={114}
+                    className="rounded object-cover shrink-0 shadow-lg"
+                    priority
+                  />
+                ) : (
+                  <div className="w-20 h-28 rounded bg-gradient-to-br from-indigo-900/60 to-indigo-950/80 border border-indigo-500/20 flex flex-col items-center justify-center p-2 shrink-0 shadow-lg">
+                    <span className="text-indigo-300 text-[8px] font-bold text-center leading-tight line-clamp-5 mb-1">{book.title}</span>
+                    <span className="text-indigo-500 text-[7px] text-center leading-tight">{book.bookAuthor}</span>
+                  </div>
                 )}
+                <div>
+                  <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+                    {book.title}
+                  </h1>
+                  <p className="text-zinc-400 text-base mb-3">by <span className="text-zinc-300">{book.bookAuthor}</span></p>
+                  <div className="flex flex-wrap items-center gap-4">
+                    <RatingStars rating={book.rating} />
+                    {book.buyLink && (
+                      <a
+                        href={book.buyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+                      >
+                        Get the book <ExternalLink size={11} />
+                      </a>
+                    )}
+                  </div>
+                </div>
               </div>
 
               <p className="text-zinc-400 text-lg leading-relaxed mb-6">
@@ -207,7 +225,7 @@ export default async function BookPage({
                 <div>
                   <p className="text-white font-semibold mb-1" style={{ fontFamily: "var(--font-display)" }}>Łukasz Miądowicz</p>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-3">
-                    AI Product Leader, AI Strategy & Adoption Lead, Agent Harness Builder. I design AI systems that deliver business outcomes — not just features that respond. Ex-Software Engineer at Google for Startups. PhD Quantum Physics. $80M ARR scaled. 10+ years in product.
+                    AI Product Leader, AI Strategy & Adoption Lead, Agent Harness Builder. I design AI systems that deliver business outcomes - not just features that respond. Ex-Software Engineer at Google for Startups. PhD Quantum Physics. $80M ARR scaled. 10+ years in product.
                   </p>
                   <Link href="/#contact" className="inline-flex items-center gap-1.5 text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium">
                     Work with me <ArrowRight size={13} />

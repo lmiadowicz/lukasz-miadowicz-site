@@ -100,7 +100,7 @@ export function HeroSection() {
               className="hero-subtitle text-lg text-zinc-400 mb-8 leading-relaxed"
             >
               <strong className="text-zinc-200">AI Product Leader · PhD Quantum Physics · Ex-Google SWE.</strong>{" "}
-              My job shifted from &ldquo;what to build?&rdquo; to &ldquo;how should AI behave?&rdquo; — defining the character, knowledge, and capabilities of intelligent systems that solve problems no human process could.{" "}
+              My job shifted from &ldquo;what to build?&rdquo; to &ldquo;how should AI behave?&rdquo; - defining the character, knowledge, and capabilities of intelligent systems that solve problems no human process could.{" "}
               10+ years in product. $80M ARR scaled. UC Berkeley Haas.
             </motion.p>
 
@@ -164,7 +164,7 @@ export function HeroSection() {
               <div className="absolute inset-0 rounded-full bg-indigo-600/25 blur-3xl scale-110" />
               <Image
                 src={PROFILE_IMG}
-                alt="Łukasz Miądowicz — AI Product Leader"
+                alt="Łukasz Miądowicz - AI Product Leader"
                 width={400}
                 height={400}
                 className="relative w-72 h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-cover object-top rounded-full border-2 border-indigo-500/30 shadow-2xl"

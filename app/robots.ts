@@ -8,14 +8,14 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/"],
       },
-      // Citation-time crawlers — these determine if you appear in live AI answers
+      // Citation-time crawlers - these determine if you appear in live AI answers
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "OAI-SearchBot", allow: "/" },
       { userAgent: "Applebot-Extended", allow: "/" },
       { userAgent: "FacebookBot", allow: "/" },
-      // Google-Extended — Gemini training + Gemini grounding in Search
+      // Google-Extended - Gemini training + Gemini grounding in Search
       { userAgent: "Google-Extended", allow: "/" },
-      // Training data crawlers — opt out to control what feeds future model weights
+      // Training data crawlers - opt out to control what feeds future model weights
       { userAgent: "GPTBot", disallow: "/" },
       { userAgent: "ClaudeBot", disallow: "/" },
       { userAgent: "anthropic-ai", disallow: "/" },

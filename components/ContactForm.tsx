@@ -124,7 +124,7 @@ export function ContactSection() {
                   aria-invalid={captchaError}
                 />
                 {captchaError && (
-                  <p id="captcha-error" role="alert" className="field-error-message">Incorrect answer — try again.</p>
+                  <p id="captcha-error" role="alert" className="field-error-message">Incorrect answer - try again.</p>
                 )}
               </div>
               {state.error && (

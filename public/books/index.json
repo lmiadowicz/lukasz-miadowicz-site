@@ -4,12 +4,51 @@
     "title": "Evidence-Guided: Creating High Impact Products in the Age of Uncertainty",
     "bookAuthor": "Itamar Gilad",
     "date": "2026-04-25",
-    "excerpt": "The book that made me rethink how I validate product decisions. Gilad's GIST framework replaced gut-feel roadmaps with a disciplined, evidence-driven system — and it's the closest thing I've found to a scientific method for product work.",
+    "excerpt": "The book that made me rethink how I validate product decisions. Gilad's GIST framework replaced gut-feel roadmaps with a disciplined, evidence-driven system - and it's the closest thing I've found to a scientific method for product work.",
     "tags": ["Product Strategy", "Product Discovery", "Evidence", "GIST", "Roadmaps"],
     "category": "Product Strategy",
     "rating": 5,
     "image": "",
-    "buyLink": "https://www.amazon.com/Evidence-Guided-Creating-Impact-Products-Uncertainty/dp/1736633619",
+    "buyLink": "https://www.amazon.com/Evidence-Guided-Creating-Impact-Products-Uncertainty-ebook/dp/B0CJCDP1H7/ref=sr_1_1?crid=348KL6CNB7ZGE&dib=eyJ2IjoiMSJ9.LJrGhWltn11diCMY152ZEoc3Zh0hIAcTUh-Px9GtBAOfOJ0bItMTRKDaH8a2FyF_pWZWwvHUUQoRUrI2RaRTw1sZlP2j0Jl4TqDy996ACUx7Z9IdeXrSKKjXlRtxwkEqt749SyJxYf-AgRkDk2-HRDGeUxwq9_YwDTuTKU_N_U82Fp8n-SF1atDfFSvsCklLBxFnR4ccfuDPTaQ-WY57ZR91fD3qoEnxtOseCOytOM0.QJWgGaPFEzwPiJu9g0ZpulHzVu722oxT6A4MvVxlB10&dib_tag=se&keywords=evidence+guided&qid=1777075010&s=books&sprefix=evidence+guided%2Cstripbooks-intl-ship%2C235&sr=1-1",
+    "content": ""
+  },
+  {
+    "slug": "never-split-the-difference",
+    "title": "Never Split the Difference: Negotiating as if Your Life Depended on It",
+    "bookAuthor": "Chris Voss",
+    "date": "2026-04-25",
+    "excerpt": "The negotiation book that actually works in product. Voss rewired how I handle stakeholder pushback, engineering constraints, and difficult customer conversations - by treating every negotiation as an exercise in tactical empathy rather than logical persuasion.",
+    "tags": ["Negotiation", "Communication", "Leadership", "Influence"],
+    "category": "Leadership",
+    "rating": 5,
+    "image": "",
+    "buyLink": "https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805",
+    "content": ""
+  },
+  {
+    "slug": "understanding-michael-porter",
+    "title": "Understanding Michael Porter: The Essential Guide to Competition and Strategy",
+    "bookAuthor": "Joan Magretta",
+    "date": "2026-04-25",
+    "excerpt": "The clearest explanation of Porter's strategy framework I've read. Magretta strips out the academic language and leaves the core: strategy is about being different, not better. That distinction reshaped how I think about AI product positioning.",
+    "tags": ["Strategy", "Competitive Advantage", "Positioning", "Business"],
+    "category": "Product Strategy",
+    "rating": 4,
+    "image": "",
+    "buyLink": "https://www.amazon.com/Understanding-Michael-Porter-Essential-Competition/dp/1422160599",
+    "content": ""
+  },
+  {
+    "slug": "demand-side-sales",
+    "title": "Demand-Side Sales 101: Stop Selling and Help Your Customers Make Progress",
+    "bookAuthor": "Bob Moesta",
+    "date": "2026-04-25",
+    "excerpt": "Moesta takes Jobs-to-be-Done from a product framework into a sales methodology. The core insight - that people don't buy products, they hire them to make progress in a specific situation - changed how I write product positioning and discovery interview guides.",
+    "tags": ["Sales", "Jobs-to-be-Done", "Product Discovery", "Customer Research"],
+    "category": "Product Strategy",
+    "rating": 4,
+    "image": "",
+    "buyLink": "https://www.amazon.com/Demand-Side-Sales-101-Customers-Progress/dp/1544532512",
     "content": ""
   }
 ]

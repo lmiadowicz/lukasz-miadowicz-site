@@ -13,22 +13,22 @@ image: "/images/posts/agent-specs-cover.webp"
 canonical: "https://miadowicz.com/blog/beyond-user-stories-why-agent-specs-are-the-future-software-development"
 faq:
   - question: "What is an Agent Spec in software development?"
-    answer: "An Agent Spec is a detailed, structured document designed to be consumed by both human engineers and AI coding agents. Unlike a user story, it is a contract: it declares exactly what a feature must do, how it behaves in every scenario, and what is explicitly out of scope. It is split into two parts — a PM Spec (the why and what) and a Dev Spec (the how)."
+    answer: "An Agent Spec is a detailed, structured document designed to be consumed by both human engineers and AI coding agents. Unlike a user story, it is a contract: it declares exactly what a feature must do, how it behaves in every scenario, and what is explicitly out of scope. It is split into two parts - a PM Spec (the why and what) and a Dev Spec (the how)."
   - question: "What is the Translation Tax in software development?"
-    answer: "The Translation Tax is the invisible time, effort, and cognitive work engineers spend interpreting vague user stories, filling in missing context, and translating 'why' into 'how.' This gap-filling work is unpaid and invisible — but when your developer is an AI agent, it becomes catastrophic: agents follow instructions exactly, including their omissions."
+    answer: "The Translation Tax is the invisible time, effort, and cognitive work engineers spend interpreting vague user stories, filling in missing context, and translating 'why' into 'how.' This gap-filling work is unpaid and invisible - but when your developer is an AI agent, it becomes catastrophic: agents follow instructions exactly, including their omissions."
   - question: "What is the difference between a PM Spec and a Dev Spec?"
     answer: "A PM Spec is owned by the Product Manager and captures the business context: feature goals, scope boundaries (wedge), user scenarios, behavioral requirements, success metrics, fallback plans, and guardrails. A Dev Spec is owned by the Developer and captures the technical blueprint: architecture, API contracts, data models, executable test commands, code style rules, and strict boundaries for the AI coding agent."
   - question: "What is an Agent Orchestrator?"
-    answer: "An Agent Orchestrator is the evolved role of a developer in an AI-assisted development workflow. Rather than writing all code manually, they direct AI coding agents, provide them with detailed Agent Specs, review generated code, enforce architectural integrity, and ensure quality and security. Agent Specs do not replace developers — they empower them to orchestrate AI agents more effectively."
+    answer: "An Agent Orchestrator is the evolved role of a developer in an AI-assisted development workflow. Rather than writing all code manually, they direct AI coding agents, provide them with detailed Agent Specs, review generated code, enforce architectural integrity, and ensure quality and security. Agent Specs do not replace developers - they empower them to orchestrate AI agents more effectively."
   - question: "Why don't user stories work for AI coding agents?"
-    answer: "User stories rely on experienced human engineers to fill in gaps — reading between the lines, making sensible assumptions, and asking clarifying questions. AI coding agents do not fill in gaps. They follow instructions exactly, including omissions. A vague user story will produce code that technically satisfies the stated requirement but misses retry logic, security signatures, timeout handling, or edge cases the author assumed were obvious."
+    answer: "User stories rely on experienced human engineers to fill in gaps - reading between the lines, making sensible assumptions, and asking clarifying questions. AI coding agents do not fill in gaps. They follow instructions exactly, including omissions. A vague user story will produce code that technically satisfies the stated requirement but misses retry logic, security signatures, timeout handling, or edge cases the author assumed were obvious."
   - question: "How do Agent Specs improve software development with AI agents?"
-    answer: "Agent Specs make all implicit assumptions explicit, creating a contract that AI agents can execute precisely. They reduce rework by surfacing critical decisions (edge cases, fallbacks, security guardrails) before code is written — not after QA or in production. They also help developers become Agent Orchestrators by giving them a structured way to direct, review, and validate AI agent output."
+    answer: "Agent Specs make all implicit assumptions explicit, creating a contract that AI agents can execute precisely. They reduce rework by surfacing critical decisions (edge cases, fallbacks, security guardrails) before code is written - not after QA or in production. They also help developers become Agent Orchestrators by giving them a structured way to direct, review, and validate AI agent output."
 ---
 
 # Beyond User Stories: Why Agent Specs Are the Future of Software Development
 
-After spending over a decade as a Product Manager, I've seen plenty of methodologies come and go — waterfall, agile, SCRUM, Kanban, OKRs, shape-up... you name it. Yet one artifact has stubbornly persisted through it all: the humble user story.
+After spending over a decade as a Product Manager, I've seen plenty of methodologies come and go - waterfall, agile, SCRUM, Kanban, OKRs, shape-up... you name it. Yet one artifact has stubbornly persisted through it all: the humble user story.
 
 > *"As a user, I want to configure webhooks, so my external systems can be notified when a new event occurs."*
 
@@ -40,9 +40,9 @@ Think about how a user story travels from the Product Manager's mind to working 
 
 ![Translation Tax Diagram](/images/posts/diagram_1.webp)
 
-This flow is what I call the **Translation Tax** — the time, effort, and cognitive work engineers spend interpreting vague user stories, filling in missing pieces, and translating "why" into "how."
+This flow is what I call the **Translation Tax** - the time, effort, and cognitive work engineers spend interpreting vague user stories, filling in missing pieces, and translating "why" into "how."
 
-This translation is invisible and unpaid. It's where assumptions creep in, where important context gets dropped, and often where misalignments hide — only caught later in QA or production. Human engineers manage this well because of experience and dialogue, but they are effectively doing invisible work.
+This translation is invisible and unpaid. It's where assumptions creep in, where important context gets dropped, and often where misalignments hide - only caught later in QA or production. Human engineers manage this well because of experience and dialogue, but they are effectively doing invisible work.
 
 But here's the catch: what happens when your developer is an AI agent? The invisible work has to become visible.
 
@@ -52,7 +52,7 @@ But here's the catch: what happens when your developer is an AI agent? The invis
 
 The future of software development is not simply humans accepting AI autocomplete help. It's about autonomous agent workflows that take features from concept through code, testing, and deployment. We're not quite there yet, but it's coming fast.
 
-The problem? **AI agents don't fill in gaps like humans do.** They don't "read between the lines." They will follow your instructions *exactly* — including your omissions.
+The problem? **AI agents don't fill in gaps like humans do.** They don't "read between the lines." They will follow your instructions *exactly* - including your omissions.
 
 Hand an agent a vague user story like the webhook example above, and it might build a system that blindly fires requests without retry logic, completely ignores timeout scenarios, or fails to implement security signatures.
 
@@ -83,11 +83,11 @@ Creating a successful Agent Spec is a cross-disciplinary effort. Here is how the
 
 ## The PM Spec: Anatomy of a Great Product Document
 
-Let's look at a real-world example: building a **Webhook Delivery API**. The PM Spec focuses entirely on the business logic, constraints, and user experience. It captures everything engineers silently assumed before — now documented for execution by humans or AI agents alike.
+Let's look at a real-world example: building a **Webhook Delivery API**. The PM Spec focuses entirely on the business logic, constraints, and user experience. It captures everything engineers silently assumed before - now documented for execution by humans or AI agents alike.
 
 ### 1. The Wedge and Scope Boundaries
 
-The "wedge" is your entry point — the narrow, specific problem you are solving right now, leaving room for future expansion.
+The "wedge" is your entry point - the narrow, specific problem you are solving right now, leaving room for future expansion.
 
 **In Scope (The Wedge):**
 - Outbound webhook delivery for a single event type (`invoice.paid`).
@@ -122,7 +122,7 @@ This is where PMs earn their keep. What happens when things go wrong? AI agents 
 
 ## The Dev Spec: The Developer's Blueprint for the AI
 
-While the PM owns the "What" and "Why", the Developer (acting as the Agent Orchestrator) owns the **Dev Spec** — the "How."
+While the PM owns the "What" and "Why", the Developer (acting as the Agent Orchestrator) owns the **Dev Spec** - the "How."
 
 The Dev Spec is a highly technical document, often written in Markdown (like a `CLAUDE.md` or `agent.md` file), designed to guide the coding agent's implementation.
 
@@ -139,11 +139,11 @@ The developer feeds both the PM Spec and the Dev Spec to the coding agent (like 
 
 ## Why Agent Specs Matter Now More Than Ever
 
-User stories still have their place early in discovery — rough alignment, exploring solutions, talking to stakeholders. They're great conversation starters but not detailed blueprints.
+User stories still have their place early in discovery - rough alignment, exploring solutions, talking to stakeholders. They're great conversation starters but not detailed blueprints.
 
 The PM-to-engineer handoff used to rely on engineers to do the gap-filling, silent decision-making, and quality assurance through dialogue and experience. AI agents, however, do *exactly* what you give them. No more filling gaps.
 
-Making all the assumptions explicit is a bigger job but a more honest one. It surfaces critical choices for review, debate, and reuse — better for everyone, human or machine.
+Making all the assumptions explicit is a bigger job but a more honest one. It surfaces critical choices for review, debate, and reuse - better for everyone, human or machine.
 
 Remember: **Agent Specs do not replace developers**. Developers evolve into Agent Orchestrators: guiding AI agents, validating outputs, enforcing quality and security, and preserving architectural integrity. The human element remains indispensable.
 

@@ -5,7 +5,7 @@ slug: "the-agentic-ai-playbook-building-0-to-1-products-from-first-principles"
 date: "2026-02-02"
 updated: "2026-04-25"
 author: "Łukasz Miądowicz"
-excerpt: "A first-principles methodology for building agentic AI systems: cognitive science discovery, multi-agent architecture, circuit breakers, and unit economics — with 98% task time reduction and $191/task ROI documented."
+excerpt: "A first-principles methodology for building agentic AI systems: cognitive science discovery, multi-agent architecture, circuit breakers, and unit economics - with 98% task time reduction and $191/task ROI documented."
 tags: ["Agentic AI", "Multi-Agent Systems", "AI Product Management", "LLM", "Case Study", "AI Engineering", "Unit Economics", "0→1", "HITL", "AI Agents"]
 category: "Agentic AI"
 readTime: "30 min read"
@@ -13,21 +13,21 @@ image: "/images/posts/framework_overview.webp"
 canonical: "https://miadowicz.com/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles"
 faq:
   - question: "What is agentic AI and how is it different from regular AI features?"
-    answer: "Agentic AI refers to AI systems that autonomously take sequences of actions to complete complex goals — searching, reasoning, deciding, and acting across multiple steps. Regular AI features respond to a single prompt and produce a single output. Agentic systems use a mesh of specialized agents coordinated by an orchestrator, share state through memory, and include human-in-the-loop checkpoints for high-stakes decisions."
+    answer: "Agentic AI refers to AI systems that autonomously take sequences of actions to complete complex goals - searching, reasoning, deciding, and acting across multiple steps. Regular AI features respond to a single prompt and produce a single output. Agentic systems use a mesh of specialized agents coordinated by an orchestrator, share state through memory, and include human-in-the-loop checkpoints for high-stakes decisions."
   - question: "What is the 4D framework for building agentic AI products?"
-    answer: "The 4D framework is a four-phase methodology: (1) Discovery — identify high-value AI use cases through deep user observation and cognitive task analysis; (2) Design — translate human thought processes into a multi-agent architecture; (3) Development — build with production-ready guardrails, circuit breakers, and observability; (4) Deployment — prove the economic case with unit economics, pricing strategy, and GTM plan."
+    answer: "The 4D framework is a four-phase methodology: (1) Discovery - identify high-value AI use cases through deep user observation and cognitive task analysis; (2) Design - translate human thought processes into a multi-agent architecture; (3) Development - build with production-ready guardrails, circuit breakers, and observability; (4) Deployment - prove the economic case with unit economics, pricing strategy, and GTM plan."
   - question: "How do you calculate the ROI of an agentic AI system?"
-    answer: "Calculate ROI by comparing cost per task against value created. Example from Qtravel.ai: total cost per proposal = $5 (LLM $0.58 + API $0.20 + infra $0.05 + human review $4.17). Before the system, a human agent spent 4 hours ($200) per proposal. Net savings = $191 per task. At 600 proposals/year, that's $114,600 saved — with a 1.3-year payback on the $150,000 development cost."
+    answer: "Calculate ROI by comparing cost per task against value created. Example from Qtravel.ai: total cost per proposal = $5 (LLM $0.58 + API $0.20 + infra $0.05 + human review $4.17). Before the system, a human agent spent 4 hours ($200) per proposal. Net savings = $191 per task. At 600 proposals/year, that's $114,600 saved - with a 1.3-year payback on the $150,000 development cost."
   - question: "What is a circuit breaker pattern in agentic AI systems?"
     answer: "A circuit breaker is a production safety mechanism that stops an AI agent from running indefinitely. It tracks multiple thresholds simultaneously: max iterations, max cost (e.g. $5), max execution time, and max stale iterations (no progress). State hashing detects when an agent is looping without making progress. When any threshold is breached, the system escalates to a human with full context rather than continuing to consume API budget."
   - question: "How much does it cost to run an agentic AI system per task?"
-    answer: "Using early 2024 Claude 3 pricing as a benchmark: a 6-agent travel proposal system costs approximately $0.58 in LLM fees per task (Haiku for simple extraction at $0.25/MTok input, Sonnet for research at $3/MTok, Opus for complex reasoning at $15/MTok). Adding API costs ($0.20) and infrastructure ($0.05) brings the total automated cost to $0.83 — but human review time ($4.17 for 5 minutes at $50/hour) is the dominant cost, not the LLM."
+    answer: "Using early 2024 Claude 3 pricing as a benchmark: a 6-agent travel proposal system costs approximately $0.58 in LLM fees per task (Haiku for simple extraction at $0.25/MTok input, Sonnet for research at $3/MTok, Opus for complex reasoning at $15/MTok). Adding API costs ($0.20) and infrastructure ($0.05) brings the total automated cost to $0.83 - but human review time ($4.17 for 5 minutes at $50/hour) is the dominant cost, not the LLM."
   - question: "What is human-in-the-loop (HITL) design in agentic AI?"
     answer: "Human-in-the-loop design places human review checkpoints at specific moments where judgment is essential. In a travel proposal system, HITL checkpoints appear at: (1) initial request clarification if the brief is ambiguous, (2) proposal review before sending to the client, and (3) exception handling when an agent hits an unresolvable error. HITL ensures humans focus on high-value creative and relationship work while AI handles repetitive research and formatting."
   - question: "What is the difference between a single AI agent and a multi-agent system?"
     answer: "A single AI agent is one LLM with tools trying to do everything sequentially. A multi-agent system is a mesh of specialized agents, each responsible for a narrow cognitive task, coordinated by an orchestrator. Multi-agent systems are more reliable (each agent is optimized for its task), more debuggable (failures are isolated), more cost-efficient (use smaller/cheaper models for simpler tasks), and more scalable (agents can run in parallel)."
   - question: "What are the most common failure modes in agentic AI production systems?"
-    answer: "Six failure modes appear repeatedly: (1) task-level failure — agent doesn't complete its objective; (2) tool-use failure — agent hallucinates tools or uses wrong parameters; (3) reasoning failure — logically flawed decisions; (4) infinite loops — stuck relaxing constraints forever; (5) cascading failures — one agent's failure triggers downstream failures; (6) silent failures — plausible but incorrect output that passes unnoticed. Silent failures are the most dangerous because they're hardest to detect without human review."
+    answer: "Six failure modes appear repeatedly: (1) task-level failure - agent doesn't complete its objective; (2) tool-use failure - agent hallucinates tools or uses wrong parameters; (3) reasoning failure - logically flawed decisions; (4) infinite loops - stuck relaxing constraints forever; (5) cascading failures - one agent's failure triggers downstream failures; (6) silent failures - plausible but incorrect output that passes unnoticed. Silent failures are the most dangerous because they're hardest to detect without human review."
 ---
 
 # The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles
@@ -53,10 +53,10 @@ Through a detailed case study of automating a corporate travel agency, I demonst
 
 The case study yielded significant, quantifiable results:
 
-- **Massive Efficiency Gains:** Reduced time to create a travel proposal from **4 hours to just 5 minutes** of human review — a **98% reduction**.
+- **Massive Efficiency Gains:** Reduced time to create a travel proposal from **4 hours to just 5 minutes** of human review - a **98% reduction**.
 - **3× Capacity Increase:** Each travel professional could manage **150 trips per month**, up from 50, tripling revenue capacity without increasing headcount.
 - **Compelling ROI:** The system delivered **$191 in net savings per proposal**, with a payback period of just 1.3 years on the initial development cost.
-- **Dominant Cost Driver:** **Human review time ($4.17/task)**, not LLM costs ($0.58/task), is the primary operational expense — which means accuracy and reliability are the real ROI drivers.
+- **Dominant Cost Driver:** **Human review time ($4.17/task)**, not LLM costs ($0.58/task), is the primary operational expense - which means accuracy and reliability are the real ROI drivers.
 
 ### The Bottom Line for Leaders
 
@@ -97,13 +97,13 @@ I'll explore this methodology through a comprehensive case study of building an 
 
 ### The B2B Corporate Travel Agency Challenge
 
-**The Business Context:** During my time building AI products in the travel industry, I worked with a 100-person corporate travel agency facing an existential scalability crisis. Their business model was built on providing white-glove service to mid-market companies — the kind of personalized attention that self-serve booking tools couldn't match. But this high-touch model was entirely dependent on their 60 human travel professionals, and the company was hitting a wall.
+**The Business Context:** During my time building AI products in the travel industry, I worked with a 100-person corporate travel agency facing an existential scalability crisis. Their business model was built on providing white-glove service to mid-market companies - the kind of personalized attention that self-serve booking tools couldn't match. But this high-touch model was entirely dependent on their 60 human travel professionals, and the company was hitting a wall.
 
 The Head of Operations told me in our first meeting: **"Our travel professionals are burning out. They spend 80% of their time fighting with our booking systems and 20% actually talking to clients. We can't scale the business this way."**
 
 The CEO added: **"Our brand is built on providing a premium, personalized service. I don't want to replace our travel professionals with a self-serve portal like Expedia. I want to give them superpowers so they can handle 3× the clients with less stress."**
 
-This was the perfect setup for an agentic AI solution — but I needed to understand the problem deeply before proposing anything.
+This was the perfect setup for an agentic AI solution - but I needed to understand the problem deeply before proposing anything.
 
 ---
 
@@ -130,7 +130,7 @@ Primary success metrics:
 
 **Week 2: Deep User Observation**
 
-The second week was about observation. I embedded myself with the travel professionals, watching them work and asking them to narrate their thought process out loud — the "think-aloud protocol" from cognitive science research.
+The second week was about observation. I embedded myself with the travel professionals, watching them work and asking them to narrate their thought process out loud - the "think-aloud protocol" from cognitive science research.
 
 I conducted 15 observation sessions with 5 different agents. Here's a complete transcript excerpt from one session with Sarah:
 
@@ -144,7 +144,7 @@ I conducted 15 observation sessions with 5 different agents. Here's a complete t
 >
 > **Me:** "What's your next step?"
 >
-> **Sarah:** "Now the fun begins. *(Opens 5 browser tabs)*. I'll start with flights. I have to check our GDS first — that's our main booking system, it's this ancient green-screen interface from the 90s. *(Types rapidly, squinting at the screen)*. Ugh, nothing direct on their preferred airline, British Airways. So now I have to check Kayak and Google Flights. Found one on Lufthansa with a layover in Frankfurt, arrives at 2pm. I'll save that link in my notepad file."
+> **Sarah:** "Now the fun begins. *(Opens 5 browser tabs)*. I'll start with flights. I have to check our GDS first - that's our main booking system, it's this ancient green-screen interface from the 90s. *(Types rapidly, squinting at the screen)*. Ugh, nothing direct on their preferred airline, British Airways. So now I have to check Kayak and Google Flights. Found one on Lufthansa with a layover in Frankfurt, arrives at 2pm. I'll save that link in my notepad file."
 >
 > *(Sarah opens a text file on her desktop labeled "Acme_London_March.txt" and pastes the URL.)*
 >
@@ -152,11 +152,11 @@ I conducted 15 observation sessions with 5 different agents. Here's a complete t
 >
 > **Sarah:** "Because our CRM doesn't have a good way to save in-progress research. It's designed for finalized bookings, not for the messy middle part where I'm exploring options. So I keep a running notepad for each trip. It's my external brain."
 
-This revealed something critical: **the real work wasn't in the final booking — it was in the "messy middle" of research, comparison, and optimization.** This is where Sarah spent 80% of her time, and where an agentic system could provide the most value.
+This revealed something critical: **the real work wasn't in the final booking - it was in the "messy middle" of research, comparison, and optimization.** This is where Sarah spent 80% of her time, and where an agentic system could provide the most value.
 
 **Week 3: Cognitive Task Analysis**
 
-I took all the observation data and broke it down into "decision atoms" — the smallest units of cognitive work that can't be subdivided further.
+I took all the observation data and broke it down into "decision atoms" - the smallest units of cognitive work that can't be subdivided further.
 
 From Sarah's workflow, I identified 10 decision atoms:
 
@@ -295,13 +295,13 @@ Here's a simplified schema:
 
 ### Chapter 3: Choosing the Right Agent Mesh Pattern
 
-For the travel booking workflow, I settled on an **Assembly Line (Orchestrator-Worker)** pattern — a linear, sequential process where the output of one agent becomes the input for the next, managed by a central Orchestrator.
+For the travel booking workflow, I settled on an **Assembly Line (Orchestrator-Worker)** pattern - a linear, sequential process where the output of one agent becomes the input for the next, managed by a central Orchestrator.
 
 **Assembly Line Pattern:**
 
 - **Best for:** Well-defined, predictable workflows where the steps are always the same.
 - **Pros:** Simple to design, debug, and manage. Predictable costs. Easy to add HITL checkpoints at any stage.
-- **Cons:** Inflexible — cannot handle unexpected situations without sophisticated error handling. If one agent fails, the entire pipeline stops.
+- **Cons:** Inflexible - cannot handle unexpected situations without sophisticated error handling. If one agent fails, the entire pipeline stops.
 
 ### Alternative Agent Mesh Patterns
 
@@ -339,7 +339,7 @@ By the time we killed the process, it had made over 500 API calls, racking up $1
 
 The immediate fix was a simple iteration counter. But as a team, we knew we needed something more robust. This is where the partnership between product and engineering is crucial.
 
-### Chapter 5: From Hotfix to Hardened Pattern — The Circuit Breaker
+### Chapter 5: From Hotfix to Hardened Pattern - The Circuit Breaker
 
 For the production system, we designed a much more robust and configurable Circuit Breaker pattern.
 
@@ -435,7 +435,7 @@ Standard software observability (logs, metrics, traces) is insufficient for agen
 
 2. **Agent Traces:** Distributed tracing tracks the flow of a task through the agent mesh. Each agent span includes: agent name and model, input and output, token usage and cost, execution time, reasoning steps.
 
-3. **Cost Tracking:** Track costs at three levels — per agent (which are most expensive?), per task (what's the CPT?), per client (are some clients more expensive to serve?).
+3. **Cost Tracking:** Track costs at three levels - per agent (which are most expensive?), per task (what's the CPT?), per client (are some clients more expensive to serve?).
 
 4. **Human Feedback Loops:** When a human agent edits a proposal, capture the diff and store it as training data for continuous improvement.
 
@@ -479,7 +479,7 @@ Example structured log entry:
 
 3. **Cost Monitoring is a First-Class Feature.** The 3 AM incident taught me that cost monitoring can't be an afterthought. I built cost tracking into every agent and set up alerts for anomalies.
 
-4. **Edge Cases are the Norm, Not the Exception.** In traditional software, edge cases are rare. In agentic systems, they're constant. Ambiguous requests, impossible constraints, missing data — these happen daily. Design for edge cases from day one.
+4. **Edge Cases are the Norm, Not the Exception.** In traditional software, edge cases are rare. In agentic systems, they're constant. Ambiguous requests, impossible constraints, missing data - these happen daily. Design for edge cases from day one.
 
 5. **The Agent Mesh is a Living System.** I thought I'd build it once and be done. I was wrong. User needs evolve, APIs change, LLMs improve. Budget for ongoing maintenance and optimization.
 
@@ -489,7 +489,7 @@ Example structured log entry:
 
 ### Chapter 9: Unit Economics (2024 Pricing)
 
-To prove business viability, I calculated the **Cost Per Task (CPT)** — the total cost to generate one travel proposal.
+To prove business viability, I calculated the **Cost Per Task (CPT)** - the total cost to generate one travel proposal.
 
 Using early 2024 Claude 3 pricing:
 
@@ -521,7 +521,7 @@ Using early 2024 Claude 3 pricing:
 | Human Review (5 min @ $50/hour) | $4.17 |
 | **Total CPT** | **$5.00** |
 
-**Key Insight:** The human review time is the dominant cost, not the LLM. The primary ROI driver is not reducing LLM costs — it's increasing system accuracy and reliability to reduce human review time.
+**Key Insight:** The human review time is the dominant cost, not the LLM. The primary ROI driver is not reducing LLM costs - it's increasing system accuracy and reliability to reduce human review time.
 
 ### Chapter 10: ROI Analysis
 
@@ -543,7 +543,7 @@ Before the agentic system, a travel agent spent an average of 4 hours to create 
 - System development cost (one-time): $150,000
 - **Payback period: 1.3 years**
 
-But the real value was capacity expansion. With the agentic system, each agent could handle 150 trips per month instead of 50 — a **3× increase without hiring more staff.**
+But the real value was capacity expansion. With the agentic system, each agent could handle 150 trips per month instead of 50 - a **3× increase without hiring more staff.**
 
 **Revenue Impact:**
 - Revenue per agent (before): $500K/year
@@ -594,7 +594,7 @@ At that ROI, it's a no-brainer for customers.
 - **Approach:** Hire VP of Sales, build inside sales team. Expand to enterprise agencies (500+ agents).
 - **Success Metric:** $5M ARR by end of year 2.
 
-**The Competitive Moat — Three Pillars:**
+**The Competitive Moat - Three Pillars:**
 
 1. **Deep Domain Expertise:** The 4-week discovery sprint creates insights that competitors can't replicate without similar investment.
 2. **Production-Ready Reliability:** The circuit breaker, observability stack, and failure handling provide a 12–18 month head start.
@@ -606,7 +606,7 @@ At that ROI, it's a no-brainer for customers.
 
 This playbook has taken you from first principles to a production-ready, economically viable agentic AI product. I started by understanding user cognition through deep research, translated that understanding into a multi-agent architecture, implemented it with robust engineering practices, and proved its business viability with rigorous unit economics and a thoughtful GTM strategy.
 
-**The key insight: Agentic AI is not about building features; it is about building systems that think.** This requires a fundamentally different approach — one that combines cognitive science, systems thinking, rigorous engineering, and business acumen.
+**The key insight: Agentic AI is not about building features; it is about building systems that think.** This requires a fundamentally different approach - one that combines cognitive science, systems thinking, rigorous engineering, and business acumen.
 
 The travel agency case study demonstrates that when you do this work properly, the results are transformative:
 
@@ -615,7 +615,7 @@ The travel agency case study demonstrates that when you do this work properly, t
 - **$60M revenue increase** for a 60-agent company without adding headcount
 - **17× ROI** for customers at the proposed pricing
 
-The methodology I've presented is not specific to travel. It applies to any domain where knowledge workers perform complex cognitive tasks that involve research, synthesis, optimization, and communication — legal research, financial analysis, software development, and countless other domains.
+The methodology I've presented is not specific to travel. It applies to any domain where knowledge workers perform complex cognitive tasks that involve research, synthesis, optimization, and communication - legal research, financial analysis, software development, and countless other domains.
 
 The future belongs to companies that can successfully augment human cognition with agentic AI systems. This playbook provides the blueprint for how to do it right.
 

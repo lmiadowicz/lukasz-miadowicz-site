@@ -112,7 +112,7 @@ export default async function Image() {
                 fontFamily: "monospace",
               }}
             >
-              01 — Hello
+              01 - Hello
             </span>
             <div
               style={{

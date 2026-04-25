@@ -103,7 +103,7 @@ Speed of learning is the new competitive advantage.
 
 ## Key Takeaways
 
-1. **AI compresses discovery from weeks to 48 hours.** Hypothesis to working prototype in one day is the new baseline — not the exception.
+1. **AI compresses discovery from weeks to 48 hours.** Hypothesis to working prototype in one day is the new baseline - not the exception.
 2. **Write the hypothesis as a falsifiable statement before you build anything.** "We believe [user] will [action] because [reason], resulting in [outcome]. We'll know when [metric] changes by [amount] in [timeframe]."
 3. **5 users in context beats 500 survey responses.** Observe real people doing their real job. Don't help. Just watch.
 4. **Kill zombie projects ruthlessly.** A feature that's "kind of working" consumes more roadmap than a clean kill.

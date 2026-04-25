@@ -26,7 +26,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   metadataBase: new URL("https://miadowicz.com"),
   title: {
-    default: "Łukasz Miądowicz — AI Product Leader & Strategy",
+    default: "Łukasz Miądowicz - AI Product Leader & Strategy",
     template: "%s | Łukasz Miądowicz",
   },
   description:
@@ -58,14 +58,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://miadowicz.com",
     siteName: "miadowicz.",
-    title: "Łukasz Miądowicz — AI Product Leader & Strategy",
+    title: "Łukasz Miądowicz - AI Product Leader & Strategy",
     description: "I help companies grow revenue and move faster with AI. $80M ARR scaled. 98% task time reduction. PhD Quantum Physics. Ex-Google SWE.",
     images: [
       {
         url: "https://miadowicz.com/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Łukasz Miądowicz — AI Product Leader & Head of AI Product",
+        alt: "Łukasz Miądowicz - AI Product Leader & Head of AI Product",
       },
     ],
   },
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@miadowicz",
     creator: "@miadowicz",
-    title: "Łukasz Miądowicz — AI Product Leader & Strategy",
+    title: "Łukasz Miądowicz - AI Product Leader & Strategy",
     description: "I help companies grow revenue and move faster with AI. $80M ARR scaled. 98% task time reduction. PhD Quantum Physics.",
     images: ["https://miadowicz.com/opengraph-image"],
   },

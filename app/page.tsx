@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-[oklch(0.1_0.005_265)]">
-      {/* JSON-LD structured data — SSR'd in initial HTML for Google E-E-A-T */}
+      {/* JSON-LD structured data - SSR'd in initial HTML for Google E-E-A-T */}
       {homeSchemas.map((schema, i) => (
         <script
           key={i}

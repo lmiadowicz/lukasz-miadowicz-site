@@ -78,15 +78,15 @@ export function AboutSection() {
               AI Native PM.<br /><span className="gradient-text">Own the roadmap. Empower the team.</span>
             </h2>
             <p className="text-zinc-400 leading-relaxed mb-4">
-              I&apos;m an <strong className="text-zinc-200">AI Product Leader</strong> — I own the AI roadmap end-to-end and personally prototype the first version of every major feature before committing engineering resources.
-              Being AI Native means I ask &ldquo;what new experience is now possible?&rdquo; before settling for making existing ones faster. I expand the problem space — solving at scale, speed, and complexity no human process could match — and build new solution categories: autonomous agents, generative interfaces, and adaptive systems.
+              I&apos;m an <strong className="text-zinc-200">AI Product Leader</strong> - I own the AI roadmap end-to-end and personally prototype the first version of every major feature before committing engineering resources.
+              Being AI Native means I ask &ldquo;what new experience is now possible?&rdquo; before settling for making existing ones faster. I expand the problem space - solving at scale, speed, and complexity no human process could match - and build new solution categories: autonomous agents, generative interfaces, and adaptive systems.
             </p>
             <p className="text-zinc-400 leading-relaxed mb-4">
-              At <strong className="text-zinc-200">Qtravel.ai</strong> as AI Product Leader, I owned the full AI roadmap, led the team, and shipped an agentic proposal system — 98% task time reduction, 3× capacity, +80% conversion.
-              At <strong className="text-zinc-200">ButterCMS</strong> as Senior Technical PM, I owned AI & Strategy — defined the AI roadmap, coded the prototype end-to-end in Claude Code, secured C-suite buy-in, and shipped AI Alpha in under 3 months. +40% conversion.
+              At <strong className="text-zinc-200">Qtravel.ai</strong> as AI Product Leader, I owned the full AI roadmap, led the team, and shipped an agentic proposal system - 98% task time reduction, 3× capacity, +80% conversion.
+              At <strong className="text-zinc-200">ButterCMS</strong> as Senior Technical PM, I owned AI & Strategy - defined the AI roadmap, coded the prototype end-to-end in Claude Code, secured C-suite buy-in, and shipped AI Alpha in under 3 months. +40% conversion.
             </p>
             <p className="text-zinc-400 leading-relaxed mb-8">
-              I started as a Software Engineer — including at Google for Startups — moved into product, never stopped coding.
+              I started as a Software Engineer - including at Google for Startups - moved into product, never stopped coding.
               Quantum Physics researcher. Haas School of Business alumnus (UC Berkeley).
             </p>
             <div className="flex flex-wrap gap-2 mb-8">
@@ -112,9 +112,9 @@ export function AboutSection() {
 
 export function BelieveSection() {
   const beliefs = [
-    { num: "01", title: "My job shifted from 'what to build?' to 'how should AI behave?'", body: "I no longer just define features. I define the character, knowledge, and capabilities of intelligent systems. Every LLM has fundamental constraints — hallucination, context limits, knowledge cutoff, inconsistency. My edge is knowing which of the six levers to pull — instructions, knowledge, memory, tools, reasoning, fine-tuning — to shape AI behavior that reliably solves real problems, not just demos well." },
+    { num: "01", title: "My job shifted from 'what to build?' to 'how should AI behave?'", body: "I no longer just define features. I define the character, knowledge, and capabilities of intelligent systems. Every LLM has fundamental constraints - hallucination, context limits, knowledge cutoff, inconsistency. My edge is knowing which of the six levers to pull - instructions, knowledge, memory, tools, reasoning, fine-tuning - to shape AI behavior that reliably solves real problems, not just demos well." },
     { num: "02", title: "The best AI product is the one users don't notice.", body: "AI should operate inside existing workflows, not demand new ones. The moment a user has to learn a new interface to use your AI feature, you've already lost. I design AI systems that fit the job to be done - not the other way around." },
-    { num: "03", title: "Outcomes first. Question the constraint first.", body: "I don't start with 'how do we add AI to this?' I start with 'which old constraints no longer exist — and what's now possible that wasn't before?' AI unlocks new problem spaces: previously impossible problems become solvable at scale, speed, and complexity. Sometimes that changes everything. Sometimes it doesn't. I know the difference." },
+    { num: "03", title: "Outcomes first. Question the constraint first.", body: "I don't start with 'how do we add AI to this?' I start with 'which old constraints no longer exist - and what's now possible that wasn't before?' AI unlocks new problem spaces: previously impossible problems become solvable at scale, speed, and complexity. Sometimes that changes everything. Sometimes it doesn't. I know the difference." },
     { num: "04", title: "The PM who can prototype wins.", body: "Every major feature I've shipped started as a working prototype I built myself - before a single sprint was committed. This is the biggest leverage point in modern product: de-risk the roadmap in 48 hours instead of 6 weeks. I do this with Claude Code, Python, and LLM APIs." },
   ];
   return (
@@ -148,7 +148,7 @@ export function BelieveSection() {
 
 export function ServicesSection() {
   const primary = [
-    { icon: <Brain size={22} />, title: "AI Product Leader (Full-Time / Fractional)", desc: "I own the AI roadmap end-to-end: vision, strategy, team alignment, and shipping. I translate probabilistic AI behavior into reliable products — knowing which levers to pull, how to build the business case, and how to get C-suite buy-in. Not advise. Deliver.", tags: ["AI Product Leader", "AI Roadmap", "0→1", "Team Leadership", "C-Suite"] },
+    { icon: <Brain size={22} />, title: "AI Product Leader (Full-Time / Fractional)", desc: "I own the AI roadmap end-to-end: vision, strategy, team alignment, and shipping. I translate probabilistic AI behavior into reliable products - knowing which levers to pull, how to build the business case, and how to get C-suite buy-in. Not advise. Deliver.", tags: ["AI Product Leader", "AI Roadmap", "0→1", "Team Leadership", "C-Suite"] },
     { icon: <Search size={22} />, title: "AI Product Strategy & Roadmap Ownership", desc: "I build AI product strategy from first principles: where is the niche, what is the real differentiator, which AI architecture fits the use case. I translate ambiguous business goals into a prioritized AI roadmap.", tags: ["AI Strategy", "Product Roadmap", "JTBD", "Differentiation", "OKRs"] },
     { icon: <TrendingUp size={22} />, title: "AI Business Case & C-Suite Communication", desc: "I build the economic case for AI investments and present it to boards in language they trust. My documented case: 98% task time reduction, 3× capacity increase, $191 net savings per task, 1.3-year payback.", tags: ["ROI Analysis", "Business Case", "C-Suite", "Unit Economics", "GTM"] },
   ];
@@ -157,8 +157,8 @@ export function ServicesSection() {
     { icon: <Target size={22} />, title: "AI Adoption & Team Enablement", desc: "Workflow mapping, highest-ROI automation targets, first sprint, team training." },
     { icon: <Code2 size={22} />, title: "Rapid AI Prototyping", desc: "Hypothesis to functional prototype in 24–48 hours using Claude Code, Python, LLM APIs." },
     { icon: <Layers size={22} />, title: "AI System Architecture", desc: "End-to-end design using the 4D framework: Discovery, Design, Development, Deployment." },
-    { icon: <Zap size={22} />, title: "Agentic UX Design", desc: "AI agents operating inside existing workflows — four B2B patterns." },
-    { icon: <Building2 size={22} />, title: "Enterprise AI Readiness", desc: "SSO, RBAC, audit logs, multi-tenancy, LLMOps, evals — the layer enterprise buyers require." },
+    { icon: <Zap size={22} />, title: "Agentic UX Design", desc: "AI agents operating inside existing workflows - four B2B patterns." },
+    { icon: <Building2 size={22} />, title: "Enterprise AI Readiness", desc: "SSO, RBAC, audit logs, multi-tenancy, LLMOps, evals - the layer enterprise buyers require." },
     { icon: <Globe size={22} />, title: "Forward-Deployed Solutions", desc: "Embed with customers to deploy and configure AI in their environment." },
   ];
 
@@ -250,7 +250,7 @@ export function CTABanner() {
               Let&apos;s build something<br /><span className="gradient-text">together.</span>
             </h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Open to full-time AI Product Leader and Senior AI PM roles, and fractional engagements — I lead your AI roadmap end-to-end, build the business case, or ship a working prototype in 48 hours.
+              Open to full-time AI Product Leader and Senior AI PM roles, and fractional engagements - I lead your AI roadmap end-to-end, build the business case, or ship a working prototype in 48 hours.
             </p>
           </div>
           <div className="shrink-0">
@@ -269,9 +269,9 @@ export function CTABanner() {
 
 export function TestimonialsSection() {
   const testimonials = [
-    { quote: "Łukasz approaches AI strategically — thinking in systems, agentic workflows, decision boundaries, and durable differentiation. He defines where AI creates real leverage for users and the business. A unique combination of deep technical knowledge, AI fluency, and strategic depth with a product sense.", name: "Michael Sonier", role: "Co-Founder, Delano Bat Company · ex-ButterCMS (managed Łukasz directly)", initials: "MS", avatar: "/avatars/michael-sonier.png", placeholder: false },
-    { quote: "He developed a sharp perspective on how AI can be applied strategically — prototyping AI-powered concepts himself to evaluate feasibility before involving larger teams, keeping exploration lean, grounded, and tied to real product value. Genuinely technical, high-agency, and the kind of PM who creates momentum: problems get unstuck, decisions get made, things ship.", name: "Wiktor Walc", role: "CTO, Tiugo Technologies · managed Łukasz directly at ButterCMS", initials: "WW", avatar: "/avatars/wiktor-walc.png", placeholder: false },
-    { quote: "He designed our multi-agent system architecture alongside engineering — model selection, cost optimisation across LLM tiers, circuit breaker patterns for production reliability, and observability design. His AI personalisation layer drove +80% conversion and 25% revenue growth. These were not lucky wins — the result of disciplined strategic thinking and relentless follow-through.", name: "Tomasz Krupa", role: "Head of AI, QTravel.ai · built the LLM travel engine with Łukasz", initials: "TK", avatar: "/avatars/tomasz-krupa.jpg", placeholder: false },
+    { quote: "Łukasz approaches AI strategically - thinking in systems, agentic workflows, decision boundaries, and durable differentiation. He defines where AI creates real leverage for users and the business. A unique combination of deep technical knowledge, AI fluency, and strategic depth with a product sense.", name: "Michael Sonier", role: "Co-Founder, Delano Bat Company · ex-ButterCMS (managed Łukasz directly)", initials: "MS", avatar: "/avatars/michael-sonier.png", placeholder: false },
+    { quote: "He developed a sharp perspective on how AI can be applied strategically - prototyping AI-powered concepts himself to evaluate feasibility before involving larger teams, keeping exploration lean, grounded, and tied to real product value. Genuinely technical, high-agency, and the kind of PM who creates momentum: problems get unstuck, decisions get made, things ship.", name: "Wiktor Walc", role: "CTO, Tiugo Technologies · managed Łukasz directly at ButterCMS", initials: "WW", avatar: "/avatars/wiktor-walc.png", placeholder: false },
+    { quote: "He designed our multi-agent system architecture alongside engineering - model selection, cost optimisation across LLM tiers, circuit breaker patterns for production reliability, and observability design. His AI personalisation layer drove +80% conversion and 25% revenue growth. These were not lucky wins - the result of disciplined strategic thinking and relentless follow-through.", name: "Tomasz Krupa", role: "Head of AI, QTravel.ai · built the LLM travel engine with Łukasz", initials: "TK", avatar: "/avatars/tomasz-krupa.jpg", placeholder: false },
   ];
   return (
     <Section id="testimonials" className="py-24 relative overflow-hidden">
@@ -339,8 +339,8 @@ export function PortfolioSection() {
   const portfolio: PortfolioItem[] = [
     { title: "appspeaker.io", desc: "AI Agent for Google Play App Reviews. Automatically monitors, analyzes, and responds to user reviews using LLMs. Built end-to-end with Claude Agent API.", tags: ["Claude Agent API", "AI Agent", "NLP", "Google Play", "Python"], status: "live", links: { demo: "https://appspeaker.io" }, metrics: "Automated review intelligence" },
     { title: "Semantic Travel Search", desc: "NLP-powered search engine for Qtravel.ai. Intent detection, semantic matching, and personalized recommendations.", tags: ["NLP", "Semantic Search", "Python", "Qtravel.ai"], status: "live", links: { demo: "https://qtravel.ai" }, metrics: "Semantic search at scale" },
-    { title: "AI Agentic Playbook", desc: "End-to-end playbook for building 0→1 AI-native products from first principles. 98% task time reduction documented.", tags: ["Agentic AI", "0→1", "Multi-Agent", "HITL", "Playbook"], status: "writing", links: { demo: "https://miadowicz.com/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles/" }, metrics: "98% task time reduction" },
-    { title: "AI Decision Framework for PMs", desc: "A structured decision tree for product managers: when to use AI, which architecture to choose, and how to evaluate build vs. buy vs. fine-tune.", tags: ["Product Strategy", "Framework", "AI", "Open Source"], status: "writing", links: { demo: "https://miadowicz.com/when-should-you-use-ai-decision-framework-for-pms/" }, metrics: "Published article" },
+    { title: "AI Agentic Playbook", desc: "End-to-end playbook for building 0→1 AI-native products from first principles. 98% task time reduction documented.", tags: ["Agentic AI", "0→1", "Multi-Agent", "HITL", "Playbook"], status: "writing", links: { demo: "https://miadowicz.com/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles" }, metrics: "98% task time reduction" },
+    { title: "AI Decision Framework for PMs", desc: "A structured decision tree for product managers: when to use AI, which architecture to choose, and how to evaluate build vs. buy vs. fine-tune.", tags: ["Product Strategy", "Framework", "AI", "Open Source"], status: "writing", links: { demo: "https://miadowicz.com/blog/when-should-you-use-ai-decision-framework-for-pms" }, metrics: "Published article" },
     { title: "Your project here", desc: "Coming soon - a Claude Code experiment, open-source tool, or case study from current work.", tags: ["Coming Soon"], status: "soon", links: {}, metrics: "" },
     { title: "Your project here", desc: "Coming soon - a RAG-powered tool, growth experiment write-up, or enterprise feature case study.", tags: ["Coming Soon"], status: "soon", links: {}, metrics: "" },
   ];
@@ -485,11 +485,11 @@ export function CaseStudiesSection() {
 
 export function ExperienceSection() {
   const jobs = [
-    { company: "ButterCMS (Tiugo)", role: "Senior Technical Product Manager — AI & Strategy", period: "2024 – Present", desc: "Sole AI PM at a Series A SaaS. Defined the AI roadmap, secured C-suite buy-in, and personally coded the first prototype in Claude Code. Shipped AI-native CMS Alpha in under 3 months with 20 enterprise customers. +40% conversion increase. Won Tiugo AI Leadership Spotlight Award and Unsung Hero 2025." },
+    { company: "ButterCMS (Tiugo)", role: "Senior Technical Product Manager - AI & Strategy", period: "2024 – Present", desc: "Sole AI PM at a Series A SaaS. Defined the AI roadmap, secured C-suite buy-in, and personally coded the first prototype in Claude Code. Shipped AI-native CMS Alpha in under 3 months with 20 enterprise customers. +40% conversion increase. Won Tiugo AI Leadership Spotlight Award and Unsung Hero 2025." },
     { company: "Qtravel.ai", role: "Head of AI Product", period: "2022 – 2024", desc: "Led AI product 0→1 for an LLM-based Travel Search Engine. Owned the full AI roadmap, led cross-functional product and engineering teams, and shipped an agentic proposal system. Results: 98% task time reduction, $191 net savings per task, 3× capacity increase, +80% conversion, +25% revenue growth." },
-    { company: "Google for Startups", role: "Product Advisor & Software Engineer", period: "2021 – 2022 · part-time", desc: "Part-time advisory role concurrent with Huuuge Games. Coached 15 startup product teams on AI product strategy, success metrics, and GTM. Enabled 30% faster GTM via AI-powered social UA testing. Introduced Firebase analytics — 10% reduction in churn." },
-    { company: "Huuuge Games", role: "Senior Product Manager", period: "2018 – 2022", desc: "Built an AI/ML-driven market intelligence platform for M&A — +70% target acquisition rate. Predictive analytics dashboard — 20% faster deal closure. Led gaming products with millions of daily active users across multiple titles." },
-    { company: "AirHelp Inc.", role: "AI Product Manager", period: "2015 – 2017", desc: "Launched a claim-check bot — reduced processing time from 20s to 20ms (1000× faster). Led B2B data integration with Expedia & Kayak via ML-powered eligibility prediction." },
+    { company: "Google for Startups", role: "Product Advisor & Software Engineer", period: "2021 – 2022 · part-time", desc: "Part-time advisory role concurrent with Huuuge Games. Coached 15 startup product teams on AI product strategy, success metrics, and GTM. Enabled 30% faster GTM via AI-powered social UA testing. Introduced Firebase analytics - 10% reduction in churn." },
+    { company: "Huuuge Games", role: "Senior Product Manager", period: "2018 – 2022", desc: "Built an AI/ML-driven market intelligence platform for M&A - +70% target acquisition rate. Predictive analytics dashboard - 20% faster deal closure. Led gaming products with millions of daily active users across multiple titles." },
+    { company: "AirHelp Inc.", role: "AI Product Manager", period: "2015 – 2017", desc: "Launched a claim-check bot - reduced processing time from 20s to 20ms (1000× faster). Led B2B data integration with Expedia & Kayak via ML-powered eligibility prediction." },
   ];
 
   return (
@@ -533,9 +533,9 @@ export function ExperienceSection() {
 
 export function BlogPreviewSection() {
   const posts = [
-    { title: "What Is an Agent Harness — and Why 90% of AI Builders Miss It", excerpt: "Most AI builders focus on the LLM prompt. The Agent Harness is the infrastructure that makes an AI agent actually reliable in production — handling loops, tools, state, safety, and context.", tag: "AI Engineering", href: "/blog/what-is-agent-harness" },
-    { title: "The Age of Amplification: What I See Coming in AI by 2030", excerpt: "A first-principles analysis of AI's trajectory to 2030 — exponential acceleration, self-improving systems, multi-agent coordination, and why this is the Age of Amplification, not automation.", tag: "AI Strategy", href: "/blog/the-age-of-amplification-ai-predictions-2030-first-principles" },
-    { title: "From PM to Venture Builder: The Definitive Guide to the Career Move Nobody Talks About", excerpt: "A comprehensive guide to moving from Product Manager to Venture Builder — skills to build, a venture launch playbook, metrics & governance, AI moats, and how to pitch the role internally.", tag: "Corporate Innovation", href: "/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about" },
+    { title: "What Is an Agent Harness - and Why 90% of AI Builders Miss It", excerpt: "Most AI builders focus on the LLM prompt. The Agent Harness is the infrastructure that makes an AI agent actually reliable in production - handling loops, tools, state, safety, and context.", tag: "AI Engineering", href: "/blog/what-is-agent-harness" },
+    { title: "The Age of Amplification: What I See Coming in AI by 2030", excerpt: "A first-principles analysis of AI's trajectory to 2030 - exponential acceleration, self-improving systems, multi-agent coordination, and why this is the Age of Amplification, not automation.", tag: "AI Strategy", href: "/blog/the-age-of-amplification-ai-predictions-2030-first-principles" },
+    { title: "From PM to Venture Builder: The Definitive Guide to the Career Move Nobody Talks About", excerpt: "A comprehensive guide to moving from Product Manager to Venture Builder - skills to build, a venture launch playbook, metrics & governance, AI moats, and how to pitch the role internally.", tag: "Corporate Innovation", href: "/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about" },
   ];
 
   return (

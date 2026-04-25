@@ -12,7 +12,7 @@ if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY && !pos
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: "https://eu.i.posthog.com",
     person_profiles: "identified_only",
-    persistence: "memory",        // cookieless — no consent banner needed
+    persistence: "memory",        // cookieless - no consent banner needed
     capture_pageview: false,      // tracked manually below (App Router)
     capture_pageleave: true,
   });

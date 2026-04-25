@@ -5,7 +5,7 @@ slug: "the-feature-moat-is-dead-building-durable-products-in-the-ai-era"
 date: "2026-04-25"
 updated: "2026-04-25"
 author: "Łukasz Miądowicz"
-excerpt: "AI has commoditized your features, UI, and model access. Here's the first-principles map of where real, durable moats are being built in 2026 — from the Product Moat Stack to the Distribution Flywheel and Context Graph."
+excerpt: "AI has commoditized your features, UI, and model access. Here's the first-principles map of where real, durable moats are being built in 2026 - from the Product Moat Stack to the Distribution Flywheel and Context Graph."
 tags: ["Product Strategy", "AI Moats", "Competitive Advantage", "Distribution Flywheel", "Data Moat", "Product Management", "SaaS", "AI Product", "Network Effects", "Context Graph"]
 category: "Product Strategy"
 readTime: "24 min read"
@@ -15,17 +15,17 @@ faq:
   - question: "What is a product moat in the AI era?"
     answer: "In the AI era, a product moat is a durable, compounding competitive advantage that cannot be easily replicated by a competitor using AI tools. Traditional moats like features, UI, and model access have been commoditized. The remaining real moats are workflow embedding, proprietary data and decision traces, distribution networks, and brand trust."
   - question: "What is the Product Moat Stack?"
-    answer: "The Product Moat Stack is a 6-layer hierarchy of product defensibility, ordered from most fragile to most durable: (1) Model — essential but zero defensibility; (2) Features — necessary for acquisition but easily copied; (3) Workflow Embedding — creates switching costs through daily habit; (4) Data & Decision Traces — proprietary context that compounds with use; (5) Distribution Network — viral artifacts and growth loops that make the product self-distributing; (6) Trust & Brand — the last fortress, built on consistency and authenticity."
+    answer: "The Product Moat Stack is a 6-layer hierarchy of product defensibility, ordered from most fragile to most durable: (1) Model - essential but zero defensibility; (2) Features - necessary for acquisition but easily copied; (3) Workflow Embedding - creates switching costs through daily habit; (4) Data & Decision Traces - proprietary context that compounds with use; (5) Distribution Network - viral artifacts and growth loops that make the product self-distributing; (6) Trust & Brand - the last fortress, built on consistency and authenticity."
   - question: "What is the Moat Durability Matrix?"
     answer: "The Moat Durability Matrix is a 2×2 prioritization framework that maps moats by how easily a well-funded competitor can replicate them versus how fast they compound over time. The four quadrants are: Fragile (AI features, UI polish), Temporary (SEO authority, team velocity), Structural (workflow embedding, data flywheel), and Fortress (distribution channels, brand trust)."
   - question: "What are decision traces in AI product strategy?"
-    answer: "Decision traces are records of the full context surrounding a user's choice — not just the final outcome, but the alternatives considered, dwell time, edits made, and downstream results. Accumulated decision traces form a Context Graph that is impossible for competitors to replicate because the context that created it is exclusive to your product."
+    answer: "Decision traces are records of the full context surrounding a user's choice - not just the final outcome, but the alternatives considered, dwell time, edits made, and downstream results. Accumulated decision traces form a Context Graph that is impossible for competitors to replicate because the context that created it is exclusive to your product."
   - question: "What is the Distribution Flywheel?"
     answer: "The Distribution Flywheel is a self-reinforcing growth loop where a product's usage actively drives its own distribution. The stages: workflow embedding drives daily use → daily use produces viral artifacts → shared artifacts generate usage data → data improves the product → improved product builds brand trust → brand trust reduces CAC → growing community creates network effects → network effects deepen workflow embedding."
   - question: "What is a Context Graph in AI products?"
-    answer: "A Context Graph is the accumulation of decision traces from every user interaction — a proprietary map of how specific users and cohorts think, decide, and act. It allows a product to predict what a user will want next and improve recommendations continuously. Context Graphs are impossible to replicate because they require the complete behavioral history that only your product has captured."
+    answer: "A Context Graph is the accumulation of decision traces from every user interaction - a proprietary map of how specific users and cohorts think, decide, and act. It allows a product to predict what a user will want next and improve recommendations continuously. Context Graphs are impossible to replicate because they require the complete behavioral history that only your product has captured."
   - question: "How do you build a data moat for an AI product?"
-    answer: "Build a data moat in three steps: (1) Identify the single most important decision a user makes in your product; (2) Instrument analytics to capture not just the final choice but the full context — options seen, dwell time, edits made, downstream outcomes; (3) Build a feedback loop that uses this context to improve the next recommendation. Volume is not the goal — contextual richness is."
+    answer: "Build a data moat in three steps: (1) Identify the single most important decision a user makes in your product; (2) Instrument analytics to capture not just the final choice but the full context - options seen, dwell time, edits made, downstream outcomes; (3) Build a feedback loop that uses this context to improve the next recommendation. Volume is not the goal - contextual richness is."
   - question: "Why are AI features not a durable moat?"
     answer: "AI features are not durable moats because they are replicable. A competitor can recreate any AI feature in days using the same frontier models, open-source frameworks, and agentic coding tools available to everyone. When the cost of building software drops to near zero, any advantage tied to building difficulty is also near zero. Features are the front door of a product, not its foundation."
 ---
@@ -46,7 +46,7 @@ This post is my attempt to map out where the real, durable moats are being built
 
 ## Part 1: The Great Moat Collapse
 
-The value of software used to be tied to how hard it was to create. That difficulty is gone. What's left is a catastrophic collapse of the moats we thought we had. The **Model Commoditization Curve** I've drawn up shows this clearly. The value captured by the model providers themselves? That peaked back in 2023–2024. This is a direct consequence of the non-linear trends I explored in [The Age of Amplification](/blog/the-age-of-amplification-ai-predictions-2030-first-principles) — capability is accelerating while the value shifts to the application layer. We're now past the "Commoditization Threshold." Model capability is becoming a utility, like electricity, and the real value is rapidly shifting to the layers you build on top.
+The value of software used to be tied to how hard it was to create. That difficulty is gone. What's left is a catastrophic collapse of the moats we thought we had. The **Model Commoditization Curve** I've drawn up shows this clearly. The value captured by the model providers themselves? That peaked back in 2023–2024. This is a direct consequence of the non-linear trends I explored in [The Age of Amplification](/blog/the-age-of-amplification-ai-predictions-2030-first-principles) - capability is accelerating while the value shifts to the application layer. We're now past the "Commoditization Threshold." Model capability is becoming a utility, like electricity, and the real value is rapidly shifting to the layers you build on top.
 
 ![The Model Commoditization Curve](/images/posts/model_commoditization_curve.webp)
 
@@ -74,13 +74,13 @@ I call this the **Product Moat Stack**. It's how I re-frame my thinking from fea
 
 **Layer 1: Model (Commodity).** This is your foundation. It's essential, but it gives you zero defensibility. Your choice of LLM is a tactical call, not a strategic one. The question isn't "which model do we use?" but "what do we build on top of the model that no one else can replicate?" I've seen too many teams spend months debating GPT-4 vs. Claude 3 when they should be building the layers above.
 
-**Layer 2: Features (Fragile).** This is what your user sees and interacts with. You need it, but it's the easiest part for competitors to copy. Features are necessary for acquisition — they're the reason someone tries your product. But they are not the reason someone stays. I've learned to think of features as the front door, not the foundation.
+**Layer 2: Features (Fragile).** This is what your user sees and interacts with. You need it, but it's the easiest part for competitors to copy. Features are necessary for acquisition - they're the reason someone tries your product. But they are not the reason someone stays. I've learned to think of features as the front door, not the foundation.
 
 **Layer 3: Workflow Embedding (Temporary).** This is where your product becomes part of a user's daily cognitive loop. When you're the default tool for a specific, frequent task, you create stickiness. Switching costs start to build here. The user has to re-learn a new tool, migrate their data, and rebuild their habits. This is real friction. But I've seen 10x better workflows displace incumbents. It's durable, but it's not a fortress. A sufficiently motivated competitor with a sufficiently better product can still displace you.
 
 **Layer 4: Data & Decision Traces (Structural).** This is the first truly durable layer I've found. It's not just about having your own data. It's about capturing the *context* of how that data is used to make decisions. Ashu Garg of Foundation Capital calls these "decision traces," and I agree they are a compounding asset that's impossible for an outsider to replicate [2]. Every time a user touches your product, they should be making it smarter for everyone else. I'll go deeper on this in Part 5.
 
-**Layer 5: Distribution Network (Fortress).** This is where you own the path to your users. I'm not just talking about marketing channels. I mean viral artifacts (outputs users share), ecosystem partnerships, and product-led growth loops. When your product sells itself, you have an almost insurmountable advantage. It's the core unfair advantage I wrote about in my guide on moving [from PM to Venture Builder](/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about) — leveraging existing distribution is the single biggest factor in de-risking a new venture.
+**Layer 5: Distribution Network (Fortress).** This is where you own the path to your users. I'm not just talking about marketing channels. I mean viral artifacts (outputs users share), ecosystem partnerships, and product-led growth loops. When your product sells itself, you have an almost insurmountable advantage. It's the core unfair advantage I wrote about in my guide on moving [from PM to Venture Builder](/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about) - leveraging existing distribution is the single biggest factor in de-risking a new venture.
 
 **Layer 6: Trust & Brand (The Last Moat).** This is your ultimate fortress. It's the name that pops into your user's head before they even search. It's built on founder credibility, community, and consistently delivering on your promise. It's the slowest moat to build and the hardest to destroy. In an age of AI-generated content and AI-generated products, authentic trust is the scarcest resource of all.
 
@@ -156,7 +156,7 @@ Company A's strategy is to build the most powerful AI features faster than anyon
 
 **Company B: "Moat-First"**
 
-Company B's strategy is to build a compounding system of moats around a simple, elegant core workflow. Their Q1 roadmap is focused on building a public, shareable link for every piece of content created — with a "Made with [Product B]" watermark that links back to the product. Q2 is about creating a community template library where users can share and remix each other's best-performing content. Q3 is about instrumenting the platform to understand which content patterns drive the highest engagement for each industry vertical, creating a proprietary "content performance graph."
+Company B's strategy is to build a compounding system of moats around a simple, elegant core workflow. Their Q1 roadmap is focused on building a public, shareable link for every piece of content created - with a "Made with [Product B]" watermark that links back to the product. Q2 is about creating a community template library where users can share and remix each other's best-performing content. Q3 is about instrumenting the platform to understand which content patterns drive the highest engagement for each industry vertical, creating a proprietary "content performance graph."
 
 **How This Plays Out**
 
@@ -191,7 +191,7 @@ The goal of this audit isn't to kill all feature work. Features are still necess
 
 **Step 2: Design a Viral Artifact.**
 
-Look at your product's output. Is it a dead end, or is it a seed? I challenge my teams to brainstorm one change to make their output 10x more shareable. Could you add a watermark? A one-click "share to X" button with a pre-populated summary? A public link with a rich, interactive view? A "made with" badge that links back to your product? The best viral artifacts are ones that are genuinely useful to share — not just promotional. A Perplexity answer is shared because it's a good answer, not because it has a Perplexity logo on it.
+Look at your product's output. Is it a dead end, or is it a seed? I challenge my teams to brainstorm one change to make their output 10x more shareable. Could you add a watermark? A one-click "share to X" button with a pre-populated summary? A public link with a rich, interactive view? A "made with" badge that links back to your product? The best viral artifacts are ones that are genuinely useful to share - not just promotional. A Perplexity answer is shared because it's a good answer, not because it has a Perplexity logo on it.
 
 **Step 3: Instrument a Decision Trace.**
 
@@ -227,7 +227,7 @@ So, the next time you review your roadmap, ask yourself this one question:
 
 If the answer is weaker, you don't have a moat. You have a treadmill. And it's only a matter of time before the AI catches you.
 
-If the answer is stronger — if your data flywheel keeps spinning, your community keeps growing, and your brand keeps compounding without you having to ship a single new feature — then you're building something real.
+If the answer is stronger - if your data flywheel keeps spinning, your community keeps growing, and your brand keeps compounding without you having to ship a single new feature - then you're building something real.
 
 That's the goal. Not the best product. The most defensible one.
 

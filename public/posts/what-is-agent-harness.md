@@ -104,7 +104,7 @@ If you're building AI agents without thinking about the harness, you're building
 
 1. **An Agent Harness has five components:** execution loop, tool execution layer, context and memory management, state tracking, and safety guardrails.
 2. **Demos don't need a harness. Production does.** The harness is invisible when it works and catastrophic when it's missing.
-3. **Most AI agent failures are harness failures** — not model failures. The LLM is rarely the problem.
+3. **Most AI agent failures are harness failures** - not model failures. The LLM is rarely the problem.
 4. **Safety guardrails belong in the harness, not the prompt.** Prompt-level instructions can be overridden; harness-level constraints cannot.
 5. **Start with guardrails, not prompts.** Before you write a single system prompt, decide what your agent is never allowed to do.
 
