@@ -1,4 +1,6 @@
-User-agent: *
+import { NextResponse } from "next/server";
+
+const ROBOTS = `User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /_next/
@@ -38,3 +40,13 @@ Content-Signal: ai-train=no, search=yes, ai-input=yes
 
 Sitemap: https://miadowicz.com/sitemap.xml
 Host: https://miadowicz.com
+`;
+
+export function GET() {
+  return new NextResponse(ROBOTS, {
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "public, max-age=300, must-revalidate",
+    },
+  });
+}

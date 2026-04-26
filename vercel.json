@@ -30,7 +30,7 @@
       ]
     },
     {
-      "source": "/(sitemap.xml|robots.txt|llms.txt|llms-full.txt|manifest.json)",
+      "source": "/(sitemap.xml|llms.txt|llms-full.txt|manifest.json)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }
       ]
