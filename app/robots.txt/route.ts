@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 const ROBOTS = `User-agent: *
 Allow: /
 Disallow: /api/
@@ -46,7 +48,7 @@ export function GET() {
   return new NextResponse(ROBOTS, {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",
-      "Cache-Control": "public, max-age=300, must-revalidate",
+      "Cache-Control": "no-store",
     },
   });
 }
