@@ -41,22 +41,22 @@ jobs:
         run: pnpm install
 
       - name: TypeScript check
-        run: cd client && pnpm tsc --noEmit
+        run: pnpm tsc --noEmit
 
       - name: Check required SEO files
         run: |
           echo "Checking required files..."
-          test -f client/public/sitemap.xml && echo "✅ sitemap.xml" || (echo "❌ sitemap.xml missing" && exit 1)
-          test -f client/public/robots.txt && echo "✅ robots.txt" || (echo "❌ robots.txt missing" && exit 1)
-          test -f client/public/llms.txt && echo "✅ llms.txt" || (echo "❌ llms.txt missing" && exit 1)
-          test -f client/public/posts/index.json && echo "✅ posts/index.json" || (echo "❌ posts/index.json missing" && exit 1)
+          test -f public/sitemap.xml && echo "✅ sitemap.xml" || (echo "❌ sitemap.xml missing" && exit 1)
+          test -f public/robots.txt && echo "✅ robots.txt" || (echo "❌ robots.txt missing" && exit 1)
+          test -f public/llms.txt && echo "✅ llms.txt" || (echo "❌ llms.txt missing" && exit 1)
+          test -f public/posts/index.json && echo "✅ posts/index.json" || (echo "❌ posts/index.json missing" && exit 1)
           echo "All required files present ✅"
 
       - name: Validate posts index.json
         run: |
           python3 -c "
           import json, sys
-          with open('client/public/posts/index.json') as f:
+          with open('public/posts/index.json') as f:
               posts = json.load(f)
           for p in posts:
               required = ['slug', 'title', 'date', 'excerpt', 'category', 'readTime']
