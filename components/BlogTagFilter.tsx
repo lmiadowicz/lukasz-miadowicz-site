@@ -2,54 +2,54 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 
-interface BlogTagFilterProps {
-  allTags: string[];
-  activeTag: string | null;
+interface BlogCategoryFilterProps {
+  categories: string[];
+  activeCategory: string | null;
 }
 
-export function BlogTagFilter({ allTags, activeTag }: BlogTagFilterProps) {
+export function BlogTagFilter({ categories, activeCategory }: BlogCategoryFilterProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const setTag = (tag: string | null) => {
+  const setCategory = (cat: string | null) => {
     const params = new URLSearchParams(searchParams.toString());
-    if (tag) {
-      params.set("tag", tag);
+    if (cat) {
+      params.set("category", cat);
     } else {
-      params.delete("tag");
+      params.delete("category");
     }
     router.push(`/blog?${params.toString()}`, { scroll: false });
   };
 
-  if (!allTags.length) return null;
+  if (!categories.length) return null;
 
   return (
-    <section aria-label="Filter posts by tag" className="py-6 border-b border-white/5 bg-[oklch(0.12_0.006_265)]">
+    <section aria-label="Filter posts by category" className="py-5 border-b border-white/5 bg-[oklch(0.12_0.006_265)]">
       <div className="container">
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Tag filters">
+        <div className="flex flex-wrap gap-2" role="group" aria-label="Category filters">
           <button
-            onClick={() => setTag(null)}
-            aria-pressed={activeTag === null}
+            onClick={() => setCategory(null)}
+            aria-pressed={activeCategory === null}
             className={`text-xs px-4 py-2 rounded-full border transition-all min-h-[36px] ${
-              activeTag === null
+              activeCategory === null
                 ? "border-indigo-500 bg-indigo-500/15 text-indigo-300"
                 : "border-white/10 text-zinc-400 hover:border-white/20 hover:text-zinc-200"
             }`}
           >
             All posts
           </button>
-          {allTags.map((tag) => (
+          {categories.map((cat) => (
             <button
-              key={tag}
-              onClick={() => setTag(activeTag === tag ? null : tag)}
-              aria-pressed={activeTag === tag}
+              key={cat}
+              onClick={() => setCategory(activeCategory === cat ? null : cat)}
+              aria-pressed={activeCategory === cat}
               className={`text-xs px-4 py-2 rounded-full border transition-all min-h-[36px] ${
-                activeTag === tag
+                activeCategory === cat
                   ? "border-indigo-500 bg-indigo-500/15 text-indigo-300"
                   : "border-white/10 text-zinc-400 hover:border-white/20 hover:text-zinc-200"
               }`}
             >
-              {tag}
+              {cat}
             </button>
           ))}
         </div>

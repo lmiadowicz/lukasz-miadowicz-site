@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const links = [
-  { label: "About", href: "/#about" },
+  { label: "About", href: "/about" },
   { label: "Hire Me", href: "/fractional" },
-  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Blog", href: "/blog" },
   { label: "Speaking", href: "/speaking" },
   { label: "Books", href: "/books" },

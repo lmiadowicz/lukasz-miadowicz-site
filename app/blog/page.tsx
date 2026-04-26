@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ChevronRight, Clock } from "lucide-react";
 import { getAllPosts, formatDate } from "@/lib/blog";
 import { BlogTagFilter } from "@/components/BlogTagFilter";
 import { Nav } from "@/components/Nav";
@@ -9,9 +9,9 @@ import { Nav } from "@/components/Nav";
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: Promise<{ tag?: string; q?: string }>;
+  searchParams: Promise<{ category?: string; q?: string }>;
 }): Promise<Metadata> {
-  const { tag } = await searchParams;
+  const { category } = await searchParams;
   const base: Metadata = {
     title: { absolute: "AI Agents, Product Leadership & Prototyping | miadowicz." },
     description:
@@ -39,7 +39,7 @@ export async function generateMetadata({
       images: ["https://miadowicz.com/opengraph-image"],
     },
   };
-  if (tag) {
+  if (category) {
     base.robots = { index: false, follow: true };
     base.alternates = { canonical: "https://miadowicz.com/blog" };
   }
@@ -72,15 +72,18 @@ const blogListSchema = {
 };
 
 interface BlogPageProps {
-  searchParams: Promise<{ tag?: string; q?: string }>;
+  searchParams: Promise<{ category?: string; q?: string }>;
 }
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
-  const { tag: activeTag } = await searchParams;
+  const { category: activeCategory } = await searchParams;
   const allPosts = getAllPosts();
-  const allTags = Array.from(new Set(allPosts.flatMap((p) => p.tags)));
-  const filtered = activeTag
-    ? allPosts.filter((p) => p.tags.includes(activeTag))
+
+  // Ordered, deduplicated list of categories from posts
+  const categories = Array.from(new Set(allPosts.map((p) => p.category)));
+
+  const filtered = activeCategory
+    ? allPosts.filter((p) => p.category === activeCategory)
     : allPosts;
 
   return (
@@ -110,7 +113,10 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                 <span className="text-xs font-mono text-indigo-400 tracking-widest uppercase">Writing</span>
                 <div className="h-px flex-1 max-w-12 bg-indigo-500/40" />
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+              <h1
+                className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
+                style={{ fontFamily: "var(--font-display)" }}
+              >
                 Thinking out loud<br /><span className="text-indigo-400">on AI &amp; Product.</span>
               </h1>
               <p className="text-zinc-400 text-lg leading-relaxed">
@@ -121,7 +127,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         </section>
 
         <Suspense fallback={null}>
-          <BlogTagFilter allTags={allTags} activeTag={activeTag ?? null} />
+          <BlogTagFilter categories={categories} activeCategory={activeCategory ?? null} />
         </Suspense>
 
         <section id="blog-main" className="py-12" aria-label="Blog posts">
@@ -134,41 +140,32 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                 </Link>
               </div>
             ) : (
-              <div className="max-w-3xl">
+              <div className="grid md:grid-cols-2 gap-4">
                 {filtered.map((post) => (
-                  <article
-                    key={post.slug}
-                    aria-labelledby={`post-title-${post.slug}`}
-                    className="group border-b border-white/8 last:border-b-0"
-                  >
+                  <article key={post.slug} aria-labelledby={`post-title-${post.slug}`}>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="flex items-center justify-between gap-6 py-6 transition-all duration-150"
+                      className="group flex flex-col gap-3 h-full p-6 rounded-xl border border-white/8 bg-[oklch(0.13_0.007_265)] hover:border-indigo-500/30 hover:bg-[oklch(0.14_0.008_265)] transition-all duration-200"
                     >
-                      <div className="flex-1 min-w-0">
-                        <p className="text-xs font-mono text-indigo-400 tracking-widest uppercase mb-1.5">
-                          {post.category}
-                        </p>
-                        <h2
-                          id={`post-title-${post.slug}`}
-                          className="text-lg md:text-xl font-bold text-white group-hover:text-indigo-300 transition-colors leading-snug"
-                          style={{ fontFamily: "var(--font-display)" }}
-                        >
-                          {post.title}
-                        </h2>
-                      </div>
-                      <div className="flex-shrink-0 flex items-center gap-4">
-                        <div className="text-right hidden sm:block">
-                          <time dateTime={post.date} className="block text-xs text-zinc-500">
-                            {formatDate(post.date)}
-                          </time>
-                          <span className="text-xs text-zinc-600">{post.readTime}</span>
-                        </div>
-                        <ArrowRight
-                          size={15}
-                          className="text-zinc-600 group-hover:text-indigo-400 transition-colors flex-shrink-0"
-                          aria-hidden="true"
-                        />
+                      <span className="text-[11px] font-mono px-2 py-0.5 rounded border border-indigo-500/20 bg-indigo-600/10 text-indigo-400 uppercase tracking-widest self-start">
+                        {post.category}
+                      </span>
+                      <h2
+                        id={`post-title-${post.slug}`}
+                        className="text-base md:text-lg font-bold text-white group-hover:text-indigo-300 transition-colors leading-snug"
+                        style={{ fontFamily: "var(--font-display)" }}
+                      >
+                        {post.title}
+                      </h2>
+                      <p className="text-zinc-400 text-sm leading-relaxed line-clamp-2 flex-1">
+                        {post.excerpt}
+                      </p>
+                      <div className="flex items-center gap-3 pt-2 border-t border-white/5 text-xs text-zinc-500">
+                        <time dateTime={post.date}>{formatDate(post.date)}</time>
+                        <span className="flex items-center gap-1">
+                          <Clock size={11} aria-hidden="true" />
+                          {post.readTime}
+                        </span>
                       </div>
                     </Link>
                   </article>
