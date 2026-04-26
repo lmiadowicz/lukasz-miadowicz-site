@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Syne, Fira_Code } from "next/font/google";
 import { Providers } from "@/components/Providers";
+import { WebMCPTools } from "@/components/WebMCPTools";
 import "./globals.css";
 
 const inter = Inter({
@@ -95,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="alternate" type="text/plain" title="LLMs Full Profile" href="https://miadowicz.com/llms-full.txt" />
         <meta name="llms-txt" content="https://miadowicz.com/llms.txt" />
       </head>
-      <body><Providers>{children}</Providers></body>
+      <body><WebMCPTools /><Providers>{children}</Providers></body>
     </html>
   );
 }
