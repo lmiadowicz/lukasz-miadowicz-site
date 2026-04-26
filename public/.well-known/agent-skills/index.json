@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "content-api",
+      "type": "skill-md",
+      "description": "Access miadowicz.com content in machine-readable formats — markdown negotiation, llms.txt, sitemap, and API catalog",
+      "url": "https://miadowicz.com/.well-known/agent-skills/content-api/SKILL.md",
+      "digest": "sha256:b1df8d9b1b482d9fee0fb09f87abca0a1cb5481ec85230d020b29fed741ced91"
+    },
+    {
+      "name": "portfolio-overview",
+      "type": "skill-md",
+      "description": "Professional background and expertise of Łukasz Miądowicz, AI Product Leader & Strategy Lead",
+      "url": "https://miadowicz.com/.well-known/agent-skills/portfolio-overview/SKILL.md",
+      "digest": "sha256:03d3d83cb68c7baac5044eaa349029f43663c13b94cd0f996ab0c61f111e61ad"
+    }
+  ]
+}
