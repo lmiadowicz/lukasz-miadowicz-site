@@ -1,17 +1,26 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-// RFC 9728 — OAuth 2.0 Protected Resource Metadata
-const METADATA = {
-  resource: "https://miadowicz.com",
-  authorization_servers: ["https://miadowicz.com"],
-  scopes_supported: ["read"],
-};
+export const dynamic = "force-dynamic";
 
-export function GET() {
-  return new NextResponse(JSON.stringify(METADATA, null, 2), {
-    headers: {
-      "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=300, must-revalidate",
-    },
-  });
+// RFC 9728 — RFC requires resource to match the origin it is served from
+export function GET(request: NextRequest) {
+  const origin = `https://${request.headers.get("x-forwarded-host") ?? request.headers.get("host") ?? "miadowicz.com"}`;
+
+  return new NextResponse(
+    JSON.stringify(
+      {
+        resource: origin,
+        authorization_servers: [origin],
+        scopes_supported: ["read"],
+      },
+      null,
+      2
+    ),
+    {
+      headers: {
+        "Content-Type": "application/json",
+        "Cache-Control": "no-store",
+      },
+    }
+  );
 }
