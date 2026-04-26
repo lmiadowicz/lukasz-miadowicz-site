@@ -215,4 +215,12 @@ One last test before you commit: **write down what success looks like in 6 month
 
 ---
 
+## Related Reading
+
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — once you've answered "yes" to all five questions, this is the complete end-to-end framework for building the AI feature: from discovery to a production-ready agentic system.
+- [AI Product Discovery: How to Test Hypotheses in Days, Not Sprints](/blog/ai-product-discovery-framework) — the rapid discovery process that validates your AI feature decision before a single line of code is written.
+- [What Is an Agent Harness? (And Why 90% of AI Builders Miss It)](/blog/what-is-agent-harness) — the infrastructure layer that makes the difference between an AI that demos well and one that ships reliably.
+
+---
+
 *Łukasz Miądowicz is an AI Product Leader who builds and ships AI products. He helps companies decide where AI creates real value - and where it doesn't. [Work with Łukasz →](https://miadowicz.com/fractional)*

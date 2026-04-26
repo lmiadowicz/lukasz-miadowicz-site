@@ -178,8 +178,14 @@ That's the age I believe we're entering. And I, for one, can't wait to see what 
 
 ## Related Reading
 
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — the hands-on counterpart to this post: how to apply first-principles thinking to actually build an agentic AI product, with a six-agent case study and documented unit economics.
 - [The Feature Moat Is Dead: Building Durable Products in the AI Era](/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era) — if AI commoditizes features, UI, and model access, here's the first-principles map of what durable competitive advantage looks like in the amplification era.
 - [Agentic UX: Designing In-Product Experiences for AI Agents](/blog/agentic-ux-designing-in-product-experiences-for-ai-agents) — what the shift from human-first to agent-first interfaces looks like in practice, with four design patterns from Notion, Salesforce, and Intercom.
+- [AI Product Advisory & Consulting](/advisory) — if you're a product leader or CTO thinking through AI strategy for 2026 and beyond, advisory is the fastest way to get a sharp second opinion.
+
+---
+
+*Łukasz Miądowicz is an AI Product Leader writing about the future of AI and how to build products for it. He helps companies navigate the amplification era — from strategy to shipped product. [Work with Łukasz →](https://miadowicz.com/fractional)*
 
 ---
 

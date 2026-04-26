@@ -153,6 +153,7 @@ If you want your AI-assisted or even human development efforts to succeed withou
 
 ## Related Reading
 
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — the end-to-end framework showing how Agent Specs fit into a complete 0→1 build, from use case discovery through a six-agent production system with documented unit economics.
 - [Agentic UX: Designing In-Product Experiences for AI Agents](/blog/agentic-ux-designing-in-product-experiences-for-ai-agents) — once the spec is written and the system is built, this is how to design the interface layer so agents operate inside real product workflows.
 - [When Should You Use AI? A Decision Framework for AI PMs](/blog/when-should-you-use-ai-decision-framework-for-pms) — five questions to answer before writing a single Agent Spec.
 

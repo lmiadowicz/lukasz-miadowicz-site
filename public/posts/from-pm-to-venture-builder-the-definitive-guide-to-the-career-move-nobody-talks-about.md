@@ -292,6 +292,7 @@ Most companies will continue to focus on optimizing their core products. A few w
 
 - [The Feature Moat Is Dead: Building Durable Products in the AI Era](/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era) — AI compresses venture economics dramatically; the same moat logic applies whether you're launching a standalone startup or an internal venture.
 - [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — a concrete example of an AI-native 0→1 build: from discovery to a six-agent system with real unit economics and a GTM plan.
+- [AI Product Advisory & Consulting](/advisory) — if you're navigating the venture builder transition and need a sharp second opinion on your AI strategy, advisory is the fastest way to get one.
 
 ---
 
@@ -305,4 +306,4 @@ Most companies will continue to focus on optimizing their core products. A few w
 
 ---
 
-*Łukasz Miądowicz is an AI Product Leader and Venture Builder. He helps companies launch new AI-native ventures - from first customer interview to spin-out. [Work with Łukasz →](https://miadowicz.com/#contact)*
+*Łukasz Miądowicz is an AI Product Leader and Venture Builder. He helps companies launch new AI-native ventures - from first customer interview to spin-out. [Work with Łukasz →](https://miadowicz.com/fractional)*

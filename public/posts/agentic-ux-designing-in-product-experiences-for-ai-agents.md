@@ -271,4 +271,12 @@ If you want to see these patterns in action before building your own:
 
 ---
 
+## Related Reading
+
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — the complete framework for building agentic AI products from scratch, covering the six design levers, HITL patterns, and a six-agent case study with documented ROI.
+- [Beyond User Stories: Why Agent Specs Are the Future of Software Development](/blog/beyond-user-stories-why-agent-specs-are-the-future-software-development) — once you've chosen the right Agentic UX pattern, this is how to specify the agent's behavior so engineering teams and coding agents can build it correctly.
+- [What Is an Agent Harness? (And Why 90% of AI Builders Miss It)](/blog/what-is-agent-harness) — the infrastructure layer that turns an agentic UX concept into a production-ready system that doesn't break under real user load.
+
+---
+
 *Łukasz Miądowicz is an AI Product Leader specializing in agentic UX and in-product AI experiences. He helps companies design and ship AI features that fit inside real user workflows — not on top of them. [Work with Łukasz →](https://miadowicz.com/fractional)*

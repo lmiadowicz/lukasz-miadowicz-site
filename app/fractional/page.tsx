@@ -315,7 +315,9 @@ export default function FractionalPage() {
                 <span className="text-zinc-300">Fractional AI PM</span>
               </nav>
 
-              <div className="max-w-3xl">
+              <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 max-w-5xl">
+              {/* Left — text */}
+              <div className="flex-1 min-w-0">
                 {/* available badge */}
                 <div className="inline-flex items-center gap-2.5 mb-6 px-3.5 py-1.5 rounded-full border border-emerald-500/20 bg-emerald-500/5">
                   <span className="relative flex h-2 w-2 shrink-0">
@@ -352,21 +354,30 @@ export default function FractionalPage() {
                   <strong className="text-zinc-200">first prototype in 24–48 hours</strong>.
                 </p>
 
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="/#contact"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-md transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5"
-                  >
-                    Book a Discovery Call <ArrowRight size={16} aria-hidden="true" />
-                  </a>
-                  <a
-                    href="/#portfolio"
-                    className="inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-indigo-500/40 text-zinc-300 hover:text-white font-medium rounded-md transition-all duration-200 hover:-translate-y-0.5"
-                  >
-                    See case studies
-                  </a>
-                </div>
+                <a
+                  href="/#contact"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-md transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5 text-base"
+                >
+                  Book a Discovery Call <ArrowRight size={16} aria-hidden="true" />
+                </a>
               </div>
+
+              {/* Right — headshot */}
+              <div className="shrink-0 lg:mt-4">
+                <div className="relative w-48 h-48 lg:w-56 lg:h-56">
+                  {/* glow ring */}
+                  <div className="absolute inset-0 rounded-full bg-indigo-600/20 blur-xl" aria-hidden="true" />
+                  <img
+                    src={PROFILE_IMG}
+                    alt="Łukasz Miądowicz — Fractional AI Product Leader"
+                    width={224}
+                    height={224}
+                    className="relative rounded-full object-cover border-2 border-indigo-500/30 w-full h-full"
+                  />
+                </div>
+                <p className="text-xs text-zinc-500 text-center mt-3 font-mono">Łukasz Miądowicz</p>
+              </div>
+            </div>
             </div>
           </section>
 
@@ -625,7 +636,7 @@ export default function FractionalPage() {
             <div className="container">
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="section-number">05 - FAQ</span>
+                  <span className="section-number">07 - FAQ</span>
                   <div className="h-px flex-1 max-w-16 bg-indigo-500/40" aria-hidden="true" />
                 </div>
                 <h2
@@ -658,6 +669,92 @@ export default function FractionalPage() {
                     </summary>
                     <p className="mt-4 text-zinc-400 text-sm leading-relaxed">{faq.a}</p>
                   </details>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* ── From the blog ─────────────────────────────────────────────── */}
+          <section
+            aria-labelledby="blog-heading"
+            className="py-24 border-t border-white/5"
+          >
+            <div className="container">
+              <div className="mb-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="section-number">06 - From the blog</span>
+                  <div className="h-px flex-1 max-w-16 bg-indigo-500/40" aria-hidden="true" />
+                </div>
+                <h2
+                  id="blog-heading"
+                  className="text-3xl md:text-4xl font-bold text-white mb-3 leading-tight"
+                  style={{ fontFamily: "var(--font-display)" }}
+                >
+                  How I think about AI product
+                </h2>
+                <p className="text-zinc-400 max-w-2xl">
+                  The frameworks I use in every engagement — available free, with the reasoning behind each one.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {[
+                  {
+                    href: "/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles",
+                    label: "Pillar",
+                    title: "The Agentic AI Product Playbook",
+                    excerpt: "The complete 0→1 framework: six design levers, HITL patterns, and a six-agent case study with documented unit economics.",
+                  },
+                  {
+                    href: "/blog/when-should-you-use-ai-decision-framework-for-pms",
+                    label: "Framework",
+                    title: "When Should You Use AI?",
+                    excerpt: "Five questions every AI PM should answer before committing to an AI feature. Includes a decision tree and 5 anti-patterns.",
+                  },
+                  {
+                    href: "/blog/agentic-ux-designing-in-product-experiences-for-ai-agents",
+                    label: "Design",
+                    title: "Agentic UX",
+                    excerpt: "Four UX patterns for embedding AI agents inside real product workflows — not as chatbots bolted on top of them.",
+                  },
+                  {
+                    href: "/blog/what-is-agent-harness",
+                    label: "Architecture",
+                    title: "What Is an Agent Harness?",
+                    excerpt: "The infrastructure layer 90% of AI builders miss — and why it's the difference between a demo and a production system.",
+                  },
+                  {
+                    href: "/blog/ai-product-discovery-framework",
+                    label: "Process",
+                    title: "AI Product Discovery",
+                    excerpt: "How to validate an AI feature in days, not sprints — with a repeatable discovery sprint template.",
+                  },
+                  {
+                    href: "/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era",
+                    label: "Strategy",
+                    title: "The Feature Moat Is Dead",
+                    excerpt: "If AI commoditizes features, what actually creates durable competitive advantage? Data flywheels, community, and brand.",
+                  },
+                ].map((post) => (
+                  <Link
+                    key={post.href}
+                    href={post.href}
+                    className="group p-5 rounded-xl border border-white/8 bg-[oklch(0.14_0.008_265)] hover:border-indigo-500/30 transition-colors flex flex-col gap-3"
+                  >
+                    <span className="inline-block px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-widest border border-indigo-500/20 bg-indigo-600/10 text-indigo-400 self-start">
+                      {post.label}
+                    </span>
+                    <h3
+                      className="text-sm font-semibold text-white group-hover:text-indigo-300 transition-colors leading-snug"
+                      style={{ fontFamily: "var(--font-display)" }}
+                    >
+                      {post.title}
+                    </h3>
+                    <p className="text-zinc-500 text-xs leading-relaxed flex-1">{post.excerpt}</p>
+                    <span className="text-indigo-400 text-xs font-medium group-hover:underline">
+                      Read →
+                    </span>
+                  </Link>
                 ))}
               </div>
             </div>

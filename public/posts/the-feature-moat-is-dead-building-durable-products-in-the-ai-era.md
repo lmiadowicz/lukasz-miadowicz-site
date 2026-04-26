@@ -243,4 +243,13 @@ That's the goal. Not the best product. The most defensible one.
 
 ---
 
+## Related Reading
+
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — how to translate moat strategy into a concrete AI product: the 4D framework, six design levers, and a six-agent build with documented unit economics.
+- [The Age of Amplification: What I See Coming in AI by 2030](/blog/the-age-of-amplification-ai-predictions-2030-first-principles) — the macro context for why feature moats are dying and what the amplification era means for product strategy.
+- [When Should You Use AI? A Decision Framework for AI PMs](/blog/when-should-you-use-ai-decision-framework-for-pms) — five diagnostic questions to answer before any AI investment hits your roadmap.
+- [AI Product Advisory & Consulting](/advisory) — need a sharp outside view on your AI product strategy or moat design? Advisory is a faster path to clarity than another workshop.
+
+---
+
 *Łukasz Miądowicz is an AI Product Leader who helps companies build durable AI products — from strategy and moat design to shipped features. [Work with Łukasz →](https://miadowicz.com/fractional)*
