@@ -1,8 +1,42 @@
 import type { Metadata } from "next";
 import { Inter, Syne, Fira_Code } from "next/font/google";
 import { Providers } from "@/components/Providers";
-import { WebMCPTools } from "@/components/WebMCPTools";
 import "./globals.css";
+
+const WEBMCP_SCRIPT = `(function(){
+  var TOOLS=[
+    {name:"navigate_to_section",title:"Navigate to Section",
+     description:"Navigate to a section of miadowicz.com: about, blog, books, portfolio, contact, or glossary",
+     inputSchema:{type:"object",properties:{section:{type:"string",enum:["about","blog","books","portfolio","contact","glossary"]}},required:["section"]},
+     execute:function(i){var m={about:"/#about",blog:"/blog",books:"/books",portfolio:"/#portfolio",contact:"/#contact",glossary:"/glossary"};window.location.href=m[i.section]||"/";return Promise.resolve({navigated:true});},
+     annotations:{readOnlyHint:false}},
+    {name:"get_site_overview",title:"Get Site Overview",
+     description:"Returns machine-readable overview of Łukasz Miądowicz's professional background",
+     inputSchema:{type:"object",properties:{}},
+     execute:function(){return fetch("/llms.txt").then(function(r){return r.text();}).then(function(t){return{content:t};});},
+     annotations:{readOnlyHint:true}},
+    {name:"get_content_list",title:"Get Content List",
+     description:"Returns list of published blog posts and books on the site",
+     inputSchema:{type:"object",properties:{type:{type:"string",enum:["blog","books","all"]}}},
+     execute:function(i){return fetch("/sitemap.xml").then(function(r){return r.text();}).then(function(x){var u=Array.from(x.matchAll(/<loc>(.*?)<\\/loc>/g)).map(function(m){return m[1];});var t=(i&&i.type)||"all";if(t!=="all")u=u.filter(function(s){return s.indexOf("/"+t+"/")>-1;});return{urls:u,count:u.length};});},
+     annotations:{readOnlyHint:true}}
+  ];
+  function reg(ctx){
+    if(!ctx)return;
+    var sig=(new AbortController()).signal;
+    if(typeof ctx.registerTool==="function"){TOOLS.forEach(function(t){try{ctx.registerTool(t,{signal:sig});}catch(e){}});}
+    if(typeof ctx.provideContext==="function"){try{ctx.provideContext(TOOLS);}catch(e){}}
+  }
+  if(navigator.modelContext){reg(navigator.modelContext);return;}
+  try{
+    Object.defineProperty(navigator,"modelContext",{configurable:true,enumerable:true,
+      set:function(v){Object.defineProperty(navigator,"modelContext",{value:v,writable:true,configurable:true,enumerable:true});reg(v);}
+    });
+  }catch(e){
+    var p=setInterval(function(){if(navigator.modelContext){clearInterval(p);reg(navigator.modelContext);}},50);
+    setTimeout(function(){clearInterval(p);},10000);
+  }
+})();`;
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -95,8 +129,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="llms-txt" href="https://miadowicz.com/llms.txt" />
         <link rel="alternate" type="text/plain" title="LLMs Full Profile" href="https://miadowicz.com/llms-full.txt" />
         <meta name="llms-txt" content="https://miadowicz.com/llms.txt" />
+        {/* WebMCP: inline so tools register before React hydration */}
+        <script dangerouslySetInnerHTML={{ __html: WEBMCP_SCRIPT }} />
       </head>
-      <body><WebMCPTools /><Providers>{children}</Providers></body>
+      <body><Providers>{children}</Providers></body>
     </html>
   );
 }
