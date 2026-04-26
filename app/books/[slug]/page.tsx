@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight, Star, ChevronRight, ExternalLink } from "lucide-
 import { Nav } from "@/components/Nav";
 import { marked } from "marked";
 import { getAllBooks, getBook, formatDate } from "@/lib/books";
-import { generateBreadcrumbSchema } from "@/lib/schema";
+import { generateBreadcrumbSchema, generateBookReviewSchema } from "@/lib/schema";
 import { ShareButton } from "@/components/ShareButton";
 
 const BASE_URL = "https://miadowicz.com";
@@ -94,9 +94,14 @@ export default async function BookPage({
     { name: "Books", item: `${BASE_URL}/books` },
     { name: book.title, item: bookUrl },
   ]);
+  const bookReviewSchema = generateBookReviewSchema(book);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bookReviewSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

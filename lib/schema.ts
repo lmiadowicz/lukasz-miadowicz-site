@@ -107,18 +107,19 @@ export const websiteSchema = {
   },
 };
 
-export const howToSchema = {
+export const methodologySchema = {
   "@context": "https://schema.org",
-  "@type": "HowTo",
+  "@type": "ItemList",
   "@id": `${BASE_URL}/#methodology`,
-  name: "How I Build AI Products That Deliver Business Outcomes — The 4D Framework",
+  name: "The 4D Framework — How I Build AI Products That Deliver Business Outcomes",
   description: "My four-phase methodology for building AI products that deliver business outcomes: shaping AI behavior through six levers to expand problem spaces and create new solution categories.",
   author: { "@id": `${BASE_URL}/#person` },
-  step: [
-    { "@type": "HowToStep", position: 1, name: "AI Discovery", text: "Identify high-value AI use cases from first principles. Not every problem should be solved with AI — I find the ones where AI expands the problem space: previously unsolvable at scale, speed, or complexity." },
-    { "@type": "HowToStep", position: 2, name: "AI Design", text: "Architecture, prototype, and configure the six levers — Instructions, Knowledge, Memory, Tools, Reasoning, Post-Training — to shape reliable AI behavior. Define HITL touchpoints and safety guardrails." },
-    { "@type": "HowToStep", position: 3, name: "AI Development", text: "Build the prototype in code before committing engineering resources. Validate in 24-48 hours. Evaluate, refine, and ship with observability and evals." },
-    { "@type": "HowToStep", position: 4, name: "AI Deployment", text: "Launch, monetize, and operate. Build the economic case: unit economics, payback period, pricing model, GTM strategy. Documented: $191 net savings per task, 1.3-year payback, 3× capacity." },
+  numberOfItems: 4,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "AI Discovery", description: "Identify high-value AI use cases from first principles. Not every problem should be solved with AI — I find the ones where AI expands the problem space: previously unsolvable at scale, speed, or complexity." },
+    { "@type": "ListItem", position: 2, name: "AI Design", description: "Architecture, prototype, and configure the six levers — Instructions, Knowledge, Memory, Tools, Reasoning, Post-Training — to shape reliable AI behavior. Define HITL touchpoints and safety guardrails." },
+    { "@type": "ListItem", position: 3, name: "AI Development", description: "Build the prototype in code before committing engineering resources. Validate in 24-48 hours. Evaluate, refine, and ship with observability and evals." },
+    { "@type": "ListItem", position: 4, name: "AI Deployment", description: "Launch, monetize, and operate. Build the economic case: unit economics, payback period, pricing model, GTM strategy. Documented: $191 net savings per task, 1.3-year payback, 3× capacity." },
   ],
 };
 
@@ -155,7 +156,7 @@ export const homeSchemas = [
   profilePageSchema,
   serviceSchema,
   websiteSchema,
-  howToSchema,
+  methodologySchema,
   homepageFAQSchema,
 ];
 
@@ -245,5 +246,56 @@ export function generateBreadcrumbSchema(items: { name: string; item: string }[]
     itemListElement: items.map((el, i) => ({
       "@type": "ListItem", position: i + 1, name: el.name, item: el.item,
     })),
+  };
+}
+
+export function generateBookReviewSchema(book: {
+  slug: string;
+  title: string;
+  bookAuthor: string;
+  excerpt: string;
+  date: string;
+  rating: number;
+  image?: string;
+  tags: string[];
+  category: string;
+  buyLink?: string;
+}) {
+  const url = `${BASE_URL}/books/${book.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "@id": `${url}#review`,
+    url,
+    name: `${book.title} — Notes & Review`,
+    description: book.excerpt,
+    datePublished: book.date,
+    inLanguage: "en-US",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: book.rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    author: {
+      "@type": "Person",
+      "@id": `${BASE_URL}/#person`,
+      name: "Łukasz Miądowicz",
+      url: BASE_URL,
+    },
+    itemReviewed: {
+      "@type": "Book",
+      name: book.title,
+      author: { "@type": "Person", name: book.bookAuthor },
+      ...(book.image && { image: book.image }),
+      ...(book.buyLink && { url: book.buyLink }),
+    },
+    keywords: book.tags.join(", "),
+    isPartOf: {
+      "@type": "WebPage",
+      "@id": `${BASE_URL}/books`,
+      name: "Book Notes — miadowicz.",
+      url: `${BASE_URL}/books`,
+    },
   };
 }
