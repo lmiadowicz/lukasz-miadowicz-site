@@ -46,11 +46,10 @@ jobs:
       - name: Check required SEO files
         run: |
           echo "Checking required files..."
-          test -f public/sitemap.xml && echo "✅ sitemap.xml" || (echo "❌ sitemap.xml missing" && exit 1)
-          test -f public/robots.txt && echo "✅ robots.txt" || (echo "❌ robots.txt missing" && exit 1)
           test -f public/llms.txt && echo "✅ llms.txt" || (echo "❌ llms.txt missing" && exit 1)
           test -f public/posts/index.json && echo "✅ posts/index.json" || (echo "❌ posts/index.json missing" && exit 1)
           echo "All required files present ✅"
+          echo "Note: sitemap.xml and robots.txt are served dynamically via Next.js routes"
 
       - name: Validate posts index.json
         run: |
