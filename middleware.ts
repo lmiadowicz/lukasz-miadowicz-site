@@ -27,13 +27,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Training data crawlers — opt out
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
+# Training data crawlers — opt out (search/retrieval bots are allowed via * rule above)
 User-agent: anthropic-ai
 Disallow: /
 
@@ -143,5 +137,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/robots.txt", "/", "/blog/:path*", "/books/:path*", "/glossary/:path*"],
+  matcher: ["/robots.txt", "/", "/blog/:path*", "/books/:path*", "/glossary/:path*", "/fractional", "/advisory", "/speaking"],
 };

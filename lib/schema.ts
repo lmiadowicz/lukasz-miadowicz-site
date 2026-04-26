@@ -29,7 +29,7 @@ export const personSchema = {
     "Python", "TypeScript", "LangGraph", "CrewAI",
   ],
   hasCredential: [
-    { "@type": "EducationalOccupationalCredential", name: "Quantum Physics Research (doctoral-level)", credentialCategory: "training" },
+    { "@type": "EducationalOccupationalCredential", name: "Quantum Physics Research (doctoral-level)", credentialCategory: "degree" },
     { "@type": "EducationalOccupationalCredential", name: "Haas School of Business - Product Management", credentialCategory: "certificate" },
     { "@type": "EducationalOccupationalCredential", name: "Anthropic Claude Code Certification", credentialCategory: "certificate" },
   ],
@@ -43,7 +43,6 @@ export const personSchema = {
   sameAs: [
     "https://www.linkedin.com/in/lukaszmiadowicz/",
     "https://x.com/miadowicz",
-    "https://miadowicz.com/blog",
     "https://github.com/miadowicz",
   ],
   mainEntityOfPage: { "@type": "ProfilePage", "@id": `${BASE_URL}/#profile` },
@@ -201,7 +200,7 @@ export function generateBlogPostingSchema(post: {
     publisher: {
       "@type": "Organization", "@id": `${BASE_URL}/#organization`,
       name: "miadowicz.", url: BASE_URL,
-      logo: { "@type": "ImageObject", url: `${BASE_URL}/favicon.svg`, width: 32, height: 32 },
+      logo: { "@type": "ImageObject", url: `${BASE_URL}/icon-512.png`, width: 512, height: 512 },
     },
     articleBody,
     wordCount: words,
@@ -222,7 +221,8 @@ export function generateBlogPostingSchema(post: {
     schema.teaches = post.faq.map((item) => ({ "@type": "DefinedTerm", name: item.question }));
   }
   if (post.image) {
-    schema.image = { "@type": "ImageObject", url: post.image, width: 1200, height: 630 };
+    const imageUrl = post.image.startsWith("http") ? post.image : `${BASE_URL}${post.image}`;
+    schema.image = { "@type": "ImageObject", url: imageUrl, width: 1200, height: 630 };
   }
   return schema;
 }
