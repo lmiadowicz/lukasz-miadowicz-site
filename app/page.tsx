@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/Nav";
 import { HeroSection } from "@/components/HeroSection";
+import { TrustBar } from "@/components/TrustBar";
 import { StatsBar } from "@/components/StatsBar";
 import {
   AboutSection,
@@ -58,6 +59,7 @@ export default function HomePage() {
 
       <main id="main-content" role="main" tabIndex={-1}>
         <HeroSection />
+        <TrustBar />
         <StatsBar />
         <AboutSection />
         <BelieveSection />
