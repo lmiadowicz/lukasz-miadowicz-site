@@ -41,6 +41,7 @@ const firaCode = Fira_Code({
   variable: "--font-fira-code",
   display: "swap",
   weight: ["400", "500", "600"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -109,8 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${syne.variable} ${firaCode.variable} dark`}
     >
       <head>
-        <link rel="preconnect" href="https://d2xsxph8kpxj0f.cloudfront.net" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://d36hbw14aib5lz.cloudfront.net" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://eu-assets.i.posthog.com" crossOrigin="anonymous" />
         <link rel="llms-txt" href="https://miadowicz.com/llms.txt" />
         <link rel="alternate" type="text/plain" title="LLMs Full Profile" href="https://miadowicz.com/llms-full.txt" />
         <meta name="llms-txt" content="https://miadowicz.com/llms.txt" />
