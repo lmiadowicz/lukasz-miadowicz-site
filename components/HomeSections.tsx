@@ -40,32 +40,86 @@ function SectionHeader({ num, label }: { num: string; label: string }) {
 }
 
 export function AboutSection() {
+  const process = [
+    {
+      phase: "01 · Discover",
+      items: ["AI opportunity mapping", "Constraint & limitation audit", "ROI sizing"],
+    },
+    {
+      phase: "02 · Design",
+      items: ["AI behavior specification", "HITL & failure mode mapping", "Stack selection"],
+    },
+    {
+      phase: "03 · Build",
+      items: ["48-hr prototype", "Eval suite & red teaming", "Guardrail definition"],
+    },
+    {
+      phase: "04 · Ship & Learn",
+      items: ["Production deployment", "Drift monitoring", "Feedback pipeline"],
+    },
+  ];
+
   return (
     <Section id="about" className="py-24">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="relative">
-            <div className="grid grid-cols-2 gap-3">
-              {[
-                { value: "$80M", label: "ARR scaled", context: "multi-product portfolio" },
-                { value: "98%", label: "Task time reduction", context: "Qtravel.ai agentic system" },
-                { value: "3×", label: "Capacity increase", context: "same headcount" },
-                { value: "+80%", label: "Conversion increase", context: "AI personalisation layer" },
-              ].map((m, i) => (
+            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-5 font-mono">My process on the job</p>
+            <div className="space-y-0">
+              {process.map((step, i) => (
                 <motion.div
-                  key={m.label}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  key={step.phase}
+                  initial={{ opacity: 0, x: -16 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.08, duration: 0.5 }}
-                  className="p-5 rounded-xl border border-white/8 bg-[oklch(0.14_0.008_265)] hover:border-indigo-500/30 transition-colors"
+                  transition={{ delay: i * 0.1, duration: 0.5 }}
+                  className="flex items-stretch gap-4"
                 >
-                  <div className="text-3xl font-bold text-indigo-400 mb-1" style={{ fontFamily: "var(--font-display)" }}>{m.value}</div>
-                  <div className="text-sm font-semibold text-white mb-0.5">{m.label}</div>
-                  <div className="text-xs text-zinc-500">{m.context}</div>
+                  <div className="flex flex-col items-center shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-indigo-500 mt-0.5 shrink-0 ring-2 ring-indigo-500/20" />
+                    {i < process.length - 1 && (
+                      <div className="w-px flex-1 bg-gradient-to-b from-indigo-500/40 to-indigo-500/10 mt-1 mb-1" />
+                    )}
+                  </div>
+                  <div className={`pb-5 flex-1 min-w-0 ${i === process.length - 1 ? "pb-0" : ""}`}>
+                    <p className="text-xs font-mono text-indigo-400 mb-2">{step.phase}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {step.items.map((item) => (
+                        <span
+                          key={item}
+                          className="text-xs text-zinc-400 bg-white/4 border border-white/8 px-2 py-0.5 rounded-md hover:border-indigo-500/30 hover:text-zinc-300 transition-colors"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.45, duration: 0.5 }}
+              className="mt-5 p-4 rounded-xl border border-indigo-500/20 bg-indigo-600/5"
+            >
+              <p className="text-xs text-indigo-400 font-mono mb-3">→ Documented outcomes</p>
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  { value: "98%", label: "task reduction" },
+                  { value: "3×", label: "capacity" },
+                  { value: "+80%", label: "conversion" },
+                ].map((m) => (
+                  <div key={m.label}>
+                    <div className="text-xl font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>{m.value}</div>
+                    <div className="text-xs text-zinc-500">{m.label}</div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
             <div className="flex flex-wrap gap-2 mt-4">
               <span className="tech-tag">7+ Years in AI</span>
               <span className="tech-tag">PhD Quantum Physics</span>
