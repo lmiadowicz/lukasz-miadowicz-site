@@ -9,7 +9,7 @@ excerpt: "A practical decision framework for AI PMs on when to add AI to a produ
 tags: ["AI", "AI Features", "AI Product Management", "AIPM", "Decision Framework", "Product Design", "Product Management", "Product Manager", "Product Strategy"]
 category: "AI Product Management"
 readTime: "8 min read"
-image: ""
+image: "/images/posts/framework_overview.webp"
 canonical: "https://miadowicz.com/blog/when-should-you-use-ai-decision-framework-for-pms"
 faq:
   - question: "When should you add AI to a product feature?"
@@ -215,4 +215,4 @@ One last test before you commit: **write down what success looks like in 6 month
 
 ---
 
-*Łukasz Miądowicz is an AI Product Leader who builds and ships AI products. He helps companies decide where AI creates real value - and where it doesn't. [Work with Łukasz →](https://miadowicz.com/#contact)*
+*Łukasz Miądowicz is an AI Product Leader who builds and ships AI products. He helps companies decide where AI creates real value - and where it doesn't. [Work with Łukasz →](https://miadowicz.com/fractional)*

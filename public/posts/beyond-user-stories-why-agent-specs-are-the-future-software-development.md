@@ -148,3 +148,14 @@ Making all the assumptions explicit is a bigger job but a more honest one. It su
 Remember: **Agent Specs do not replace developers**. Developers evolve into Agent Orchestrators: guiding AI agents, validating outputs, enforcing quality and security, and preserving architectural integrity. The human element remains indispensable.
 
 If you want your AI-assisted or even human development efforts to succeed without rework and security holes, it's time to evolve from user stories to Agent Specs.
+
+---
+
+## Related Reading
+
+- [Agentic UX: Designing In-Product Experiences for AI Agents](/blog/agentic-ux-designing-in-product-experiences-for-ai-agents) — once the spec is written and the system is built, this is how to design the interface layer so agents operate inside real product workflows.
+- [When Should You Use AI? A Decision Framework for AI PMs](/blog/when-should-you-use-ai-decision-framework-for-pms) — five questions to answer before writing a single Agent Spec.
+
+---
+
+*Łukasz Miądowicz is an AI Product Leader who works with teams to move from vague AI specs to production-ready agent systems. [Work with Łukasz →](https://miadowicz.com/fractional)*

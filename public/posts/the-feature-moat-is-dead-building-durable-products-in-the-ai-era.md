@@ -240,3 +240,7 @@ That's the goal. Not the best product. The most defensible one.
 [2] Ashu Garg, "[Where AI is headed in 2026](https://foundationcapital.com/where-ai-is-headed-in-2026/)," Foundation Capital, 30 Dec. 2025.
 
 [3] Moe Ali, "[Every Leader is in a DISTRIBUTION WAR: 15 AI Distribution Plays That Build Real Moats!](https://www.productmanagement.ai/p/every-leader-is-in-a-distribution)," ProductManagement.ai, 23 Jan. 2026.
+
+---
+
+*Łukasz Miądowicz is an AI Product Leader who helps companies build durable AI products — from strategy and moat design to shipped features. [Work with Łukasz →](https://miadowicz.com/fractional)*

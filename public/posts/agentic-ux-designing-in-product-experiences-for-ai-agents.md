@@ -268,3 +268,7 @@ If you want to see these patterns in action before building your own:
 19. [Stripe Sessions - Seamless Shopping: AI Agents, AWS, and Stripe](https://stripe.com/sessions/2025/seamless-shopping-ai-agents-aws-and-stripe)
 20. [Figma - Introducing Claude Code to Figma](https://www.figma.com/blog/introducing-claude-code-to-figma/)
 21. [Bain & Company - The Three Layers of an Agentic AI Platform](https://www.bain.com/insights/the-three-layers-of-an-agentic-ai-platform/)
+
+---
+
+*Łukasz Miądowicz is an AI Product Leader specializing in agentic UX and in-product AI experiences. He helps companies design and ship AI features that fit inside real user workflows — not on top of them. [Work with Łukasz →](https://miadowicz.com/fractional)*

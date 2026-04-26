@@ -9,7 +9,7 @@ excerpt: "A comprehensive guide to moving from Product Manager to Venture Builde
 tags: ["AI", "Career", "Corporate Innovation", "Product Management", "Product Manager", "Spin-Out", "Startups", "Venture Builder", "Venture Building"]
 category: "Corporate Innovation"
 readTime: "25 min read"
-image: ""
+image: "/images/posts/diagram-01-venture-lifecycle.webp"
 canonical: "https://miadowicz.com/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about"
 faq:
   - question: "What is a Venture Builder inside a company?"
@@ -285,6 +285,13 @@ Conversely, this role is not a fit for those who are uncomfortable with extreme 
 The path is not easy, but for companies that get it right, it's a powerful engine for growth. It's a way to take the immense talent that already exists within the product organization and apply it to the much harder, much more valuable problem of building new businesses.
 
 Most companies will continue to focus on optimizing their core products. A few will build the capability to launch new ones. That is the opportunity that venture building presents.
+
+---
+
+## Related Reading
+
+- [The Feature Moat Is Dead: Building Durable Products in the AI Era](/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era) — AI compresses venture economics dramatically; the same moat logic applies whether you're launching a standalone startup or an internal venture.
+- [The Agentic AI Product Playbook: Building 0-to-1 Products from First Principles](/blog/the-agentic-ai-playbook-building-0-to-1-products-from-first-principles) — a concrete example of an AI-native 0→1 build: from discovery to a six-agent system with real unit economics and a GTM plan.
 
 ---
 

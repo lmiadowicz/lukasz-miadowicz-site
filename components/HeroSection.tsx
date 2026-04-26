@@ -172,7 +172,7 @@ export function HeroSection() {
               />
               <div className="absolute -bottom-3 -right-3 bg-[oklch(0.14_0.008_265)] border border-indigo-500/30 rounded-xl px-4 py-2.5 text-center shadow-xl">
                 <div className="text-xs text-indigo-400 font-medium mb-0.5" style={{ fontFamily: "var(--font-mono)" }}>Open to</div>
-                <div className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>Full-time roles</div>
+                <div className="text-sm font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>Full-time & Fractional</div>
               </div>
             </div>
           </motion.div>

@@ -590,6 +590,78 @@ export function BlogPreviewSection() {
   );
 }
 
+export function ProcessSection() {
+  const steps = [
+    {
+      num: "01",
+      title: "Discovery call (30 min)",
+      desc: "We map your AI opportunity, current state, and what success looks like. No slides, no sales pitch — just a focused conversation about where AI creates real leverage for your business.",
+    },
+    {
+      num: "02",
+      title: "Proposal & scoping",
+      desc: "I send a plain-language proposal within 24 hours: scope, engagement model (full-time, fractional, or sprint), timeline, and expected outcomes with measurable milestones.",
+    },
+    {
+      num: "03",
+      title: "First week: rapid audit",
+      desc: "I embed quickly. In week one I audit your product, data, and team, identify the highest-ROI AI opportunities, and present a prioritized roadmap with the business case built in.",
+    },
+    {
+      num: "04",
+      title: "Build, ship, iterate",
+      desc: "From roadmap to running code. I work alongside your team, own the AI product decisions, and stay until the metric moves — not until the contract ends.",
+    },
+  ];
+
+  return (
+    <Section id="process" className="py-24 relative">
+      <div className="absolute inset-0 dot-grid opacity-15" />
+      <div className="container relative">
+        <SectionHeader num="04" label="How we work together" />
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight" style={{ fontFamily: "var(--font-display)" }}>
+            From first call<br /><span className="gradient-text">to shipping AI.</span>
+          </h2>
+          <p className="text-zinc-400 max-w-sm text-sm leading-relaxed">
+            A repeatable process I&apos;ve refined across five AI 0→1 builds. Fast to start, focused on outcomes.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-4">
+          {steps.map((step, i) => (
+            <motion.div
+              key={step.num}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              className="relative p-6 rounded-xl border border-white/8 bg-[oklch(0.13_0.007_265)] group hover:border-indigo-500/30 transition-colors"
+            >
+              <span className="text-[11px] font-mono text-indigo-400/60 tracking-widest mb-3 block">{step.num}</span>
+              <h3 className="text-base font-semibold text-white mb-2" style={{ fontFamily: "var(--font-display)" }}>{step.title}</h3>
+              <p className="text-zinc-400 text-sm leading-relaxed">{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            href="/fractional"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-md transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/25 mr-3"
+          >
+            See engagement models <ArrowRight size={16} />
+          </Link>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-indigo-500/40 text-zinc-300 hover:text-white font-medium rounded-md transition-all duration-200"
+          >
+            Book a call
+          </a>
+        </div>
+      </div>
+    </Section>
+  );
+}
+
 export function Footer() {
   return (
     <footer role="contentinfo" className="border-t border-white/5 py-8">
@@ -599,6 +671,8 @@ export function Footer() {
         </div>
         <div>© {new Date().getFullYear()} Łukasz Miądowicz</div>
         <div className="flex items-center gap-4">
+          <Link href="/fractional" className="hover:text-zinc-400 transition-colors">Hire Me</Link>
+          <Link href="/speaking" className="hover:text-zinc-400 transition-colors">Speaking</Link>
           <Link href="/blog" className="hover:text-zinc-400 transition-colors">Blog</Link>
           <Link href="/glossary" className="hover:text-zinc-400 transition-colors">Glossary</Link>
           <a href="https://www.linkedin.com/in/lukaszmiadowicz/" target="_blank" rel="noopener noreferrer me" className="hover:text-zinc-400 transition-colors">LinkedIn</a>

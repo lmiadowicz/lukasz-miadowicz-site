@@ -7,9 +7,10 @@ import { ArrowRight } from "lucide-react";
 
 const links = [
   { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
+  { label: "Hire Me", href: "/fractional" },
   { label: "Portfolio", href: "/#portfolio" },
   { label: "Blog", href: "/blog" },
+  { label: "Speaking", href: "/speaking" },
   { label: "Books", href: "/books" },
 ];
 

@@ -9,7 +9,7 @@ excerpt: "A first-principles analysis of AI's trajectory to 2030, exploring expo
 tags: ["AI", "AI Agents", "AI Strategy", "Future of AI", "First Principles", "Multi-Agent Systems", "Predictions"]
 category: "AI Strategy"
 readTime: "15 min read"
-image: ""
+image: "/images/posts/framework_overview.webp"
 canonical: "https://miadowicz.com/blog/the-age-of-amplification-ai-predictions-2030-first-principles"
 faq:
   - question: "What is the Age of Amplification in AI?"
@@ -173,6 +173,13 @@ Because that's what AI is: leverage. It's the ability to turn one hour of human 
 The winners of the next decade will be the people who see this clearly, who embrace the leverage, and who use it to build things that matter. They will be the ones who understand the future is not about humans versus machines. It's about humans *with* machines, amplified beyond anything we've built before.
 
 That's the age I believe we're entering. And I, for one, can't wait to see what we build.
+
+---
+
+## Related Reading
+
+- [The Feature Moat Is Dead: Building Durable Products in the AI Era](/blog/the-feature-moat-is-dead-building-durable-products-in-the-ai-era) — if AI commoditizes features, UI, and model access, here's the first-principles map of what durable competitive advantage looks like in the amplification era.
+- [Agentic UX: Designing In-Product Experiences for AI Agents](/blog/agentic-ux-designing-in-product-experiences-for-ai-agents) — what the shift from human-first to agent-first interfaces looks like in practice, with four design patterns from Notion, Salesforce, and Intercom.
 
 ---
 

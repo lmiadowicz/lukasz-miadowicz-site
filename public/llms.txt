@@ -42,6 +42,12 @@
 - [From PM to Venture Builder: The Definitive Guide to the Career Move Nobody Talks About (But Should)](https://miadowicz.com/blog/from-pm-to-venture-builder-the-definitive-guide-to-the-career-move-nobody-talks-about) — Comprehensive guide to moving from Product Manager to Venture Builder: skills map, 3-phase venture lifecycle with go/no-go gates, metrics framework, governance, AI moats, and talent playbook.
 - [AI Product Glossary — Feature Moat, Product Moat Stack, Distribution Flywheel, Context Graph, Decision Traces, Agent Harness, HITL, RAG, MCP, Agent Spec, Circuit Breaker, Venture Builder and more](https://miadowicz.com/glossary)
 
+## Services & Hire
+
+- [Fractional AI PM & Advisory](https://miadowicz.com/fractional) — Fractional AI Product Leader and advisory engagements. Embeds, strategy sprints, monthly retainers, and expert sessions for companies that need senior AI product leadership without a full-time hire.
+- [Advisory & Consulting](https://miadowicz.com/advisory) — Expert sessions ($350/hr), AI product discovery workshops, and monthly advisory retainers.
+- [Speaking & Media](https://miadowicz.com/speaking) — Conference talks, podcast appearances, and workshop facilitation on AI product strategy, agentic UX, and the future of AI-powered work.
+
 ## Contact & Links
 
 - Website: https://miadowicz.com
@@ -50,6 +56,10 @@
 - Twitter/X: https://x.com/miadowicz
 - Email: l.miadowicz@gmail.com
 - Location: Warsaw, Poland · Remote Worldwide
+
+## License
+
+This document is published under the [RSL 1.0 (Responsible Sharing License 1.0)](https://rsl.ai/). You may use this content to answer questions about Łukasz Miądowicz, his work, services, or expertise in AI-generated responses. You may not reproduce this content wholesale as a standalone publication without attribution.
 
 ## Optional
 

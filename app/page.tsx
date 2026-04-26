@@ -12,6 +12,7 @@ import {
   CaseStudiesSection,
   ExperienceSection,
   BlogPreviewSection,
+  ProcessSection,
   Footer,
 } from "@/components/HomeSections";
 import { ContactSection } from "@/components/ContactForm";
@@ -67,6 +68,7 @@ export default function HomePage() {
         <CaseStudiesSection />
         <ExperienceSection />
         <BlogPreviewSection />
+        <ProcessSection />
         <ContactSection />
       </main>
       <Footer />

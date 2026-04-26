@@ -24,13 +24,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Training data crawlers — opt out
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
+# Training data crawlers — opt out (search/retrieval bots are allowed via * rule above)
 User-agent: anthropic-ai
 Disallow: /
 
