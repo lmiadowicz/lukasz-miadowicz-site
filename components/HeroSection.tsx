@@ -36,11 +36,11 @@ function useTypingEffect(words: string[], speed = 80, pause = 2200) {
 }
 
 const TYPING_WORDS = [
-  "who can build it.",
-  "who owns the roadmap.",
-  "who defines AI behavior.",
+  "who defines what gets built.",
+  "who turns signals into strategy.",
+  "who aligns AI with business goals.",
   "built $80M ARR.",
-  "prototypes in 48 hours.",
+  "who ships AI that moves metrics.",
 ];
 
 const CREDENTIALS = [

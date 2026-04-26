@@ -129,7 +129,7 @@ export function AboutSection() {
           <div>
             <SectionHeader num="02" label="About" />
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "var(--font-display)" }}>
-              AI Native PM.<br /><span className="gradient-text">Own the roadmap. Empower the team.</span>
+              AI Product Leader.<br /><span className="gradient-text">Strategy first. Outcomes always.</span>
             </h2>
             <p className="text-zinc-400 leading-relaxed mb-4">
               I&apos;m an <strong className="text-zinc-200">AI Product Leader</strong> - I own the AI roadmap end-to-end and personally prototype the first version of every major feature before committing engineering resources.

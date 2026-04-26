@@ -133,8 +133,8 @@ export default function AboutPage() {
                     className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
-                    AI Native PM.<br />
-                    <span className="gradient-text">Own the roadmap.</span>
+                    AI Product Leader.<br />
+                    <span className="gradient-text">Strategy to shipped product.</span>
                   </h1>
 
                   <p className="text-xl text-zinc-400 font-medium mb-6">
